@@ -1,0 +1,165 @@
+а a á|o|e
+# ^^^ 'a' és 'á' kb. ua
+аа á
+А A Á
+Ав Au
+# ^^^ "Augusztin"
+б b v
+Б B
+в v f
+В V F|W
+# ^^^ állhat elméletileg "W' is a family name-ben
+г g h|gy|k|v|j
+# ^^^ 'j' nem jellemző
+Г G H
+д d gy|t
+Д D Gy
+Дей Dé
+# ^^^ "Dénes"
+# >>> betűkapcsolatok a hivatalosból
+дю gyu
+Дю Gyu
+дя gya
+Дя Gya
+дё gyo
+Дё Gyo
+де gye
+Де Gye
+ди gyi
+Ди Gyi
+дь gy
+Дь Gy
+# <<<
+дт d gy|t
+е e é|ö|ő|o|je|jé|jo|jó|já|ye|yé|yó|yö|a
+# ^^^ 'a' nem jellemző
+ее é ő|ehé
+# ^^^ érdekesség: ее é ő|öe|oé lehet, és még ee=ehé vö. Феер ('Fehér') vagy ee=eje Фееш ('Fejes')
+Е E É|Je|Jó
+ей é ö
+ё o ö|ő|ű|e|é|jo|yo|yó|yö|yő
+Ё Jó Ja|Jo|Já|Ö
+ёй é ő
+ж zs s
+Ж Zs S
+з z zs|sz
+З Z Zs
+и i j|ji|yi|í|e|é|ü|ő|á
+# ^^^ 'á' nem jellemző
+И I J
+й j ly|i
+Й J
+к k g
+К K
+л l ly
+Л L
+м m s
+М M
+н n m
+# ^^^ 'm' nem jellemző
+Н N Ny
+# >>> betűkapcsolatok a hivatalosból
+ню nyu
+Ню Nyu
+ня nya
+Ня Nya
+нё nyo
+Нё Nyo
+не nye
+Не Nye
+ни nyi
+Ни Nyi
+нь ny
+Нь Ny
+# <<<
+о o ó|ö|ő|a|á|ú
+оу ou
+О O A|Ó
+ов ó
+п p
+П P
+р r l
+Р R
+с sz z|c|s
+С Sz S|C
+т t d|g|c
+Т T D
+# >>> betűkapcsolatok a hivatalosból
+тю tyu
+Тю Tyu
+тя tya
+Тя Tya
+тё tyo
+Тё Tyo
+те tye
+Те Tye
+ти tyi
+Ти Tyi
+ть ty
+Ть Ty
+# <<<
+у u ú|o|ó|ö|ő|ü|i|y
+У U Ú|Ü|O
+ф f
+Ф F
+х h k|g
+Х H K
+ц c cz|cs|g
+Ц C Cz|Cs|Sz
+ч cs ts|ch
+Ч Cs Ts|Ch
+# >>> betűkapcsolatok a hivatalosból
+чё cso
+Чё Cso
+# <<<
+ш s zs|sch|m
+Ш S Zs|Sz|Sch
+# 'sch' és 'Sch' családnévben, német helynévben elképzelhető
+щ s cs|c|scs|zs
+Щ S Sz|C|Cs|Zs
+# >>> betűkapcsolatok a hivatalosból
+щё so cso
+Щё So Cso
+# <<<
+ъ y ''
+# ^^^ tipp: fordítvan jobb lenne -> nem segít, hm..
+Ъ J ''
+# nincs az adatban Ъ
+ы i é|ü|ű
+Ы É Ö|Ő
+ь y ''
+# ^^^ tipp: fordítvan jobb lenne -> nem segít, hm..
+Ь B ''
+# úgy tűnik, hogy a lágyságjelet és a keményjelet keverik a leírók
+э e é|ö|ő
+Э E É|Je
+эе é ehé
+# ^^^ érdekesség: 'эе' é|ehé (vö. Фэер=Fehér, Фэешь=Fejes)
+ю yu yo|yó|yö|yő|ju|jú|jo|jó|ö|ő|u|ü|ű
+Ю Ju Jó|Já|Je|Gyu
+# ^^^ 'Gyu' nem jellemző
+я ja yá|ye|já
+Я Já
+#
+# írásjelek - \\\\ mert regex char => escape-elve kell keresni!
+\\\\- - ''
+# _ '' _
+# ^^^ ezt vhogy
+#
+# országnevek <- countries.csv
+\\bАвстрия\\b Ausztria
+\\bЧехословакия\\b Csehszlovákia
+\\bТрансильвания\\b Erdély
+\\bЮгославия\\b Jugoszlávia
+\\bПольша\\b Lengyelország
+\\bВенгрия\\b Magyarország
+\\bГермания\\b Németország
+\\bРумыния\\b Románia
+\\bСловакия\\b Szlovákia
+# rövidítések
+\\bАвстр\\. Ausztria
+\\bЧехослов\\. Csehszlovákia
+\\bВенгр\\. Magyarország
+#
+# 'megye' nem kell a végére!
+мед(е|и|я|ье|ь)\\b ''

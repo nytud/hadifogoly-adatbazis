@@ -1,0 +1,90 @@
+а a e|ä|á|ei|ey|ah
+б b p|bb
+в w v|f|h|b|u
+г g h|k|ck
+гх k
+д d t|gy
+дц z ts
+е e ä|ie|ye|je|y|ei|a|é|ö|''|eh|äh
+ё ö eu|ő|e|öh|jo|jó
+ж sch zs|t|ch|f|d|z|tsch|st
+# a 'ж' főleg akkor 'ch', 'f' vagy 'd', ha szó végén írják
+з s z|ds|ss|ß|ßß
+и i ie|yi|ji|in|j|''|e|í|ih
+й i ''|j|y|ly
+к k kt|ch|ck|g
+кк kk ck|ch
+л l
+м m nkt|nd|n|mm|t
+н n nk|nd|nn|p
+нц z
+о o eu|a|oh|ó|ö|ei
+п p P|l|n|b
+р r
+с s ß|ss|ßß|rs|z|ch|tsch|cs
+т t dt|ty|tt
+тц z ts
+дт t d
+нт n
+у u uh|ü|ú|''|o
+ф f
+х ch h|k|kh|g
+# 'х' -> ch főleg szó végén
+ц z ds|ts|c|u|d|t
+ч tsch cs|z|tz|h
+ш sch tsch|s
+шт st scht
+шп sp schp
+чш tsch
+щ z tz|sch
+# 'щ' -> 'sch' akkor leginkább, ha szó belsejében van
+# ъ nincsen
+ы i ''|ü|ö|ei|eu
+ь '' i|y|j|ld
+э e ö|ye|é|je
+ю ü u|yu|ju|ö|üh
+я a ja|ya|ai|ia|ie|ye|y|ei
+А A E|Ä
+Б B P
+В W V
+Г G H|K|P
+Д D Gy
+Дь Gy
+Е E Je|Jä|Ä
+# Ё nincsen
+Ж Z S|Zh
+З S Z
+И I J|U
+Й J
+К K G
+Л L
+М M N
+Н N Ny
+О O A
+П P
+Р R
+С S Sz
+Т T G
+У U Wu|Wü|W|Ú
+Ф F
+Х H Ch|''|K|G
+Ц Z C|Ts
+Ч Č Tsch|Cs
+# 'Ч': leginkább csehszlovák dolgok vannak ide bekeveredve, pl. Černice
+Ш Sch S|St
+Шт St
+Шп Sp
+Щ Sch S
+Щт St
+Щп Sp
+# Ъ nincsen
+Ы Ő
+# Ь nincsen
+Э E Ye|Je
+Ю Ju Jú|Deu
+Я Ja Já
+#
+# városnevek
+# végül csak ez az egy városnév volt oroszul
+\\bВена\\b Wien
+# ^^^ majd lehetne vhogy Bécs

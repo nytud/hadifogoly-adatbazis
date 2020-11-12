@@ -1,0 +1,13 @@
+а a á|o|e
+# 'a' és 'á' kb. ua
+А a á
+б b
+Б B
+в v
+г g h|v|j
+Г G H
+д d gy|t
+Д D Gy
+e e é|ö|ő|o
+
+ 

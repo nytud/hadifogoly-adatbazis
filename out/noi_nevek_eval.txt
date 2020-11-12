@@ -1,0 +1,74 @@
+
+    git diff --no-index --word-diff --unified=0 Kart_1000_Sor.transcribed.csv Kart_1000_Sor.transcribed.new.csv | grep "+}" | sed "s/.*\[-/[-/;s/+}.*/+}/" | sstat > ../noi_nevek_eval.INFO
+
+    + = jó női név megoldás született         9 db 14%
+    x = tényleg női a név, de rossz női lett  3 db  5%
+    - = a jó ffi mellé jött rossz női is     14 db 22%
+    X = ffi helyett rossz női lett           30 db 48%
+    ? = nem tudom, mi a megoldás              7 db 11%
+
+ - 37 [-Sándor/L-]{+Sándor[0.83];Santál[0.50]/L+}
+ - 11 [-Sándor/L	Sándor/L-]{+Sándor[0.83];Santál[0.50]/L	Sándor[0.83];Santál[0.50]/L+}
+ X  5 [-Karl>>Kartal/D-]{+Karl>>Karla/D+}
+ +  3 [-Roza=T-]{+Róza[0.75];Rózsa[0.67]/L+}
+ X  3 [-Pauly=T-]{+Pauly>>Paula/D+}
+ -  3 [-Iván/L-]{+Iván[0.75];Ivon[0.75]/L+}
+ X  2 [-Szilyvesztr>>Szilveszter/D-]{+Szilyvesztr>>Szilvesztra/D+}
+ X  2 [-Sando=T-]{+Szenta/L+}
+ -  2 [-Sándor/L-]{+Sándor[0.67];Santál[0.50];Santel[0.50]/L+}
+ x  2 [-Marija=T-]{+Marija>>Marita/D+}
+ -  2 [-Ernye[0.89];Ernő[0.75];Jernő[0.44]/L-]{+Ernye[0.89];Ernő[0.75];Erna[0.75];Jerne[0.67];Jernő[0.44];Elma[0.25]/L+}
+ X  1 [-Varno=T-]{+Verna/L+}
+ X  1 [-Szilyveszt>>Szilveszter/D-]{+Szilyveszt>>Szilvesztra/D+}
+ X  1 [-Sándor/L	Balla/L-]{+Sándor[0.83];Santál[0.50]/L	Bella/S+}
+ ?  1 [-Rozami>>Rami/D-]{+Rozami>>Rozali/D+}
+ +  1 [-Rozali=T-]{+Rozali/S+}
+ x  1 [-Rozalija=T-]{+Rozalija>>Rozalina/D+}
+ X  1 [-Paul=T-]{+Paul>>Paula/D+}
+ X  1 [-Nalman=T-]{+Nalman>>Nalani/D+}
+ +  1 [-Morgit=T-]{+Margit/L+}
+ +  1 [-Matilyda=T-]{+Matilda/L+}
+ X  1 [-Matija=T-]{+Matija>>Maja/D+}
+ X  1 [-Marto>>Martos/D-]{+Margó[0.60];Márta[0.60]/L+}
+ ?  1 [-Marián/L-]{+Marion[0.83];Marián[0.67];Mariam[0.50]/L+}
+ X  1 [-Manjas>>Majs/D-]{+Manjas>>Mana/D+}
+ X  1 [-Mahany=T-]{+Megán/L+}
+ +  1 [-Magdolina=T-]{+Magdaléna/L+}
+ X  1 [-Lorenc=T	Lorenc=T-]{+Lorenc>>Lorena/D	Lorenc>>Lorena/D+}
+ X  1 [-Keza=T-]{+Keza>>Kenza/D+}
+ +  1 [-Katalin=T-]{+Katalin/S+}
+ X  1 [-Karlman=T-]{+Karlman>>Karla/D+}
+ x  1 [-Julija=T-]{+Julija>>Juli/D+}
+ ?  1 [-Juka=T-]{+Juka>>Jutka/D+}
+ ?  1 [-Jiona=T-]{+Jiona>>Jonna/D+}
+ -  1 [-Jenő/L	Jenő/L-]{+Jenő[0.50];Jana[0.25]/L	Jenő[0.50];Jana[0.25]/L+}
+ -  1 [-Jenő/L-]{+Ené[0.67];Émi[0.33];Emő[0.33];Jenő[0.29]/L+}
+ X  1 [-Jáonas=T-]{+Jáonas>>Jána/D+}
+ X  1 [-Ján=T-]{+Ján>>Jána/D+}
+ -  1 [-Iván/L	Iván/L-]{+Iván[0.75];Ivon[0.75]/L	Iván[0.75];Ivon[0.75]/L+}
+ X  1 [-Ion=T-]{+Ion>>Ivon/D+}
+ X  1 [-Intvon=T-]{+Intvon>>Ivon/D+}
+ +  1 [-Gilyda>>Gida/D-]{+Gilda[0.91];Hilda[0.73]/L+}
+ -  1 [-Géza/L-]{+Giza[0.75];Géza[0.50]/L+}
+ -  1 [-Gerő[0.75];Gara[0.50]/L-]{+Gerő[0.75];Gara[0.50];Gala[0.25];Géla[0.25];Héra[0.25];Héla[0.00]/L+}
+ X  1 [-Georgij=T-]{+Georgij>>Georgina/D+}
+ X  1 [-Geno>>Gernot/D-]{+Hana/L+}
+ X  1 [-Florenc=T	Florenc=T-]{+Florenc>>Florencia/D	Florenc>>Florencia/D+}
+ +  1 [-Erzsi=T-]{+Erzsi/S+}
+ X  1 [-Eni>>Enki/D-]{+Ené[0.67];Émi[0.33]/L+}
+ ?  1 [-Élon/L-]{+Elen[0.67];Élon[0.44]/L+}
+ +  1 [-Elena=T-]{+Elena/S+}
+ .  1 [-Bödi[0.75];Bugyi[0.67];Bódé[0.50];Böde[0.50]/L-]{+Bödi[0.75];Bugyi[0.67];Böde[0.50];Bódé[0.50]/L+}
+ ?  1 [-Besga=T-]{+Böske/L+}
+ -  1 [-Berkó/L-]{+Barka[0.80];Berkó[0.60];Borka[0.60]/L+}
+ -  1 [-Bene[0.75];Béni[0.75];Benő[0.75]/L	Bene[0.75];Béni[0.75];Benő[0.75]/L-]{+Bene[0.75];Béni[0.75];Benő[0.75];Boni[0.75]/L	Bene[0.75];Béni[0.75];Benő[0.75];Boni[0.75]/L+}
+ X  1 [-Balla/L-]{+Bella/S+}
+ X  1 [-Balinja=T	Balinja=T-]{+Balinja>>Balbina/D	Balinja>>Balbina/D+}
+ X  1 [-Babar=T-]{+Babar>>Barbara/D+}
+ -  1 [-Arnat>>Arnót/D	Sándor/L-]{+Arnat>>Arna/D	Sándor[0.83];Santál[0.50]/L+}
+ X  1 [-Amel=T	Szernat=T-]{+Amel>>Ameli/D	Szernat>>Szeréna/D+}
+ -  1 [-Amar[0.75];Omár[0.75];Aser[0.25]/L-]{+Amar[0.75];Omár[0.75];Aser[0.25];Amál[0.25]/L+}
+ X  1 [-Aloisz=T-]{+Aloisz>>Aliz/D+}
+ ?  1 [-Aimnas=T-]{+Aimnas>>Aina/D+}
+ X  1 [-Adai=T	Adai=T-]{+Adai>>Ada/D	Adai>>Ada/D+}
+

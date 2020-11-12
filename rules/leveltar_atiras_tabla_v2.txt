@@ -1,0 +1,77 @@
+а a á|o|e
+# 'a' és 'á' kb. ua
+А A Á
+б b v
+Б B
+в v f
+В V
+# állhat elméletileg "W' is a family name-ben
+г g h|gy|k|v|j
+# 'j' nem jellemző
+Г G H
+д d gy|t
+Д D Gy
+е e é|ö|ő|o|je|jé|jo|jó|já|ye|yé|yó|yö|a
+# 'a' nem jellemző
+Е E É|Je|Jó
+ё o ö|ő|ű|e|é|jo|yo|yó|yö|yő
+Ё Jó Ja|Jo|Já|Ö
+ж zs s
+Ж Zs
+з z zs|sz
+З Z Zs
+и i j|ji|yi|í|e|é|ü|ő|á
+# 'á' nem jellemző
+И I J
+й j ly|i
+Й J
+к k g
+К K
+л l ly
+Л L
+м m
+М M
+н n m
+# 'm' nem jellemző
+Н N Ny
+о o ó|ö|ő|a|á|ú
+О O A|Ó
+п p
+П P
+р r l
+Р R
+с sz z|c|s
+С Sz S|C
+т t d|g 
+Т T D
+у u ú|o|ó|ö|ő|ü|i|y
+У U Ú|Ü|O
+ф f
+Ф F
+х h k|g
+Х H K
+ц c cz|cs|g
+Ц C Cz|Cs|Sz
+ч cs
+# 'ts' és 'ch' is állhatna itt elméletileg (csak: family name) 
+Ч Cs
+# 'Ts' és "Ch" is állhatna itt elméletileg (csak: family name)
+ш s sch
+Ш S Sch|Sz
+щ s cs|c|scs
+Щ S Sz
+ъ y ''
+Ъ J ''
+# nincs az adatban Ъ
+ы i é|ü|ű
+Ы I É|Ü|Ű
+ь y ''
+Ь B ''
+# úgy tűnik, hogy a lágyságjelet és a keményjelet keverik a leírók
+э e é|ö|ő
+Э E É|Je
+ю yu yo|yó|yö|yő|jo|ö|ő|u|ü|ű
+Ю Ju Jó
+я ja yá
+Я Já
+ 

@@ -1,0 +1,106 @@
+
+# adatsor szerkezete: 4 mező
+#  * os (oszlopsorszám, 0-tól!)
+#    vagy:
+#    os1/os2=string
+#    = ha os2=string => ezeket a szabályokat kell alkalmazni os1-ben
+#    <- ez mindenképp a sima os1-es sor után jöjjön! (!)
+#    <- os1-enként csak 1 db ilyen lehet! (!)
+#  * "loose"-szabályok
+#  * "strict"-szabályok
+#  * termlista
+#
+# az adatsor előtti infó megjegyzéssor szerkezete:
+# c nn/mm X = ..
+#  c  = kezeljük-e ("-", ha kezeljük)
+#  nn = oszlopsorszám (0-tól!)
+#  mm = eredeti oszlopsorszám (0-tól!)_
+#       nn és mm azért tér el, mert a helyeket részekre bontjuk
+#  X  = eredeti ("excel") oszlopbetű
+#  .. = elnevezés
+
+# x  0/ 0 A = ID
+# nincs teendő -- ez a 0 lenne <- 0-tól számozunk!
+
+# +  1/ 1 B = Family
+1 ru2hu_loose ru2hu_strict vezeteknevek
+
+# +  2/ 2 C = Name
+# +  3/ 3 D = FatherName
+2 ru2hu_loose ru2hu_strict osszesffi
+3 ru2hu_loose ru2hu_strict osszesffi
+
+# x  4/ 4 E = Date_r
+# nincs teendő
+
+# Mesto_r (hely, cím)
+# +  5/ 5 F = Mesto_r/country
+5 ru2hu_loose ru2hu_strict countries
+# +  6/ 5 F = Mesto_r/county
+6 ru2hu_loose ru2hu_strict counties
+6/5=Австрия ru2de_loose ru2de_strict places_de
+# +  7/ 5 F = Mesto_r/district
+7 ru2hu_loose ru2hu_strict places
+7/5=Австрия ru2de_loose ru2de_strict places_de
+# +  8/ 5 F = Mesto_r/city
+8 ru2hu_loose ru2hu_strict places
+8/5=Австрия ru2de_loose ru2de_strict places_de
+# +  9/ 5 F = Mesto_r/village
+9 ru2hu_loose ru2hu_strict places
+9/5=Австрия ru2de_loose ru2de_strict places_de
+# + 10/ 5 F = Mesto_r/street
+10 ru2hu_loose ru2hu_strict places
+10/5=Австрия ru2de_loose ru2de_strict places_de
+# + 11/ 5 F = Mesto_r/number
+# házszám -- nem kezeljük
+
+# Mesto_pl (hely, cím)
+# + 12/ 6 G = Mesto_pl/country
+12 ru2hu_loose ru2hu_strict countries
+# + 13/ 6 G = Mesto_pl/county
+13 ru2hu_loose ru2hu_strict counties
+13/12=Австрия ru2de_loose ru2de_strict places_de
+# + 14/ 6 G = Mesto_pl/district
+14 ru2hu_loose ru2hu_strict places
+14/12=Австрия ru2de_loose ru2de_strict places_de
+# + 15/ 6 G = Mesto_pl/city
+15 ru2hu_loose ru2hu_strict places
+15/12=Австрия ru2de_loose ru2de_strict places_de
+# + 16/ 6 G = Mesto_pl/village
+16 ru2hu_loose ru2hu_strict places
+16/12=Австрия ru2de_loose ru2de_strict places_de
+# + 17/ 6 G = Mesto_pl/street
+17 ru2hu_loose ru2hu_strict places
+17/12=Австрия ru2de_loose ru2de_strict places_de
+# x 18/ 6 G = Mesto_pl/number
+# házszám -- nem kezeljük
+
+# + 19/ 7 H = Nationality <- ez mindig "magyar"
+19 nat_loose nat_strict nat
+
+# x 20/ 8 I = Date_pl
+# x 21/ 9 J = Date_vyb
+# x 22/10 K = Date_sm
+# nincs teendő
+
+# e 23/11 L = Prich (hová került, mi lett vele, ~11500-féle orosz szó)
+# ???
+
+# e 24/12 M = Zvanie (rendfokozat / foglalkozás, ~1000-féle orosz szó)
+# ???
+
+# e 25/13 N = Mesto_zah (hol nyugszik, ~2500-féle orosz szó, 97,5%-ban ü
+# ???
+
+# e 26/14 O = Lager (láger, ahonnan hazament?, főleg számok, ~1500-féle
+# ???
+
+# x 27/15 P = ArhNumber (ez vajon mi? számok)
+
+# e 28/16 Q = Примечание ЦРК (megj / anyja neve, ~250-féle orosz szó, 99
+# ???
+
+# x 29/17 R = Rec_id (egy szám)
+
+# x 30/18 S = DBNumber (egy szám)
+

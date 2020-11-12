@@ -1,0 +1,30 @@
+
+% 2020.06.22.
+% ötletek innen:
+% https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc
+
+% -- szövegközi kód is szürke háttérrel
+% szín azonos legyen a .theme fájl "background-color" -jával! XXX
+\usepackage{fancyvrb,newverbs,xcolor}
+\definecolor{Light}{HTML}{f0f0f0}
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{
+  \colorbox{Light}{\oldtexttt{#1}}
+}
+
+% -- hyperref! linkek!
+\usepackage{hyperref}
+% -- PDF options
+\hypersetup{
+  pdftitle={A magyar hadifoglyok adatbázisának orosz-magyar transzkripciója},
+  pdfauthor={Sass Bálint}
+}
+%\usepackage[pdfborder={0 0 0}]{hyperref} -- ez nem működik... XXX
+
+% -- fejezetcímek formázása
+%\usepackage{sectsty}
+% # = h1 --> \LARGE és előtte oldaltörés
+%\sectionfont{\LARGE\clearpage}
+% ## = h2 --> aláhúzva és előtte oldaltörés
+%\subsectionfont{\underline\clearpage}
+
