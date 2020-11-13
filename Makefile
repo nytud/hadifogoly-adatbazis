@@ -9,8 +9,12 @@ S=scripts
 
 # ===== MAIN STUFF 
 
-# >>> mindent egybe = transcribe + eval <<<
+# >>> mindent egybe <<
+# transcribe + eval részletes kiértékeléssel
 transcribe_and_eval_by_col: transcribe eval_by_col
+
+# transcribe + eval egyszerű kiértékeléssel
+transcribe_and_eval: transcribe eval
 
 
 # ===== TRANSCRIBE
@@ -186,4 +190,14 @@ PSEUDO_SEED=42
 create_pseudo:
 	@echo "--- $@" 1>&2
 	$S/randomize_data.sh $(DATAFILE) $(PSEUDO_SIZE) $(PSEUDO_SEED) > $(DATADIR)/pseudo_$(PSEUDO_SIZE)_$(PSEUDO_SEED).csv
+
+# create one crafted data record for testing
+# in $(DATADIR)/$(CR_FILE).csv
+# for setting CR_FLAGS see $S/create_crafted_data.py -h
+# example usage:
+# make create_crafted_data CR_FLAGS="-F 'Янош' -H 'д. Парад, обл. Хевеш'"
+CR_FILE=crafted
+CR_FLAGS=
+create_crafted_data:
+	@python $S/create_crafted_data.py $(CR_FLAGS) > $(DATADIR)/$(CR_FILE).csv
 

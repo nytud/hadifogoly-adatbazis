@@ -150,7 +150,7 @@ megfeleltetés tehát a következő:
 |[7]..[18] |=| [19]..[30]|
 
 Az átírt adatbázis oszlopcímkéit
-a `data/data.header.new` fájlban találjuk.
+a `data/data.header.new.csv` fájlban találjuk.
 
 
 ## 5. Előfeldolgozás
