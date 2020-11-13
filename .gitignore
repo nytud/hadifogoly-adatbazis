@@ -4,6 +4,7 @@ _adat
 data/Kart.separated.csv
 data/sample*
 data/full*
+data/crafted.csv
 
 out/old*
 out/new*

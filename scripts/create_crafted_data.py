@@ -23,11 +23,6 @@ HELP = 2
 INDEX = 3 # from 1! (as `cut` does)
 
 
-def cli_to_key(cli):
-    """Convert option string to python key, i.e. '-' -> '_'."""
-    return cli.replace('-', '_')
-
-
 def main():
     """Main."""
     # get CLI arguments
@@ -42,7 +37,7 @@ def main():
     fields = [f'#{field}#' for field in record.split('\t')]
 
     for option in OPTIONS:
-        arg_value = args_dict[cli_to_key(option[LONG])]
+        arg_value = args_dict[option[LONG].replace('-', '_')]
         if arg_value is not None:
             fields[option[INDEX] - 1] = arg_value
             # -1 => convert indices from 1 to indices from 0
