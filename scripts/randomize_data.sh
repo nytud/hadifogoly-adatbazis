@@ -28,29 +28,29 @@ S=scripts
 
 
 ACTSEED=$SEED
-cat $INFILE | cut -d '	' -f 2     | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $SEED) > b
+cat $INFILE | cut -d '	' -f 2     | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $ACTSEED) > b
 
 ACTSEED=$((SEED+1))
-cat $INFILE | cut -d '	' -f 3,4   | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $SEED) > c
+cat $INFILE | cut -d '	' -f 3,4   | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $ACTSEED) > c
 
 ACTSEED=$((SEED+2))
-cat $INFILE | cut -d '	' -f 5     | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $SEED) > d
+cat $INFILE | cut -d '	' -f 5     | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $ACTSEED) > d
 
 ACTSEED=$((SEED+3))
-cat $INFILE | cut -d '	' -f 6     | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $SEED) > e
+cat $INFILE | cut -d '	' -f 6     | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $ACTSEED) > e
 
 ACTSEED=$((SEED+4))
-cat $INFILE | cut -d '	' -f 7     | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $SEED) > f
+cat $INFILE | cut -d '	' -f 7     | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $ACTSEED) > f
 
 ACTSEED=$((SEED+5))
-cat $INFILE | cut -d '	' -f 8-12  | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $SEED) > g
+cat $INFILE | cut -d '	' -f 8-12  | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $ACTSEED) > g
 
 # XXX ez a lényeg, hogy itt SEED+1 van, hogy 3,4,13 egyben legyen!
 ACTSEED=$((SEED+1))
-cat $INFILE | cut -d '	' -f 13    | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $SEED) > h
+cat $INFILE | cut -d '	' -f 13    | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $ACTSEED) > h
 
 ACTSEED=$((SEED+6))
-cat $INFILE | cut -d '	' -f 14-19 | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $SEED) > i
+cat $INFILE | cut -d '	' -f 14-19 | shuf -n $SIZE --random-source=<($S/get_seeded_random.sh $ACTSEED) > i
 
 
 # sorszám az elejére 2000000-tól
