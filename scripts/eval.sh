@@ -9,7 +9,15 @@ if [ $# -eq 3 ]
 then
     COLS=$3
 else
-    COLS="2-4,6-19" # 20 kimarad, mert az mindig 'magyar'
+    COLS="2-4,6-10,13-17"
+    # kimarad:
+    #    1 sorszám
+    #    5 szül év
+    #   11 utca
+    #   12 házszám
+    #   18 utca
+    #   19 házszám
+    #   20 az mindig 'magyar'
 fi
 
 TMPFILE=$(mktemp)

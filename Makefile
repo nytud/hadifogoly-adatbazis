@@ -69,9 +69,10 @@ eval_diff:
 
 EVAL_BY_COL_OUTPUT=out/$(FILE).eval_by_col.new.out
 EVAL_BY_COL_ORIG=out/$(FILE).eval_by_col.out
+# cols (2-4,6-10,13-17) info in scripts/eval.sh
 eval_by_col: eval
 	@echo "--- $@" 1>&2
-	@( cat $(EVAL_OUTPUT) | grep "YES" ; for COL in 2 3 4 $$(seq 6 19) ; do echo -n "=== $$COL " ; cat $(EVAL_INPUT) | cut -d '	' -f $$COL > ei.$(FILE); make EVAL_INPUT=ei.$(FILE) EVAL_OUTPUT=eo.$(FILE) eval | grep "darab%" ; echo ; done ) > $(EVAL_BY_COL_OUTPUT) ; rm -f ei.$(FILE) eo.$(FILE)
+	@( cat $(EVAL_OUTPUT) | grep "YES" ; for COL in 2 3 4 $$(seq 6 10) $$(seq 13 17) ; do echo -n "=== $$COL " ; cat $(EVAL_INPUT) | cut -d '	' -f $$COL > ei.$(FILE); make EVAL_INPUT=ei.$(FILE) EVAL_OUTPUT=eo.$(FILE) eval | grep "darab%" ; echo ; done ) > $(EVAL_BY_COL_OUTPUT) ; rm -f ei.$(FILE) eo.$(FILE)
 
 eval_by_col_diff:
 	@echo "--- $@" 1>&2
