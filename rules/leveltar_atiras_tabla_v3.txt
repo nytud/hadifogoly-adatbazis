@@ -156,10 +156,6 @@
 \\bГермания\\b Németország
 \\bРумыния\\b Románia
 \\bСловакия\\b Szlovákia
-# rövidítések
-\\bАвстр\\. Ausztria
-\\bЧехослов\\. Csehszlovákia
-\\bВенгр\\. Magyarország
 #
 # 'megye' nem kell a végére!
 мед(е|и|я|ье|ь)\\b ''

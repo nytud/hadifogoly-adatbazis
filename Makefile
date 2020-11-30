@@ -33,10 +33,10 @@ transcribe: preprocess
 	@cat $(INPUT_PREPROCESSED) | python3 $S/transcribe.py -c $(METARULES) $(FLAGS) > $(OUTPUT)
 
 # helyek felbontása + zárójeles nevek elhagyása
-# sorrend! omit_parenth_names.py -> preprocess.py 
+# sorrend! preextract.py -> ... -> omit_parenth_names.py -> preprocess.py 
 preprocess:
 	@echo "--- $@" 1>&2
-	@cat $(INPUT) | python3 $S/separate_location_parts.py | python3 $S/omit_parenth_names.py | python3 $S/preprocess.py > $(INPUT_PREPROCESSED)
+	@cat $(INPUT) | python $S/preextract.py | python3 $S/separate_location_parts.py | python3 $S/omit_parenth_names.py | python3 $S/preprocess.py > $(INPUT_PREPROCESSED)
 
 preparation: convert_rules convert_metarules
 	@echo "--- $@" 1>&2

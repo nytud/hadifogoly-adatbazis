@@ -25,6 +25,7 @@ cp -p data/Kart.csv $D/data
 cp -p data/Kart_1000_Sor.csv $D/data
 cp -p data/test_set.csv $D/data
 cp -p data/pseudo_1000_42.csv $D/data
+cp -p data/random_10000_42.csv $D/data
 cp -p data/data.header.csv $D/data
 cp -p data/data.header.new.csv $D/data
 cp -p data/sar_table.csv $D/data
@@ -76,5 +77,8 @@ cp -p out/test_set.eval_by_col.out $D/out
 cp -p out/pseudo_1000_42.transcribed.csv $D/out
 cp -p out/pseudo_1000_42.eval.out $D/out
 cp -p out/pseudo_1000_42.eval_by_col.out $D/out
+cp -p out/random_10000_42.transcribed.csv $D/out
+cp -p out/random_10000_42.eval.out $D/out
+cp -p out/random_10000_42.eval_by_col.out $D/out
 cp -p out/noi_nevek_eval.txt $D/out
 

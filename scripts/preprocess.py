@@ -10,6 +10,17 @@ import sys
 SAR_TABLE_FILENAME = 'data/sar_table.csv' # search-and-replace table
 #SAR_MARK = '/R' # search-and-replace mark -- see in file
 
+PREPOSITIONS = [
+    'в',  # -bAn
+    'около',  # közel
+    'на',  # -On -- ez talán mégis szükséges? "на Дону" hm.. XXX
+    'под'  # alatt
+]
+# all preps are needed with two spaces and then with one space
+# (because of the output of separate_location_parts.py)
+PREPOSITIONS_WITH_SPACES = [f'{p}  ' for p in PREPOSITIONS] + [f'{p} ' for p in PREPOSITIONS]
+
+
 def process():
     """Do the thing."""
 
@@ -45,6 +56,16 @@ def process():
             if col in {2, 3}:
                 if val in search_and_replace:
                     val = search_and_replace[val]
+
+            # remove -ский/-ская endings from places
+            if col in {5, 6, 7, 8, 9, 12, 13, 14, 15, 16}:
+                val = re.sub('ский$', '', val)
+                val = re.sub('ская$', '', val)
+
+            # remove prepositions from places
+            if col in {5, 6, 7, 8, 9, 12, 13, 14, 15, 16}:
+                for pattern in PREPOSITIONS_WITH_SPACES:
+                    val = re.sub(f'^{pattern}', '', val)
 
             to_print.append(val)
 
