@@ -189,7 +189,15 @@ PSEUDO_SIZE=1000
 PSEUDO_SEED=42
 create_pseudo:
 	@echo "--- $@" 1>&2
-	$S/randomize_data.sh $(DATAFILE) $(PSEUDO_SIZE) $(PSEUDO_SEED) > $(DATADIR)/pseudo_$(PSEUDO_SIZE)_$(PSEUDO_SEED).csv
+	$S/pseudo_data.sh $(DATAFILE) $(PSEUDO_SIZE) $(PSEUDO_SEED) > $(DATADIR)/pseudo_$(PSEUDO_SIZE)_$(PSEUDO_SEED).csv
+
+# random rendes adat készítése
+# = n db random sor, sorokon belül persze nincs randomizálás!
+RANDOM_SIZE=10000
+RANDOM_SEED=42
+create_random:
+	@echo "--- $@" 1>&2
+	$S/random_data.sh $(DATAFILE) $(RANDOM_SIZE) $(RANDOM_SEED) > $(DATADIR)/random_$(RANDOM_SIZE)_$(RANDOM_SEED).csv
 
 # create one crafted data record for testing
 # in $(DATADIR)/$(CR_FILE).csv
