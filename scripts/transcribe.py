@@ -28,6 +28,7 @@ AS_STRICT = '/S'          # 1. strict-ként megvan simán
 
 AS_LOOSE = '/L'           # 2. loose-ként megvan
 
+STRICT_FIRST_STEP = False
 # akarunk-e difflib guess-t
 IS_DIFFLIB = True         # False if '-n' 
 DIFFLIB_CUTOFF = 0.8      # set by '-f'
@@ -164,12 +165,14 @@ def process(infrastructure):
                 trans = strict_trans(word)
 
 # 5. ha így "egy-az-egyben" megvan a listán, akkor visszaadjuk
+#    (amennyiben '-s' révén kértük ezt a lépést!)
 
-                if trans in terms:
-                    result = trans + AS_STRICT
-                    transcribed = result
-                    cache[word] = result
-                    continue
+                if STRICT_FIRST_STEP:
+                    if trans in terms:
+                        result = trans + AS_STRICT
+                        transcribed = result
+                        cache[word] = result
+                        continue
 
 # 6. átírjuk loose (#5) szerint: regex = loose(name)
 
@@ -239,6 +242,11 @@ def get_args():
         help="path to a 'metarules' JSON config file",
     )
     pars.add_argument(
+        '-s', '--strict-first-step',
+        action='store_true',
+        help="add a 'simple strict match' step at the beginning",
+    )
+    pars.add_argument(
         '-n', '--no-difflib',
         action='store_true',
         help="turn off difflib, no approx search, 7x faster",
@@ -253,24 +261,29 @@ def get_args():
         action='store_true',
         help="do not mark words according to how they handled, do not use this switch if you want to use `make eval*`",
     )
-    arguments = vars(pars.parse_args())
+    arguments = pars.parse_args()
     return arguments
 
 
-def main(config, no_difflib, difflib_cutoff, plain):
+def main():
     """Main."""
+
+    args = get_args()
 
     # ez sztem mehet a get_args()-ba, és csak a config jöjjön ki
 
+    global STRICT_FIRST_STEP
+    STRICT_FIRST_STEP = args.strict_first_step
+
     global IS_DIFFLIB
-    IS_DIFFLIB = not no_difflib
+    IS_DIFFLIB = not args.no_difflib
 
     global DIFFLIB_CUTOFF
-    DIFFLIB_CUTOFF = difflib_cutoff if difflib_cutoff else 0.8      # set by '-f'
+    DIFFLIB_CUTOFF = args.difflib_cutoff if args.difflib_cutoff else 0.8      # set by '-f'
     # XXX hardcoded 0.8 ...
 
     global IS_MARK
-    IS_MARK = not plain
+    IS_MARK = not args.plain
 
     if not IS_MARK:
         global AS_STRICT
@@ -282,10 +295,9 @@ def main(config, no_difflib, difflib_cutoff, plain):
         AS_DIFFLIB = ''
         AS_FALLBACK = ''
 
-    infrastructure = build_infrastructure(config)
+    infrastructure = build_infrastructure(args.config)
     process(infrastructure)
 
 
 if __name__ == '__main__':
-    args = get_args()
-    main(**args)
+    main()
