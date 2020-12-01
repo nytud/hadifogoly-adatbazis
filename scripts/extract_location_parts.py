@@ -178,11 +178,7 @@ def extract_location_parts(string, raw_num=None):
             return location_parts
 
     scale_of_types_index = 0
-    # for loc_type, _, __ in locations_per_string:
-    #     if len(loc_type) == 0:
-    #         print(locations_per_string)
-    #         break
-    # print(locations_per_string)
+
     for abbreviaton in abbrs_rus_dict.keys():
         for i, (_, abb, location_info) in enumerate(locations_per_string):
             if abbreviaton in abb:
