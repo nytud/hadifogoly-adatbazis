@@ -120,7 +120,7 @@ complete_places_list_de:
 DEPLOY_DIR=deploy_dir
 DEPLOY_NAME=habt
 DEPLOY_TARGET=corpus.nytud.hu:/var/www/habt
-deploy: README.pdf
+deploy: deploy_random README.pdf
 	@echo "--- $@" 1>&2
 	@$S/deploy.sh $(DEPLOY_DIR)
 	@ln -s $(DEPLOY_DIR) $(DEPLOY_NAME)
@@ -128,6 +128,11 @@ deploy: README.pdf
 	@scp -p $(DEPLOY_NAME).zip $(DEPLOY_TARGET)
 	@rm -rf $(DEPLOY_DIR) $(DEPLOY_NAME) $(DEPLOY_NAME).zip
 	@echo "--- $@" 1>&2
+
+deploy_random:
+	@echo "--- $@" 1>&2
+	@scp -p data/random_10000_42.csv $(DEPLOY_TARGET)
+	@scp -p out/random_10000_42.transcribed.csv $(DEPLOY_TARGET)
 
 README_IN=README.md
 README_INTERM=README_for_pandoc_pdf.md

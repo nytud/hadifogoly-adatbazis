@@ -31,11 +31,13 @@ csak vessük össze az alábbi két fájlt:
 * átírt kimenet: `out/Kart.transcribed.csv`
 
 Ha a 682000 rekord túl soknak bizonyul,
-akkor tanulmányozhatunk egy 1000 soros
+akkor tanulmányozhatunk egy 1000 és egy 10000 soros
 [(8. rész)](#8-adatfájlok-futtatás) mintát is:
 
 * eredeti bemenet: `data/Kart_1000_Sor.csv`
 * átírt kimenet: `out/Kart_1000_Sor.transcribed.csv`
+* eredeti bemenet: `data/random_10000_42.csv`
+* átírt kimenet: `out/random_10000_42.transcribed.csv`
 
 A fenti fájlok szenzitív adatokat tartalmaznak,
 így nem lehetnek részei a nyilvános repzotóriumnak.
@@ -70,32 +72,29 @@ valamint egy __lista__, ami az elvárt értékeket tartalmazza
 Előfeldolgozás [(5. rész)](#5-előfeldolgozás) után az algoritmus a következőképpen működik:
 
 1. előkészítjük az adott mezőhöz tartozó eszközkészletet
-2. a mezőben lévő szót átírjuk az __strict__ transzkriptorral 
-3. ha _egy az egyben_ megvan a listán __==> kész__
-4. ha nincs meg, akkor átírjuk az __loose__ transzkriptorral 
-5. így egy _regex_-et kapunk, ezt illesztjük a listára
-6. ha így megvan, akkor visszaadjuk az összes találatot __==> kész__
-7. ha nincs meg, _közelítő kereséssel_ keressük
+2. a mezőben lévő szót átírjuk a __loose__ transzkriptorral 
+3. így egy _regex_-et kapunk, ezt illesztjük a listára
+4. ha így megvan, akkor visszaadjuk az összes találatot __==> kész__
+5. ha nincs meg, _közelítő kereséssel_ keressük
    a __strict__ átirat közelítéseit a listán
-8. ha így megvan, visszaadjuk a legjobb találatot __==> kész__
-9. ha egyik módszer sem járt sikerrel,
+6. ha így megvan, visszaadjuk a legjobb találatot __==> kész__
+7. ha egyik módszer sem járt sikerrel,
    akkor visszaadjuk a __strict__ átiratot __==> kész__
 
 Példák az algoritmus különböző kilépési pontjaira:
 ```txt
-3. Имре -> Imre
-6. Андрош -> Andros -> (A|Á)(n|m)(d|gy|t)(r|l)(a|á|o|e)(s|sch) -> András
-8. Форенц -> Forenc -> F(o|ó|ö|ő|a|á|ú)(r|l)(e|é|ö|ő|o|je|jé|...
+4. Андрош -> Andros -> (A|Á)(n|m)(d|gy|t)(r|l)(a|á|o|e)(s|sch) -> András
+6. Форенц -> Forenc -> F(o|ó|ö|ő|a|á|ú)(r|l)(e|é|ö|ő|o|je|jé|...
    ...jo|jó|já|ye|yé|yó|yö|a)(n|m)(c|cz|cs|g) -> Forenc>>Ferenc
-9. Момольсильтер -> ... -> Momolyszilyter
+7. Момольсильтер -> ... -> Momolyszilyter
 ```
 
-A 6. pontban a találatokat `;`-vel elválasztva adjuk vissza,
+A 4. pontban a találatokat `;`-vel elválasztva adjuk vissza,
 több találat esetén kiegészítve egy "valószínűségi" mértékkel.
 Utóbbi a __strict__ átirat és a találat
 `difflib.SequenceMatcher(...).ratio()` szerinti hasonlósága.
 
-A 7. pontban a közelítő keresést
+A 5. pontban a közelítő keresést
 a python `difflib` [(11. rész)](#11-difflib) csomagja valósítja meg.
 Felmerülhet, hogy itt az 1 db __strict__ alak helyett
 miért nem próbáljuk ki a regex-ből kigenerálható _összes_ alakot.
@@ -133,9 +132,9 @@ a következő mezőket dolgozzuk fel:
 - [7] nemzetiség
 
 A _hely_ mezők -- [5] és [6] -- több szóból, elemből állnak:
-ország, megye, város, utca...
+ország, megye, város...
 
-Ezeket felbontottuk 7-7 mezőre [(5. rész)](#5-előfeldolgozás),
+Ezeket felbontottuk 5-5 [(5. rész)](#5-előfeldolgozás) (plusz 2-2 nem használt) mezőre,
 és így adtuk be az algoritmusnak [(3. rész)](#3-algoritmus), melyet
 alapvetően egyes szavak kezelésére készítettünk fel.
 A felbontás miatt az adatoszlopok száma 12-vel (19-ről 31-re)
@@ -155,7 +154,15 @@ a `data/data.header.new.csv` fájlban találjuk.
 
 ## 5. Előfeldolgozás
 
-### 5.1 _név_ mezők: [1], [2], [3]
+
+### 5.1 Általános lépések
+
+Az anyagból eltávolítottuk az orosz elöljárókat
+(pl. `в`, `около`, `под`)
+és végződéseket (`-ский/-ская`).
+
+
+### 5.2 _név_ mezők: [1], [2], [3]
 
 Bár az adatbázis túlnyomó részben férfi keresztneveket tartalmaz,
 előfordulnak női keresztnevek is.
@@ -184,12 +191,12 @@ másodlagos zárójeles alakokat figyelmen kívül hagyjuk.
 A pontot elhagyjuk a nevek végéről.
 
 
-### 5.2 _hely_ mezők: [5] és [6]
+### 5.3 _hely_ mezők: [5] és [6]
 
 A _hely_ mezőket
-egyenként 7 mezőre bontottuk [(4. rész)](#4-az-átírt-adatbázis-szerkezete):
+egyenként 5 mezőre bontottuk [(4. rész)](#4-az-átírt-adatbázis-szerkezete):
 
-1. ország, 2. megye, 3. járás, 4. város, 5. falu, 6. utca, 7. házszám
+1. ország, 2. megye, 3. járás, 4. város, 5. falu
 
 Az egyes elemeket különféle rövidítések alapján
 igyekeztünk beazonosítani,
@@ -215,12 +222,11 @@ Az algoritmus kilépési pontjainak felel meg
 |algoritmus lépés|jel|
 |---:|---|
 |egyedi átírás [(5. rész)](#5-előfeldolgozás)|`/R`|
-|3.|`/S`|
-|6.|`/L`|
-|8.|`/D`|
-|9.|`=T`|
+|4.|`/L`|
+|6.|`/D`|
+|7.|`=T`|
 
-Az első 4 kategória (ezekben közös a `/`)
+Az első 3 kategória (ezekben közös a `/`)
 jelenti azokat, amikor
 valamilyen elvi módon eredményre jutottunk,
 az utolsó kategória azt jelenti,
@@ -311,6 +317,7 @@ make preparation ; make FILE=Kart transcribe
 make preparation ; make FILE=Kart_1000_Sor transcribe
 make preparation ; make FILE=test_set transcribe
 make preparation ; make FILE=pseudo_1000_42 transcribe
+make preparation ; make FILE=random_10000_42 transcribe
 ```
 
 A teljes adatbázist feldolgozó
@@ -487,7 +494,7 @@ transzkriptorokat és helységlistát.
 Ezzel a megoldással elég rugalmasan
 meg tudjuk választani az épp szükséges eszközkészleteket.
 
-2020.11.12. _v7_ | 08.13. _v6_ | 07.31. _v5_ | 07.09. _v4_ | 06.28. _v3_ | 06.22. _v2_ | 06.20. _v1_
+2020.12.01. _v8_ | 11.12. _v7_ | 08.13. _v6_ | 07.31. _v5_ | 07.09. _v4_ | 06.28. _v3_ | 06.22. _v2_ | 06.20. _v1_
 
 Mittelholcz Iván (`Transcriptor` osztály)\
 Halász Dávid (helyek feldolgozása, részekre bontása)\
