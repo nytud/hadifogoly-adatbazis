@@ -1,5 +1,14 @@
 import re
 
+
+"""
+Jelenleg ezt a négy típust keresi és adja ki a program, amennyiben jelen vannak egy sorban:
+country - ország
+county - megye
+district - járás
+city - város
+"""
+
 # abbrs_transcribed_dict = {
 #     'EMPTY': 'country',
 #     'NUMBER': 'number',
@@ -24,65 +33,84 @@ import re
 
 pat_num = re.compile(r'\d+')
 
-scale_of_types = ['country', 'county', 'district', 'city', 'street']
+# todo: ha kell (argumentum alapján), akkor egy típusból többet is visszaad, ha több rövidítés van
+#  egy típusból
 
-scale_of_types_all = ['country', 'county', 'district', 'city', 'village', 'street', 'number']
 
-frequent_countries = ['Венгр.',
-                      'Венг.',
-                      'Венгрии',
-                      'Венгрия',
-                      'Австрия',
-                      'Австрии',
-                      'Чехословак.',
-                      'Чехослов.',
-                      'Чехословакия',
-                      'Чехословакии',
-                      'Словакия',
-                      'Словакии',
-                      'Словак.',
-                      'Германия',
-                      'Германии',
-                      'Румыния',
-                      'Румынии',
-                      'Югославия',
-                      'Югославии',
-                      'Польша'] # Lengyelország
+scale_of_types = ['county', 'district', 'city']  # street]
+
+frequent_countries = [
+    'Венгр.',
+    'Венг.',
+    'Венгрии',
+    'Венгрия',
+    'Австрия',
+    'Австрии',
+    'Австр.',
+    'Чехословак.',
+    'Чехослов.',
+    'Чехословакия',
+    'Чехословакии',
+    'Словакия',
+    'Словакии',
+    'Словак.',
+    'Германия',
+    'Германии',
+    'Румыния',
+    'Румынии',
+    'Югославия',
+    'Югославии',
+    'Трансильвания',
+    'Польша',
+    'Чехия',
+    'Силезия',
+    'Галиция',
+    'Дания',
+    'Бессарабия',
+    'Белоруссия',
+    'Латвия',
+    'Болгария'
+]
+
+# Abban az esetben kikommentelendő, ha a számokat is fel szeretnénk dolgozni
+# poss_districts = {'р-н', 'p-нe', 'р-он', 'р-на', 'кр.', 'к.', 'у.', 'уезд', 'у-д'}
 
 abbrs_rus_dict = {
-    'EMPTY': 'country',
-    'NUMBER': 'number',
     'обл.': 'county',  # megye
-    'р-н': 'county',  # megye, ha van obl, akkor ált. város/község
     'окр.': 'county',  # megye
+    'о.': 'county',  # megye / kevesebbszer város
     'губ.': 'county',  # megye/tartomány
+    'пр.': 'county',  # megye
+    'пров.': 'county',  # megye
+    'р-н': 'county',  # megye, ha van obl, akkor ált. város/község
+    'p-нe': 'county',  # ua., mint egyel feljebb
+    'р-он': 'county',
+    'р-на': 'county',
     'кр.': 'county',  # megye
+    'к.': 'county',  # megye
     'у.': 'county',  # megye
     'уезд': 'county',
     'у-д': 'county',
-    'пр.': 'county',  # megye
-    'пров.': 'county',  # megye
-    'к.': 'county',  # megye
-    'о.': 'county',  # megye / kevesebbszer város
+    'м.': 'district',  # város/község
     'г.': 'city',  # város
     'с.': 'city',  # város
     'сл.': 'city',  # város
     'р.': 'city',  # város
-    'м.': 'district',  # város/község
-    'д.': 'village',  # község vagy házszám (kisebb számban)
-    'ул.': 'street',  # utca
-    'ст.': 'city'}  # város
+    'д.': 'city',  # község vagy házszám (kisebb számban)
+    'ст.': 'city',  # város
+    # 'ул.': 'street'  # utca
+}
 
 
-def extract_location_parts(string):
+def extract_location_parts(string, raw_num=None):
     location_parts = {
+        # "raw_num": raw_num,  # only for test
         "country": '',
         "county": '',
-        "district": '',
+        "district": '',  # járás
         "city": '',
-        "village": '',
-        "street": '',
-        "number": ''
+        # "street": '',
+        # "number": ''
     }
 
     # a stringből (ami egy mező tartalma) kiszedett hely-elemeket beletesszük
@@ -90,123 +118,140 @@ def extract_location_parts(string):
     # és visszaadjuk a dict-et
 
     locations_per_string = []
-    current_abbreviations = set()
+    abbreviations = set()
 
-    # általában vesszővel vannak elválasztva egymástól a különböző típusú helyinformációk
+    # Általában vesszővel vannak elválasztva egymástól a különböző típusú helyinformációk
     # ezekben keresem a rövidítés szótárakban lévő rövidítéseket és azonosítom a típust
+
+    is_country_found = False
     for location_info in string.replace(', ', ',').split(','):
         location_info = location_info.strip()
-        current_abbreviation = ''
-        number = pat_num.search(location_info)
-        if number:
-            current_location_type = abbrs_rus_dict['NUMBER']
-            locations_per_string.append((current_location_type, current_abbreviation, number.group()))
-            continue
+        abbreviations_per_locaton = set()
 
         current_location_info = location_info.split()
-        current_location_type = abbrs_rus_dict['EMPTY']
+        if not is_country_found:
+            for country in frequent_countries:
+                for info in current_location_info:
+                    if country in info:
+                        is_country_found = True
+                        location_parts['country'] = info
+                        break
+                if is_country_found:
+                    break
+            if is_country_found:
+                continue
 
+        number = pat_num.search(location_info)
+
+        if number or 'ул.' in location_info:
+            continue
+
+        # A számok feldolgozása, amennyiben kellenének a kimenetben
+
+        # if number and 'этаж' not in location_info and 'кв.' not in current_location_info:
+        #     is_street_num = True
+        #     for poss_district in poss_districts:
+        #         if poss_district in location_info:
+        #             is_street_num = False
+        #     if is_street_num or '№' in location_info or 'д.' in location_info or int(number.group()) > 23:
+        #         location_parts['number'] = number.group()
+        #     else:
+        #         location_parts['district'] = number.group()
+        #     continue
+
+        current_location_type = ''
         for poss_abbreviation in current_location_info:
             poss_abbreviation = poss_abbreviation.lower()
             if poss_abbreviation in abbrs_rus_dict.keys():
-                current_abbreviation = poss_abbreviation
-                current_abbreviations.add(poss_abbreviation)
+                abbreviations_per_locaton.add(poss_abbreviation)
+                abbreviations.add(poss_abbreviation)
 
-                location_info = location_info.replace(current_abbreviation, '')
-                current_location_type = abbrs_rus_dict[current_abbreviation]
+                location_info = ' '.join([info for info in location_info.split() if info not in abbreviations_per_locaton])
+                current_location_type = abbrs_rus_dict[poss_abbreviation]
 
-        locations_per_string.append((current_location_type, current_abbreviation, location_info.strip()))
+        locations_per_string.append((current_location_type, abbreviations_per_locaton, location_info.strip()))
 
     # Ha nincsen rövidítés a sorban, de csak kettő elemből áll, akkor gyakran ország, város információt tartalmaz a sor
-    if len(current_abbreviations) == 0 and len(locations_per_string) == 2 \
-            and locations_per_string[0][0] != 'number' and locations_per_string[1][0] != 'number':
-        if locations_per_string[0][2] in frequent_countries and not locations_per_string[1][2].endswith('меде'):
-            location_parts[locations_per_string[0][0]] = locations_per_string[0][2]
-            location_parts['city'] = locations_per_string[1][2]
-            return location_parts
-
-        elif locations_per_string[1][2] in frequent_countries and not locations_per_string[0][2].endswith('меде'):
-            location_parts[locations_per_string[1][0]] = locations_per_string[1][2]
+    if len(abbreviations) == 0 and len(locations_per_string) == 1:
+        if len(location_parts['country']) > 0 and not locations_per_string[0][2].endswith('меде'):
             location_parts['city'] = locations_per_string[0][2]
             return location_parts
 
-    # Miután megvannak a rövidítések és a hozzájuk tartozó információk, el kell végezni
-    # egy utolagos információ-típus ellenőrzést.
-    # pl. az r-n nagyon sokszor megyét jelöl,
-    # persze ha van mellette explicit megye (obl./okr.),
-    # akkor nem megyét, hanem valóban járást jelöl
-    #print(locations_per_string)
-    current_location_types = [location_infos[0] for location_infos in locations_per_string]
-    for i, (loc_type, abbr, info) in enumerate(locations_per_string):
-        stop = False
-        if (abbr == 'р-н' and current_location_types.count('county') > 1) \
-                or (abbr == 'г.' and current_location_types.count('city') > 1):
+    scale_of_types_index = 0
+    # for loc_type, _, __ in locations_per_string:
+    #     if len(loc_type) == 0:
+    #         print(locations_per_string)
+    #         break
+    # print(locations_per_string)
+    for abbreviaton in abbrs_rus_dict.keys():
+        for i, (_, abb, location_info) in enumerate(locations_per_string):
+            if abbreviaton in abb:
+                if len(location_parts[abbrs_rus_dict[abbreviaton]]) == 0:
+                    location_parts[abbrs_rus_dict[abbreviaton]] = location_info
+                else:
+                    scale_of_types_index = scale_of_types.index(abbrs_rus_dict[abbreviaton]) + 1
+                    if scale_of_types_index < len(scale_of_types):
+                        location_parts[scale_of_types[scale_of_types_index]] = location_info
+                        scale_of_types_index += 1
+                del locations_per_string[i]
+                break
+        if scale_of_types_index == len(scale_of_types):
+            break
 
-            del current_location_types[current_location_types.index(loc_type)]
-            loc_type = 'district'
-            locations_per_string[i] = (loc_type, abbr, info)
-            current_location_types.append(loc_type)
+    # azon lokációk besorolása (ha maradt még nekik hely), amit típus (rövidítés) hiányában nem kerültek sehova
+    for _, __, location_info in locations_per_string:
+        if len(location_info) > 1:
 
-        elif loc_type != 'number' and loc_type != 'village' and loc_type != 'county' and abbr != 'с.' \
-                and info not in frequent_countries \
-                and (current_location_types.count(loc_type) > 1 or loc_type == 'country'):
-            #print(info, loc_type)
-            if loc_type == 'country':
-                loc_type = 'county'
-                current_location_types.append(loc_type)
-                del current_location_types[current_location_types.index('country')]
-                if current_location_types.count(loc_type) == 1:
-                    stop = True
-            if not stop:
-                temp_loc_type = loc_type
-                # A tendency azt nézi, hogy milyen hierarchiában követik egymást az információk, kisebbtől a nagyobb
-                # halmaz felé vagy fordítva
-                tendency = scale_of_types_all.index(locations_per_string[0][0]) - scale_of_types_all.index(loc_type)
-                if tendency < 0:
-                    tendency = 1
-                elif tendency > 0 or tendency == 0:
-                    tendency = -1
-                if scale_of_types.index(loc_type) + tendency + 1 > len(scale_of_types):
-                    stop = True
-                if not stop:
-                    if scale_of_types[scale_of_types.index(loc_type) + tendency] not in current_location_types:
-                        loc_type = scale_of_types[scale_of_types.index(loc_type) + tendency]
-                    while loc_type in current_location_types:
-                        if scale_of_types.index(loc_type) + 1 == len(scale_of_types):
-                            break
-                        loc_type = scale_of_types[scale_of_types.index(loc_type) + 1]
-                    current_location_types.append(loc_type)
-                    del current_location_types[current_location_types.index(temp_loc_type)]
-        if location_parts[loc_type] == '':
-            location_parts[loc_type] = info
-        else:
-            for key in location_parts:
-                if location_parts[key] == '':
-                    location_parts[key] = info
+            if location_info == 'Будапешт':
+                temp_loc = location_parts['city']
+                location_parts['city'] = location_info
+                location_info = temp_loc
+                if len(location_info) == 0:
+                    continue
+
+            elif location_info == 'Пешт':
+                temp_loc = location_parts['county']
+                location_parts['county'] = location_info
+                location_info = temp_loc
+                if len(location_info) == 0:
+                    continue
+
+            for i in range(len(scale_of_types)-1, -1, -1):
+                if len(location_parts[scale_of_types[i]]) == 0:
+                    location_parts[scale_of_types[i]] = location_info
                     break
-    #print(location_parts)
-    #print()
+
     return location_parts
 
 
 def main():
-    # test_ls = []
-    # for line in test_ls:
-    #     string = line.strip()
-    #     extract_location_parts(string)
-    # with open('../data/Kart_1000_Sor.csv', encoding='utf-8') as inputf:
-    # with open('../out/Kart.csv.fejes.transcribed', encoding='utf-8') as inputf:
-
     with open('../data/Kart.csv', encoding='utf-8') as inputf:
 
         for line in inputf:
             string = line.strip().split('\t')
             if len(string) < 7:
                 return None
-            # extract_location_parts(string[5])
-            # extract_location_parts(string[6])
             print(extract_location_parts(string[5]))
             print(extract_location_parts(string[6]))
+
+    # For test
+    # with open('../samples/out_locs.txt', 'w', encoding='utf-8') as outpf:
+    #
+    #     with open('../samples/random_10000_42.csv', encoding='utf-8') as inputf:
+    #         # with open('../samples/random_10000_42.transcribed.csv', encoding='utf-8') as inputf:
+    #
+    #         # with open('../data/Kart.csv', encoding='utf-8') as inputf:
+    #
+    #         for line in inputf:
+    #             string = line.strip().split('\t')
+    #             if len(string) < 7:
+    #                 return None
+    #             loc_5 = extract_location_parts(string[5], row_num=string[0])
+    #             if loc_5 is not None:
+    #                 print(loc_5, file=outpf)
+    #             loc_6 = extract_location_parts(string[6], row_num=string[0])
+    #             if loc_6 is not None:
+    #                 print(loc_6, file=outpf)
 
 
 if __name__ == '__main__':

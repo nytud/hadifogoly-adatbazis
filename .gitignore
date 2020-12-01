@@ -31,6 +31,9 @@ sandbox
 levelek_infok
 # <<< Bálint
 
+# Dávid
+samples/
+.idea/
 # ---> Python
 # Byte-compiled / optimized / DLL files
 __pycache__/
