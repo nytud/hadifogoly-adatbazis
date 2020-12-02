@@ -35,7 +35,7 @@ do
         SWITCH=""
     fi
 
-cat $FILE | cut -d '	' -f $COLS | tr '+' ' ' | wordperline | grep -v "^$" | grep -v "^[0-9][0-9]*$" | grep $SWITCH $POSITIVE_PTN > $TMPFILE.$yesno
+cat $FILE | cut -d '	' -f $COLS | tr '+' ' ' | tr '	' '\n' | tr ' ' '\n' | grep -v "^$" | grep -v "^[0-9][0-9]*$" | grep $SWITCH $POSITIVE_PTN > $TMPFILE.$yesno
     
     darab[$yesno]=$(cat $TMPFILE.$yesno | wc -l)
     fele[$yesno]=$(cat $TMPFILE.$yesno | grep $SWITCH $POSITIVE_PTN | sort | uniq -c | sort -nr | wc -l)
