@@ -9,12 +9,14 @@ if [ $# -eq 3 ]
 then
     COLS=$3
 else
-    COLS="2-4,6-10,13-17"
+    COLS="2-4,6-9,13-16"
     # kimarad:
     #    1 sorszám
     #    5 szül év
+    #   10 másodlagos település
     #   11 utca
     #   12 házszám
+    #   17 másodlagos település
     #   18 utca
     #   19 házszám
     #   20 az mindig 'magyar'
