@@ -1,4 +1,5 @@
 import re
+import sys
 
 
 """
@@ -104,7 +105,7 @@ abbrs_rus_dict = {
 
 def extract_location_parts(string, row_num=None):
     location_parts = {
-        # "raw_num": raw_num,  # only for test
+        # "raw_num": row_num,  # only for test
         "country": '',
         "county": '',
         "district": '',  # járás
@@ -223,7 +224,6 @@ def extract_location_parts(string, row_num=None):
 
 def main():
     with open('../data/Kart.csv', encoding='utf-8') as inputf:
-
         for line in inputf:
             string = line.strip().split('\t')
             if len(string) < 7:
@@ -232,23 +232,20 @@ def main():
             print(extract_location_parts(string[6]))
 
     # For test
-    # with open('../samples/out_locs.txt', 'w', encoding='utf-8') as outpf:
-    #
-    #     with open('../samples/random_10000_42.csv', encoding='utf-8') as inputf:
-    #         # with open('../samples/random_10000_42.transcribed.csv', encoding='utf-8') as inputf:
-    #
-    #         # with open('../data/Kart.csv', encoding='utf-8') as inputf:
-    #
-    #         for line in inputf:
-    #             string = line.strip().split('\t')
-    #             if len(string) < 7:
-    #                 return None
-    #             loc_5 = extract_location_parts(string[5], row_num=string[0])
-    #             if loc_5 is not None:
-    #                 print(loc_5, file=outpf)
-    #             loc_6 = extract_location_parts(string[6], row_num=string[0])
-    #             if loc_6 is not None:
-    #                 print(loc_6, file=outpf)
+    # with open('samples/out_locs.txt', 'w', encoding='utf-8') as outpf:
+
+        # for line in sys.stdin.readlines():  # with open(sys.stdin)
+        # with open('../samples/random_10000_42.csv', encoding='utf-8') as inputf:
+        #     for line in inputf:
+            # string = line.strip().split('\t')
+            # if len(string) < 7:
+            #     return None
+            # loc_5 = extract_location_parts(string[5], row_num=string[0])
+            # if loc_5 is not None:
+            #     print(loc_5, file=outpf)
+            # loc_6 = extract_location_parts(string[6], row_num=string[0])
+            # if loc_6 is not None:
+            #     print(loc_6, file=outpf)
 
 
 if __name__ == '__main__':
