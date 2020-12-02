@@ -40,26 +40,26 @@ pat_num = re.compile(r'\d+')
 scale_of_types = ['county', 'district', 'city']  # street]
 
 frequent_countries = [
-    'Венгр.',
-    'Венг.',
-    'Венгрии',
+    # 'Венгр.',
+    # 'Венг.',
+    # 'Венгрии',
     'Венгрия',
     'Австрия',
-    'Австрии',
-    'Австр.',
-    'Чехословак.',
-    'Чехослов.',
+    # 'Австрии',
+    # 'Австр.',
+    # 'Чехословак.',
+    # 'Чехослов.',
     'Чехословакия',
-    'Чехословакии',
+    # 'Чехословакии',
     'Словакия',
-    'Словакии',
-    'Словак.',
+    # 'Словакии',
+    # 'Словак.',
     'Германия',
-    'Германии',
+    # 'Германии',
     'Румыния',
-    'Румынии',
+    # 'Румынии',
     'Югославия',
-    'Югославии',
+    # 'Югославии',
     'Трансильвания',
     'Польша',
     'Чехия',
@@ -102,15 +102,16 @@ abbrs_rus_dict = {
 }
 
 
-def extract_location_parts(string, raw_num=None):
+def extract_location_parts(string, row_num=None):
     location_parts = {
         # "raw_num": raw_num,  # only for test
         "country": '',
         "county": '',
         "district": '',  # járás
         "city": '',
-        # "street": '',
-        # "number": ''
+        "village": '',
+        "street": '',
+        "number": ''
     }
 
     # a stringből (ami egy mező tartalma) kiszedett hely-elemeket beletesszük
