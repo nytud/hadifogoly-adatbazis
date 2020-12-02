@@ -76,7 +76,7 @@
 оу ou
 О O A|Ó
 ов ó
-п p|pp
+п p pp
 П P
 р r l|rr
 Р R
@@ -85,22 +85,22 @@
 т t d|g|c|tt|tth
 Т T D
 # >>> betűkapcsolatok a hivatalosból
-тю tyu|ttyu
+тю tyu ttyu
 Тю Tyu
-тя tya|ttya|ttyá|tthyá
+тя tya ttya|ttyá|tthyá
 Тя Tya
-тё tyo|ttyo|ttyó
+тё tyo ttyo|ttyó
 Тё Tyo
-те tye|ttye
+те tye ttye
 Те Tye
-ти tyi|ttyi
+ти tyi ttyi
 Ти Tyi
-ть ty|tty
+ть ty tty
 Ть Ty
 # <<<
 у u ú|o|ó|ö|ő|ü|i|y
 У U Ú|Ü|O
-ф f|ff
+ф f ff
 Ф F
 х h k|g|kk
 Х H K
