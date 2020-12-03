@@ -71,8 +71,8 @@ def process(inputfile, outputfile, mode):
             # az egyben definiált megfelelőt vesszük! XXX XXX
             # -- de nem egyértelmű, hogy segít
             #    az alább kommentben részletezettek miatt!
-            #else: # 'strict'
-            #    exactly_two_char[from_what] = to_what
+            else: # 'strict'
+                exactly_two_char[from_what] = to_what
         else:
             all_but_two_char[from_what] = to_what
             #print(line)

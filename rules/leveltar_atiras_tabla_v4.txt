@@ -9,7 +9,7 @@
 в v f|ff
 В V F|W
 # ^^^ állhat elméletileg "W' is a family name-ben
-г g h|gy|k|v|j|cs|ts|ch|gg
+г g h|gy|k|v|j|cs|ts|ch|gg|gh
 # ^^^ 'j' nem jellemző
 Г G H
 д d gy|t
@@ -17,16 +17,14 @@
 Дей Dé
 # ^^^ "Dénes"
 # >>> betűkapcsolatok a hivatalosból
-дю gyu
-Дю Gyu
+дю gyu gyó
+Дю Gyu Gyó
 дя gya
 Дя Gya
 дё gyo
 Дё Gyo
 де gye
 Де Gye
-ди gyi
-Ди Gyi
 дь gy
 Дь Gy
 # <<<
@@ -67,10 +65,6 @@
 Нё Nyo
 не nye
 Не Nye
-ни nyi
-Ни Nyi
-нь ny
-Нь Ny
 # <<<
 о o ó|ö|ő|a|á|ú
 оу ou
@@ -85,18 +79,14 @@
 т t d|g|c|tt|tth
 Т T D
 # >>> betűkapcsolatok a hivatalosból
-тю tyu ttyu
+тю tyu
 Тю Tyu
-тя tya ttya|ttyá|tthyá
+тя tya
 Тя Tya
-тё tyo ttyo|ttyó
+тё tyo
 Тё Tyo
-те tye ttye
+те tye
 Те Tye
-ти tyi ttyi
-Ти Tyi
-ть ty tty
-Ть Ty
 # <<<
 у u ú|o|ó|ö|ő|ü|i|y
 У U Ú|Ü|O
@@ -148,13 +138,21 @@
 #
 # országnevek <- countries.csv
 \\bАвстрия\\b Ausztria
+\\bБелоруссия\\b Belorusszia
+\\bБессарабия\\b Besszarábia
+\\bБолгария\\b Bulgária
 \\bЧехословакия\\b Csehszlovákia
+\\bЧехия\\b Csehország
+\\bДания\\b Dánia
 \\bТрансильвания\\b Erdély
+\\bГалиция\\b Galícia
 \\bЮгославия\\b Jugoszlávia
 \\bПольша\\b Lengyelország
+\\bЛатвия\\b Lettország
 \\bВенгрия\\b Magyarország
 \\bГермания\\b Németország
 \\bРумыния\\b Románia
+\\bСилезия\\b Szilézia
 \\bСловакия\\b Szlovákia
 #
 # 'megye' nem kell a végére!
