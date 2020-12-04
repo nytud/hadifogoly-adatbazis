@@ -53,7 +53,7 @@
 Л L
 м m s|mm
 М M
-н n m|i|nn
+н n m|i|nn|ny
 # ^^^ 'm' nem jellemző
 Н N Ny|I
 # >>> betűkapcsolatok a hivatalosból
