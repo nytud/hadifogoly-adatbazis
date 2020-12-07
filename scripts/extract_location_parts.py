@@ -40,7 +40,7 @@ pat_num = re.compile(r'\d+')
 
 scale_of_types = ['county', 'district', 'city']  # street]
 
-county_hint_words = {'меде', 'меди', 'медя', 'мече'}
+county_hint_words = {'меде', 'меди', 'медя', 'мече', 'медия'}
 
 frequent_countries = [
     # 'Венгр.',
@@ -72,7 +72,8 @@ frequent_countries = [
     'Бессарабия',
     'Белоруссия',
     'Латвия',
-    'Болгария'
+    'Болгария',
+    'Украина'
 ]
 
 # Abban az esetben kikommentelendő, ha a számokat is fel szeretnénk dolgozni
@@ -108,6 +109,7 @@ abbrs_rus_dict = {
     'г.': 'city',  # város ez lehet disctrict is
     'сл.': 'city',  # város
     'р.': 'city',  # város
+    'около': 'county'  # akkor county legtöbbször, ha egyedül áll és nem egy másik rövidítéssel.
     # 'ул.': 'street'  # utca
 }
 
