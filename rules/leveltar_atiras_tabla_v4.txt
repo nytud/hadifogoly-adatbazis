@@ -63,13 +63,11 @@
 Ня Nya
 нё nyo
 Нё Nyo
-не nye
-Не Nye
 # <<<
 о o ó|ö|ő|a|á|ú
 оу ou
 О O A|Ó
-ов ó
+ов ov ó
 п p pp
 П P
 р r l|rr
@@ -85,8 +83,6 @@
 Тя Tya
 тё tyo
 Тё Tyo
-те tye
-Те Tye
 # <<<
 у u ú|o|ó|ö|ő|ü|i|y
 У U Ú|Ü|O

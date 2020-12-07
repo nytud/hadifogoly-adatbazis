@@ -2,7 +2,7 @@
 б b p|bb
 в w v|f|h|b|u
 г g h|k|ck
-гх k
+гх k ck|ch
 д d t|gy
 дц z ts
 е e ä|ie|ye|je|y|ei|a|é|ö|''|eh|äh
@@ -13,19 +13,19 @@
 и i ie|yi|ji|in|j|''|e|í|ih
 й i ''|j|y|ly
 к k kt|ch|ck|g
-кк kk ck|ch
+кк ck kk|ch
 л l
 м m nkt|nd|n|mm|t
 н n nk|nd|nn|p
-нц z
+нц nz z
 о o eu|a|oh|ó|ö|ei
 п p P|l|n|b
 р r
 с s ß|ss|ßß|rs|z|ch|tsch|cs
 т t dt|ty|tt
 тц z ts
-дт t d
-нт n
+дт dt t|d
+нт nt n
 у u uh|ü|ú|''|o
 ф f
 х ch h|k|kh|g
