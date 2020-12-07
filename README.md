@@ -132,9 +132,9 @@ a következő mezőket dolgozzuk fel:
 - [7] nemzetiség
 
 A _hely_ mezők -- [5] és [6] -- több szóból, elemből állnak:
-ország, megye, város...
+ország, megye, település...
 
-Ezeket felbontottuk 5-5 [(5. rész)](#5-előfeldolgozás) (plusz 2-2 nem használt) mezőre,
+Ezeket felbontottuk 4-4 [(5. rész)](#5-előfeldolgozás) (plusz 3-3 nem használt) mezőre,
 és így adtuk be az algoritmusnak [(3. rész)](#3-algoritmus), melyet
 alapvetően egyes szavak kezelésére készítettünk fel.
 A felbontás miatt az adatoszlopok száma 12-vel (19-ről 31-re)
@@ -194,18 +194,14 @@ A pontot elhagyjuk a nevek végéről.
 ### 5.3 _hely_ mezők: [5] és [6]
 
 A _hely_ mezőket
-egyenként 5 mezőre bontottuk [(4. rész)](#4-az-átírt-adatbázis-szerkezete):
+egyenként 4 mezőre bontottuk [(4. rész)](#4-az-átírt-adatbázis-szerkezete):
 
-1. ország, 2. megye, 3. járás, 4. város, 5. falu
+1. ország, 2. megye, 3. járás, 4. település
 
 Az egyes elemeket különféle rövidítések alapján
 igyekeztünk beazonosítani,
 de ez az adat következetlensége miatt
 nem valósítható meg megbízhatóan.
-
-_Település_ jellegű elemből sok esetben több is megjelenik,
-ezért rendeltünk ehhez 2 mezőt (4-5).
-Ezeket a majdani keresőben esetleg össze lehet vonni.
 
 Az előfeldolgozást a `make preprocess` valósítja meg.
 
@@ -484,7 +480,7 @@ Ez így néz ki:
 15 ru2hu_loose ru2hu_strict places
 15/12=Австрия ru2de_loose ru2de_strict places_de
 ```
-A [15]-ös (_város_) mezőre két sor vonatkozik.
+A [15]-ös (_település_) mezőre két sor vonatkozik.
 Az első a már ismert formátumú: alapesetben
 magyar transzkriptorokat és magyar helységlistát használunk.
 Kivéve, ha a [12]-es (_ország_) mezőben az szerepel, hogy `Австрия`.
@@ -494,7 +490,7 @@ transzkriptorokat és helységlistát.
 Ezzel a megoldással elég rugalmasan
 meg tudjuk választani az épp szükséges eszközkészleteket.
 
-2020.12.01. _v8_ | 11.12. _v7_ | 08.13. _v6_ | 07.31. _v5_ | 07.09. _v4_ | 06.28. _v3_ | 06.22. _v2_ | 06.20. _v1_
+2020.12.07. _v8_ | 11.12. _v7_ | 08.13. _v6_ | 07.31. _v5_ | 07.09. _v4_ | 06.28. _v3_ | 06.22. _v2_ | 06.20. _v1_
 
 Mittelholcz Iván (`Transcriptor` osztály)\
 Halász Dávid (helyek feldolgozása, részekre bontása)\
