@@ -16,7 +16,14 @@ PREPOSITIONS = [
     'в',  # -bAn
     'около',  # közel
     'на',  # -On -- ez talán mégis szükséges? "на Дону" hm.. XXX
-    'под'  # alatt
+    'под',  # alatt
+    'р-не', # környékén
+    'близ', # mellett, közelében
+    'близь', # ua.
+    'вблизи', # ua.
+    'возле', # ua.
+    'у', # -nÁl
+    'из', # -bÓl
 ]
 # all preps are needed with two spaces and then with one space
 # (because of the output of separate_location_parts.py)
