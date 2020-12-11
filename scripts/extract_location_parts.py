@@ -32,54 +32,123 @@ city - város
 #     'szt.': 'city',
 #     'ul.': 'street'}
 
-pat_num = re.compile(r'\d+')
+PAT_NUM = re.compile(r'\d+')
 
 # todo: ha kell (argumentum alapján), akkor egy típusból többet is visszaad, ha több rövidítés van
 #  egy típusból
 
 
-scale_of_types = ['county', 'district', 'city']  # street]
+FREQUENT_CITIES = {
+    'Арад',
+    'Берегово',
+    'Братислав',
+    'Братислава',
+    'Брно',
+    'Буда',
+    'Будапешт',
+    'Будапешта',
+    'Будапешта',
+    'Будапеште',
+    'Будапеште',
+    'Будо',
+    'Будопешт',
+    'Вишк',
+    'Иванц',
+    'Кишпешт',
+    'Клуж',
+    'Коложвар',
+    'Коломея',
+    'Кюстрин',
+    'Николаевка',
+    'Оскол',
+    'Познань',
+    'Сатумаре',
+    'Сторожевое',
+    'Ужгород',
+    'Уйпешт',
+    'Шольт'
+}
 
-county_hint_words = {'меде', 'меди', 'медя', 'мече', 'медия'}
+FREQUENT_DISTRICTS = {
+    'Закарпатская',
+    'Закарп',
 
-frequent_countries = [
-    # 'Венгр.',
-    # 'Венг.',
-    # 'Венгрии',
-    'Венгрия',
+}
+FREQUENT_COUNTIES = {
+    'Абауй',
+    'Бачбодрог',
+    'Бачбодрок',
+    'Берег',
+    'Боршод',
+    'Боршодь',
+    'Боршот',
+    'Ваш',
+    'Вош',
+    'Гайду',
+    'Гемер',
+    'Гойду',
+    'Земплин',
+    'Золо',
+    'Марош',
+    'Марошторда',
+    'Морош',
+    'Морошторда',
+    'Мороштордо',
+    'Обоуй',
+    'Пешт',
+    'Пешта',
+    'Саболч',
+    'Сабольч',
+    'Сабоч',
+    'Соболч',
+    'Собольч',
+    'Собоч',
+    'Угоча',
+    'Удваргей',
+    'Удворгей',
+    'Унг',
+    'Фегер',
+    'Фегир',
+    'Феер',
+    'Феир',
+    'Фехер',
+    'Хайду',
+    'Харомсек',
+    'Хойду',
+    'Шамодь',
+    'Шомодь',
+    'Шомоть',
+}
+
+FREQUENT_COUNTRIES = [
     'Австрия',
-    # 'Австрии',
-    # 'Австр.',
-    # 'Чехословак.',
-    # 'Чехослов.',
-    'Чехословакия',
-    # 'Чехословакии',
-    'Словакия',
-    # 'Словакии',
-    # 'Словак.',
-    'Германия',
-    # 'Германии',
-    'Румыния',
-    # 'Румынии',
-    'Югославия',
-    # 'Югославии',
-    'Трансильвания',
-    'Польша',
-    'Чехия',
-    'Силезия',
-    'Галиция',
-    'Дания',
-    'Бессарабия',
     'Белоруссия',
-    'Латвия',
+    'Бессарабия',
     'Болгария',
-    'Украина'
-]
+    'Венгрия',
+    'Галиция',
+    'Германия',
+    'Дания',
+    'Латвия',
+    'Польша',
+    'Румыния',
+    'Силезия',
+    'Словакия',
+    'Трансильвания',
+    'Украина',
+    'Чехия',
+    'Чехословакия',
+    'Югославия']
+
+SCALE_OF_TYPES = ['county', 'district', 'city']  # street]
+
+COUNTY_HINT_WORDS = {'меде', 'меди', 'медя', 'мече', 'медия'}
+
 
 # Abban az esetben kikommentelendő, ha a számokat is fel szeretnénk dolgozni
 # poss_districts = {'р-н', 'p-нe', 'р-он', 'р-на', 'кр.', 'к.', 'у.', 'уезд', 'у-д'}
 
-abbrs_rus_dict = {
+ABBRS_RUS_DICT = {
     'обл.': 'county',  # megye
     'окр.': 'county',  # megye
     'о.': 'county',  # megye / kevesebbszer város
@@ -138,7 +207,7 @@ def extract_location_parts(string, row_num=None):
 
     is_country_found = False
     for location_info in string.replace(', ', ',').split(','):
-        for county_hint_word in county_hint_words:
+        for county_hint_word in COUNTY_HINT_WORDS:
             location_info = location_info.replace(f' {county_hint_word}', county_hint_word)
             location_info = location_info.replace(f'-{county_hint_word}', county_hint_word)
 
@@ -147,7 +216,7 @@ def extract_location_parts(string, row_num=None):
         abbreviations_per_locaton = set()
 
         if not is_country_found:
-            for country in frequent_countries:
+            for country in FREQUENT_COUNTRIES:
                 for info in current_location_info:
                     if country in info:
                         is_country_found = True
@@ -158,7 +227,7 @@ def extract_location_parts(string, row_num=None):
             if is_country_found:
                 continue
 
-        number = pat_num.search(location_info)
+        number = PAT_NUM.search(location_info)
 
         if number or 'ул.' in location_info:
             continue
@@ -173,42 +242,53 @@ def extract_location_parts(string, row_num=None):
         #     if is_street_num or '№' in location_info or 'д.' in location_info or int(number.group()) > 23:
         #         location_parts['number'] = number.group()
         #     else:
-        #         location_parts['district'] = number.group()
+        #         location_parts['district'] = number.group()  # a district járás, nem kerület. Ez a sor elhagyandó.
         #     continue
 
         current_location_type = ''
         is_county_found = False
-        is_budapest_found = False
-        is_pest_found = False
-        for poss_abbreviation_or_county_hint in current_location_info:
-            for county_hint_word in county_hint_words:
-                if poss_abbreviation_or_county_hint.endswith(county_hint_word):
-                    location_info = poss_abbreviation_or_county_hint[: -len(county_hint_word)]
+        is_city_found = False
+        is_district_found = False
+        for info in current_location_info:
+            for county_hint_word in COUNTY_HINT_WORDS:
+                if info.endswith(county_hint_word):
+                    location_info = info[: -len(county_hint_word)]
                     location_parts['county'] = location_info
                     is_county_found = True
                     break
-            if 'Будапешт' in poss_abbreviation_or_county_hint:
-                location_parts['city'] = 'Будапешт'
-                is_budapest_found = True
-                break
-            if 'Пешт' == poss_abbreviation_or_county_hint:
-                location_parts['county'] = 'Пешт'
-                is_pest_found = True
+
+            if is_county_found:
                 break
 
-            if is_county_found or is_budapest_found or is_pest_found:
+            is_city_found = info in FREQUENT_CITIES
+            is_county_found = info in FREQUENT_COUNTIES
+            is_district_found = info in FREQUENT_DISTRICTS
+
+            if is_city_found:
+                location_parts['city'] = info
+
+            elif is_county_found:
+                location_parts['county'] = info
+                is_county_found = True
+
+            elif is_district_found:
+                location_parts['district'] = info
+                is_district_found = True
+
+            if is_city_found or is_district_found or is_county_found:
                 break
 
-            poss_abbreviation = poss_abbreviation_or_county_hint.lower()
-            if poss_abbreviation in abbrs_rus_dict.keys():
+            poss_abbreviation = info.lower()
+
+            if poss_abbreviation in ABBRS_RUS_DICT.keys():
                 abbreviations_per_locaton.add(poss_abbreviation)
                 abbreviations.add(poss_abbreviation)
 
                 location_info = ' '.join([info for info in location_info.split() if info not in abbreviations_per_locaton])
                 if len(current_location_type) == '':
-                    current_location_type = abbrs_rus_dict[poss_abbreviation]
+                    current_location_type = ABBRS_RUS_DICT[poss_abbreviation]
 
-        if is_county_found or is_budapest_found or is_pest_found:
+        if is_city_found or is_district_found or is_county_found:
             continue
 
         locations_per_string.append((current_location_type, abbreviations_per_locaton, location_info.strip()))
@@ -221,28 +301,29 @@ def extract_location_parts(string, row_num=None):
 
     scale_of_types_index = 0
 
-    for abbreviaton in abbrs_rus_dict.keys():
+    for abbreviaton in ABBRS_RUS_DICT.keys():
         for i, (_, abb, location_info) in enumerate(locations_per_string):
             if abbreviaton in abb:
-                if len(location_parts[abbrs_rus_dict[abbreviaton]]) == 0:
-                    location_parts[abbrs_rus_dict[abbreviaton]] = location_info
+                location_type = ABBRS_RUS_DICT[abbreviaton]
+                if len(location_parts[location_type]) == 0:
+                    location_parts[location_type] = location_info
                     del locations_per_string[i]
                 else:
-                    scale_of_types_index = scale_of_types.index(abbrs_rus_dict[abbreviaton]) + 1
-                    if scale_of_types_index < len(scale_of_types):
-                        location_parts[scale_of_types[scale_of_types_index]] = location_info
+                    scale_of_types_index = SCALE_OF_TYPES.index(location_type) + 1
+                    if scale_of_types_index < len(SCALE_OF_TYPES):
+                        location_parts[SCALE_OF_TYPES[scale_of_types_index]] = location_info
                         scale_of_types_index += 1
                         del locations_per_string[i]
                 break
-        if scale_of_types_index == len(scale_of_types):
+        if scale_of_types_index == len(SCALE_OF_TYPES):
             break
 
     # azon lokációk besorolása (ha maradt még nekik hely), amit típus (rövidítés) hiányában nem kerültek sehova
     for _, __, location_info in locations_per_string:
         if len(location_info) > 1:
-            for i in range(len(scale_of_types)-1, -1, -1):
-                if len(location_parts[scale_of_types[i]]) == 0:
-                    location_parts[scale_of_types[i]] = location_info
+            for i in range(len(SCALE_OF_TYPES)-1, -1, -1):
+                if len(location_parts[SCALE_OF_TYPES[i]]) == 0:
+                    location_parts[SCALE_OF_TYPES[i]] = location_info
                     break
 
     return location_parts
