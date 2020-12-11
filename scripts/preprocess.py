@@ -17,7 +17,6 @@ PREPOSITIONS = [
     'около',  # közel
     'на',  # -On -- ez talán mégis szükséges? "на Дону" hm.. XXX
     'под',  # alatt
-    'р-не', # környékén
     'близ', # mellett, közelében
     'близь', # ua.
     'вблизи', # ua.
