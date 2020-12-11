@@ -150,6 +150,7 @@
 \\bРумыния\\b Románia
 \\bСилезия\\b Szilézia
 \\bСловакия\\b Szlovákia
+\\bУкраина\\b Ukrajna
 #
 # 'megye' nem kell a végére!
 мед(е|и|я|ье|ь)\\b ''

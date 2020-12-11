@@ -28,7 +28,7 @@ cp -p data/pseudo_1000_42.csv $D/data
 cp -p data/random_10000_42.csv $D/data
 cp -p data/data.header.csv $D/data
 cp -p data/data.header.new.csv $D/data
-cp -p data/sar_table.csv $D/data
+cp -rp data/sar_tables $D/data
 #
 # *preprocessed* nem kell
 # data/Kart.preprocessed.csv <- az az, ami nincs!
@@ -55,6 +55,7 @@ cp -p scripts/eval.sh $D/scripts
 cp -p scripts/extract_location_parts.py $D/scripts
 cp -p scripts/metarules2json.py $D/scripts
 cp -p scripts/omit_parenth_names.py $D/scripts
+cp -p scripts/preextract.py $D/scripts
 cp -p scripts/preprocess.py $D/scripts
 cp -p scripts/ru2hu.py $D/scripts
 cp -p scripts/rules2json.py $D/scripts
