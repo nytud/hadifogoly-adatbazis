@@ -36,7 +36,7 @@ transcribe: preprocess
 # sorrend! preextract.py -> ... -> omit_parenth_names.py -> preprocess.py 
 preprocess:
 	@echo "--- $@" 1>&2
-	@cat $(INPUT) | python $S/preextract.py | python3 $S/separate_location_parts.py | python3 $S/omit_parenth_names.py | python3 $S/preprocess.py > $(INPUT_PREPROCESSED)
+	@cat $(INPUT) | python3 $S/preextract.py | python3 $S/separate_location_parts.py | python3 $S/omit_parenth_names.py | python3 $S/preprocess.py > $(INPUT_PREPROCESSED)
 
 preparation: convert_rules convert_metarules
 	@echo "--- $@" 1>&2
@@ -131,7 +131,8 @@ deploy: deploy_random README.pdf
 
 deploy_random:
 	@echo "--- $@" 1>&2
-	@scp -p data/random_10000_42.csv $(DEPLOY_TARGET)
+	@echo "!!! header+dátum+ponthelyettalahuzas legyen a random_10000_42.transcribed.csv -ben !!!"
+	#@scp -p data/random_10000_42.csv $(DEPLOY_TARGET)
 	@scp -p out/random_10000_42.transcribed.csv $(DEPLOY_TARGET)
 
 README_IN=README.md
