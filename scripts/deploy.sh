@@ -29,6 +29,7 @@ cp -p data/random_10000_42.csv $D/data
 cp -p data/data.header.csv $D/data
 cp -p data/data.header.new.csv $D/data
 cp -rp data/sar_tables $D/data
+cp -rp data/freqlists $D/data
 #
 # *preprocessed* nem kell
 # data/Kart.preprocessed.csv <- az az, ami nincs!
@@ -47,6 +48,8 @@ cp -p rules/ru2de_strict.json $D/rules
 cp -p rules/ru2hu_loose.json $D/rules
 cp -p rules/ru2hu.rules $D/rules
 cp -p rules/ru2hu_strict.json $D/rules
+cp -p rules/frequent_placenames.txt $D/rules
+cp -p rules/ru2hu_places* $D/rules
 
 # scripts
 cp -p scripts/difflib_ratio_test.py $D/scripts
