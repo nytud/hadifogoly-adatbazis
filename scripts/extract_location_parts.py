@@ -32,93 +32,92 @@ city - város
 #     'szt.': 'city',
 #     'ul.': 'street'}
 
-PAT_NUM = re.compile(r'\d+')
 
 # todo: ha kell (argumentum alapján), akkor egy típusból többet is visszaad, ha több rövidítés van
 #  egy típusból
 
 
-FREQUENT_CITIES = {
-    'Арад',
-    'Берегово',
-    'Братислав',
-    'Братислава',
-    'Брно',
-    'Буда',
-    'Будапешт',
-    'Будапешта',
-    'Будапешта',
-    'Будапеште',
-    'Будапеште',
-    'Будо',
-    'Будопешт',
-    'Вишк',
-    'Иванц',
-    'Кишпешт',
-    'Клуж',
-    'Коложвар',
-    'Коломея',
-    'Кюстрин',
-    'Николаевка',
-    'Оскол',
-    'Познань',
-    'Сатумаре',
-    'Сторожевое',
-    'Ужгород',
-    'Уйпешт',
-    'Шольт'
-}
-
-FREQUENT_DISTRICTS = {
-    'Закарпатская',
-    'Закарп',
-
-}
-FREQUENT_COUNTIES = {
-    'Абауй',
-    'Бачбодрог',
-    'Бачбодрок',
-    'Берег',
-    'Боршод',
-    'Боршодь',
-    'Боршот',
-    'Ваш',
-    'Вош',
-    'Гайду',
-    'Гемер',
-    'Гойду',
-    'Земплин',
-    'Золо',
-    'Марош',
-    'Марошторда',
-    'Морош',
-    'Морошторда',
-    'Мороштордо',
-    'Обоуй',
-    'Пешт',
-    'Пешта',
-    'Саболч',
-    'Сабольч',
-    'Сабоч',
-    'Соболч',
-    'Собольч',
-    'Собоч',
-    'Угоча',
-    'Удваргей',
-    'Удворгей',
-    'Унг',
-    'Фегер',
-    'Фегир',
-    'Феер',
-    'Феир',
-    'Фехер',
-    'Хайду',
-    'Харомсек',
-    'Хойду',
-    'Шамодь',
-    'Шомодь',
-    'Шомоть',
-}
+# FREQUENT_CITIES = {
+#     'Арад',
+#     'Берегово',
+#     'Братислав',
+#     'Братислава',
+#     'Брно',
+#     'Буда',
+#     'Будапешт',
+#     'Будапешта',
+#     'Будапешта',
+#     'Будапеште',
+#     'Будапеште',
+#     'Будо',
+#     'Будопешт',
+#     'Вишк',
+#     'Иванц',
+#     'Кишпешт',
+#     'Клуж',
+#     'Коложвар',
+#     'Коломея',
+#     'Кюстрин',
+#     'Николаевка',
+#     'Оскол',
+#     'Познань',
+#     'Сатумаре',
+#     'Сторожевое',
+#     'Ужгород',
+#     'Уйпешт',
+#     'Шольт'
+# }
+#
+# FREQUENT_DISTRICTS = {
+#     'Закарпатская',
+#     'Закарп',
+#
+# }
+# FREQUENT_COUNTIES = {
+#     'Абауй',
+#     'Бачбодрог',
+#     'Бачбодрок',
+#     'Берег',
+#     'Боршод',
+#     'Боршодь',
+#     'Боршот',
+#     'Ваш',
+#     'Вош',
+#     'Гайду',
+#     'Гемер',
+#     'Гойду',
+#     'Земплин',
+#     'Золо',
+#     'Марош',
+#     'Марошторда',
+#     'Морош',
+#     'Морошторда',
+#     'Мороштордо',
+#     'Обоуй',
+#     'Пешт',
+#     'Пешта',
+#     'Саболч',
+#     'Сабольч',
+#     'Сабоч',
+#     'Соболч',
+#     'Собольч',
+#     'Собоч',
+#     'Угоча',
+#     'Удваргей',
+#     'Удворгей',
+#     'Унг',
+#     'Фегер',
+#     'Фегир',
+#     'Феер',
+#     'Феир',
+#     'Фехер',
+#     'Хайду',
+#     'Харомсек',
+#     'Хойду',
+#     'Шамодь',
+#     'Шомодь',
+#     'Шомоть',
+# }
 
 FREQUENT_COUNTRIES = [
     'Австрия',
@@ -140,10 +139,11 @@ FREQUENT_COUNTRIES = [
     'Чехословакия',
     'Югославия']
 
+PAT_NUM = re.compile(r'\d+')
+
 SCALE_OF_TYPES = ['county', 'district', 'city']  # street]
 
 COUNTY_HINT_WORDS = {'меде', 'меди', 'медя', 'мече', 'медия'}
-
 
 # Abban az esetben kikommentelendő, ha a számokat is fel szeretnénk dolgozni
 # poss_districts = {'р-н', 'p-нe', 'р-он', 'р-на', 'кр.', 'к.', 'у.', 'уезд', 'у-д'}
@@ -245,10 +245,10 @@ def extract_location_parts(string, row_num=None):
         #         location_parts['district'] = number.group()  # a district járás, nem kerület. Ez a sor elhagyandó.
         #     continue
 
+        # is_city_found = False
+        # is_district_found = False
         current_location_type = ''
         is_county_found = False
-        is_city_found = False
-        is_district_found = False
         for info in current_location_info:
             for county_hint_word in COUNTY_HINT_WORDS:
                 if info.endswith(county_hint_word):
@@ -260,23 +260,23 @@ def extract_location_parts(string, row_num=None):
             if is_county_found:
                 break
 
-            is_city_found = info in FREQUENT_CITIES
-            is_county_found = info in FREQUENT_COUNTIES
-            is_district_found = info in FREQUENT_DISTRICTS
+            # is_city_found = info in FREQUENT_CITIES
+            # is_county_found = info in FREQUENT_COUNTIES
+            # is_district_found = info in FREQUENT_DISTRICTS
+            #
+            # if is_city_found:
+            #     location_parts['city'] = info
+            #
+            # elif is_county_found:
+            #     location_parts['county'] = info
+            #     is_county_found = True
+            #
+            # elif is_district_found:
+            #     location_parts['district'] = info
+            #     is_district_found = True
 
-            if is_city_found:
-                location_parts['city'] = info
-
-            elif is_county_found:
-                location_parts['county'] = info
-                is_county_found = True
-
-            elif is_district_found:
-                location_parts['district'] = info
-                is_district_found = True
-
-            if is_city_found or is_district_found or is_county_found:
-                break
+            # if is_city_found or is_district_found or is_county_found:
+            #     break
 
             poss_abbreviation = info.lower()
 
@@ -288,14 +288,14 @@ def extract_location_parts(string, row_num=None):
                 if len(current_location_type) == '':
                     current_location_type = ABBRS_RUS_DICT[poss_abbreviation]
 
-        if is_city_found or is_district_found or is_county_found:
+        if is_county_found:  # is_city_found or is_district_found or is_county_found:
             continue
 
         locations_per_string.append((current_location_type, abbreviations_per_locaton, location_info.strip()))
 
     # Ha nincsen rövidítés a sorban, de csak kettő elemből áll, akkor gyakran ország, város információt tartalmaz a sor
     if len(abbreviations) == 0 and len(locations_per_string) == 1:
-        if len(location_parts['country']) > 0 and not locations_per_string[0][2].endswith('меде'):
+        if len(location_parts['country']) > 0:
             location_parts['city'] = locations_per_string[0][2]
             return location_parts
 
