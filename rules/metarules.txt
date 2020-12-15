@@ -40,10 +40,10 @@
 6 ru2hu_loose ru2hu_strict counties
 6/5=Австрия ru2de_loose ru2de_strict places_de
 # +  7/ 5 F = Mesto_r/district
-7 ru2hu_loose ru2hu_strict places
+7 ru2hu_places_loose ru2hu_places_strict places
 7/5=Австрия ru2de_loose ru2de_strict places_de
 # +  8/ 5 F = Mesto_r/city
-8 ru2hu_loose ru2hu_strict places
+8 ru2hu_places_loose ru2hu_places_strict places
 8/5=Австрия ru2de_loose ru2de_strict places_de
 # +  9/ 5 F = Mesto_r/village
 9 ru2hu_loose ru2hu_strict places
@@ -61,10 +61,10 @@
 13 ru2hu_loose ru2hu_strict counties
 13/12=Австрия ru2de_loose ru2de_strict places_de
 # + 14/ 6 G = Mesto_pl/district
-14 ru2hu_loose ru2hu_strict places
+14 ru2hu_places_loose ru2hu_places_strict places
 14/12=Австрия ru2de_loose ru2de_strict places_de
 # + 15/ 6 G = Mesto_pl/city
-15 ru2hu_loose ru2hu_strict places
+15 ru2hu_places_loose ru2hu_places_strict places
 15/12=Австрия ru2de_loose ru2de_strict places_de
 # + 16/ 6 G = Mesto_pl/village
 16 ru2hu_loose ru2hu_strict places

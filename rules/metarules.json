@@ -34,8 +34,8 @@
         }
     },
     "7": {
-        "loose": "ru2hu_loose",
-        "strict": "ru2hu_strict",
+        "loose": "ru2hu_places_loose",
+        "strict": "ru2hu_places_strict",
         "termlist": "places",
         "strptn": {
             "5": {
@@ -48,8 +48,8 @@
         }
     },
     "8": {
-        "loose": "ru2hu_loose",
-        "strict": "ru2hu_strict",
+        "loose": "ru2hu_places_loose",
+        "strict": "ru2hu_places_strict",
         "termlist": "places",
         "strptn": {
             "5": {
@@ -109,8 +109,8 @@
         }
     },
     "14": {
-        "loose": "ru2hu_loose",
-        "strict": "ru2hu_strict",
+        "loose": "ru2hu_places_loose",
+        "strict": "ru2hu_places_strict",
         "termlist": "places",
         "strptn": {
             "12": {
@@ -123,8 +123,8 @@
         }
     },
     "15": {
-        "loose": "ru2hu_loose",
-        "strict": "ru2hu_strict",
+        "loose": "ru2hu_places_loose",
+        "strict": "ru2hu_places_strict",
         "termlist": "places",
         "strptn": {
             "12": {

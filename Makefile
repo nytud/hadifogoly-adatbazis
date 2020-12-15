@@ -85,7 +85,9 @@ eval_by_col_diff:
 # XXX itt az összes szabályrendszer kezelendő, amit használunk!
 convert_rules:
 	@echo "--- $@" 1>&2
+	@cat rules/ru2hu.rules rules/frequent_placenames.txt > rules/ru2hu_places.rules
 	@python3 $S/rules2json.py rules/ru2hu
+	@python3 $S/rules2json.py rules/ru2hu_places
 	@python3 $S/rules2json.py rules/ru2de
 	@python3 $S/rules2json.py rules/nat
 
