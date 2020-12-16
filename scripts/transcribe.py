@@ -13,6 +13,7 @@ from collections import defaultdict
 import csv
 import difflib
 import json
+from math import log
 import re
 import sys
 
@@ -38,6 +39,8 @@ FROM_STRICT = '>>'        # difflib esetén a strict alak jele
 AS_FALLBACK = '=T'        # 4. ha nincs más, marad a strict
 
 SAR_MARK = '/R'           # search-and-replace mark, see: preprocess.py
+
+LOGBASE = 100             # base for log freq values
 
 
 def build_one(data):
@@ -67,6 +70,20 @@ def build_one(data):
             for item
             in termlist.read().splitlines()]
         # set()-tel lassabb volt, pedig "5. pont"! hm..
+
+    # XXX legyen portable...
+    data['freqs'] = {} # ti. a 'freqs' opcionális!
+    if data['freqlist'] is not None:
+        freqlist_filename = 'data/freqlists/' + data['freqlist'] + '.csv'
+        with open(freqlist_filename) as freqlist:
+            # dict of {elem: logfreq}
+            data['freqs'] = {
+                # XXX szebben?
+                # így a 0 is 0 lesz és a log() miatt az 1 is 0 lesz
+                # de ez jó így = a hapaxok "nem léteznek" :)
+                item.split('\t')[1]: log(int(item.split('\t')[0]), LOGBASE) # XXX jobban?
+                for item
+                in freqlist.read().splitlines()}
 
 # cache -- mezőnként!
 
@@ -134,6 +151,7 @@ def process(infrastructure):
             loose_trans = actual_data['loose_trans']
             strict_trans = actual_data['strict_trans']
             terms = actual_data['terms']
+            freqs = actual_data['freqs']
             cache = actual_data['cache']
 
             # egyszerre csak 1 szót/elemet dolgozunk fel,
@@ -201,7 +219,9 @@ def process(infrastructure):
                             for i
                             in sorted((
                                 (match,
-                                 difflib.SequenceMatcher(None, trans, match).ratio())
+                                 # score = difflib_ratio + logfreq
+                                 difflib.SequenceMatcher(None, trans, match).ratio() +
+                                 (freqs[match] if match in freqs else 0))
                                 for match
                                 in matches),
                                 key=lambda x: x[1],

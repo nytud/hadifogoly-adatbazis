@@ -31,10 +31,14 @@ def main():
     # 2. process
 
     processed = OrderedDict()
-    for i, line in enumerate(lines):  
-        col_strptn, loose, strict, termlist = line.split(' ')
+    for i, line in enumerate(lines):
+        fields = line.split(' ')
+        col_strptn, loose, strict, termlist = fields[0:4]
+        freqlist = None # this is an optional field
+        if len(fields) > 4:
+            freqlist = fields[4]
 
-        data_dict = {"loose": loose, "strict": strict, "termlist": termlist}
+        data_dict = {"loose": loose, "strict": strict, "termlist": termlist, "freqlist": freqlist}
 
         col_split = re.split('[{}]'.format(SPLIT_AT), col_strptn)
         if len(col_split) == 3:

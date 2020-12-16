@@ -2,33 +2,39 @@
     "1": {
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
-        "termlist": "vezeteknevek"
+        "termlist": "vezeteknevek",
+        "freqlist": "fq_vezeteknev_nagyhaboru"
     },
     "2": {
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
-        "termlist": "osszesffi"
+        "termlist": "osszesffi",
+        "freqlist": "fq_keresztnev_nagyhaboru"
     },
     "3": {
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
-        "termlist": "osszesffi"
+        "termlist": "osszesffi",
+        "freqlist": "fq_keresztnev_nagyhaboru"
     },
     "5": {
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
-        "termlist": "countries"
+        "termlist": "countries",
+        "freqlist": null
     },
     "6": {
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
         "termlist": "counties",
+        "freqlist": null,
         "strptn": {
             "5": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -37,12 +43,14 @@
         "loose": "ru2hu_places_loose",
         "strict": "ru2hu_places_strict",
         "termlist": "places",
+        "freqlist": null,
         "strptn": {
             "5": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -51,12 +59,14 @@
         "loose": "ru2hu_places_loose",
         "strict": "ru2hu_places_strict",
         "termlist": "places",
+        "freqlist": null,
         "strptn": {
             "5": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -65,12 +75,14 @@
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
         "termlist": "places",
+        "freqlist": null,
         "strptn": {
             "5": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -79,12 +91,14 @@
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
         "termlist": "places",
+        "freqlist": null,
         "strptn": {
             "5": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -92,18 +106,21 @@
     "12": {
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
-        "termlist": "countries"
+        "termlist": "countries",
+        "freqlist": null
     },
     "13": {
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
         "termlist": "counties",
+        "freqlist": null,
         "strptn": {
             "12": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -112,12 +129,14 @@
         "loose": "ru2hu_places_loose",
         "strict": "ru2hu_places_strict",
         "termlist": "places",
+        "freqlist": null,
         "strptn": {
             "12": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -126,12 +145,14 @@
         "loose": "ru2hu_places_loose",
         "strict": "ru2hu_places_strict",
         "termlist": "places",
+        "freqlist": null,
         "strptn": {
             "12": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -140,12 +161,14 @@
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
         "termlist": "places",
+        "freqlist": null,
         "strptn": {
             "12": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -154,12 +177,14 @@
         "loose": "ru2hu_loose",
         "strict": "ru2hu_strict",
         "termlist": "places",
+        "freqlist": null,
         "strptn": {
             "12": {
                 "\u0410\u0432\u0441\u0442\u0440\u0438\u044f": {
                     "loose": "ru2de_loose",
                     "strict": "ru2de_strict",
-                    "termlist": "places_de"
+                    "termlist": "places_de",
+                    "freqlist": null
                 }
             }
         }
@@ -167,6 +192,7 @@
     "19": {
         "loose": "nat_loose",
         "strict": "nat_strict",
-        "termlist": "nat"
+        "termlist": "nat",
+        "freqlist": null
     }
 }

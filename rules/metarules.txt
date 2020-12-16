@@ -23,12 +23,12 @@
 # nincs teendő -- ez a 0 lenne <- 0-tól számozunk!
 
 # +  1/ 1 B = Family
-1 ru2hu_loose ru2hu_strict vezeteknevek
+1 ru2hu_loose ru2hu_strict vezeteknevek fq_vezeteknev_nagyhaboru
 
 # +  2/ 2 C = Name
 # +  3/ 3 D = FatherName
-2 ru2hu_loose ru2hu_strict osszesffi
-3 ru2hu_loose ru2hu_strict osszesffi
+2 ru2hu_loose ru2hu_strict osszesffi fq_keresztnev_nagyhaboru
+3 ru2hu_loose ru2hu_strict osszesffi fq_keresztnev_nagyhaboru
 
 # x  4/ 4 E = Date_r
 # nincs teendő
