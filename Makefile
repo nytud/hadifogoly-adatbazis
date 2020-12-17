@@ -38,7 +38,7 @@ preprocess:
 	@echo "--- $@" 1>&2
 	@cat $(INPUT) | python3 $S/preextract.py | python3 $S/separate_location_parts.py | python3 $S/omit_parenth_names.py | python3 $S/preprocess.py > $(INPUT_PREPROCESSED)
 
-preparation: convert_rules convert_metarules
+preparation: convert_rules convert_metarules complete_sar_tables
 	@echo "--- $@" 1>&2
 
 SPLITDIR=splits
@@ -115,6 +115,10 @@ PLACES_DE_OUTPUT=$(LISTSDIR)/places_de.csv
 complete_places_list_de:
 	@echo "--- $@" 1>&2
 	@cat $(PLACES_DE_INPUT) | cut -d '	' -f 2 | sort -u > $(PLACES_DE_OUTPUT)
+
+SAR_TABLES_DIR=data/sar_tables
+complete_sar_tables:
+	for f in lastname firstname county city ; do cat $(SAR_TABLES_DIR)/work/$${f}_T_kesz_*.csv | python3 scripts/complete_sar_tables.py > $(SAR_TABLES_DIR)/$${f}_add.csv ; cat $(SAR_TABLES_DIR)/$${f}_*.csv > $(SAR_TABLES_DIR)/$${f}.csv ; done
 
 
 # ===== UTILS
