@@ -118,7 +118,8 @@ complete_places_list_de:
 
 SAR_TABLES_DIR=data/sar_tables
 complete_sar_tables:
-	for f in lastname firstname county city ; do cat $(SAR_TABLES_DIR)/work/$${f}_T_kesz_*.csv | python3 scripts/complete_sar_tables.py > $(SAR_TABLES_DIR)/$${f}_add.csv ; cat $(SAR_TABLES_DIR)/$${f}_*.csv > $(SAR_TABLES_DIR)/$${f}.csv ; done
+	@echo "--- $@" 1>&2
+	@for f in lastname firstname county city ; do cat $(SAR_TABLES_DIR)/work/$${f}_T_kesz_*.csv | python3 scripts/complete_sar_tables.py > $(SAR_TABLES_DIR)/$${f}_add.csv ; cat $(SAR_TABLES_DIR)/$${f}_*.csv > $(SAR_TABLES_DIR)/$${f}.csv ; done
 
 
 # ===== UTILS

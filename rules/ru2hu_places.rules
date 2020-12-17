@@ -11,7 +11,7 @@
 # ^^^ állhat elméletileg "W' is a family name-ben
 г g h|gy|k|v|j|cs|ts|ch|gg|gh
 # ^^^ 'j' nem jellemző
-Г G H
+Г G H|Cs
 д d gy|t
 Д D Gy
 Дей Dé
@@ -92,8 +92,8 @@
 Х H K
 ц c cz|cs|g
 Ц C Cz|Cs|Sz
-ч cs ts|ch|g
-Ч Cs Ts|Ch
+ч cs ts|ch|g|h
+Ч Cs Ts|Ch|G|H
 # >>> betűkapcsolatok a hivatalosból
 чё cso
 Чё Cso
