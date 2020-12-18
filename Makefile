@@ -223,3 +223,7 @@ CR_FLAGS=
 create_crafted_data:
 	@python $S/create_crafted_data.py $(CR_FLAGS) > $(DATADIR)/$(CR_FILE).csv
 
+for_manual_training:
+	@echo "--- $@" 1>&2
+	@cat $(DATADIR)/$(FILE).csv | python3 $S/for_manual_training.py | sstat > for_manual_training.csv
+
