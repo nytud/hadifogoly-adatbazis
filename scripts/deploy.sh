@@ -54,8 +54,10 @@ cp -p rules/ru2hu_places* $D/rules
 # scripts
 cp -p scripts/difflib_ratio_test.py $D/scripts
 cp -p scripts/difflib_test.py $D/scripts
+cp -p scripts/complete_sar_tables.py $D/scripts
 cp -p scripts/eval.sh $D/scripts
 cp -p scripts/extract_location_parts.py $D/scripts
+cp -p scripts/for_manual_work.sh $D/scripts
 cp -p scripts/metarules2json.py $D/scripts
 cp -p scripts/omit_parenth_names.py $D/scripts
 cp -p scripts/preextract.py $D/scripts
