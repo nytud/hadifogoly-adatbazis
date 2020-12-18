@@ -1,7 +1,7 @@
 
 # A magyar hadifoglyok adatbázisának _orosz-magyar_ transzkripciója
 
-Nyelvtudományi Intézet -- 2020. június-november
+Nyelvtudományi Intézet -- 2020. június-december
 
 
 ## 1. Feladat
@@ -90,9 +90,11 @@ Példák az algoritmus különböző kilépési pontjaira:
 ```
 
 A 4. pontban a találatokat `;`-vel elválasztva adjuk vissza,
-több találat esetén kiegészítve egy "valószínűségi" mértékkel.
-Utóbbi a __strict__ átirat és a találat
-`difflib.SequenceMatcher(...).ratio()` szerinti hasonlósága.
+több találat esetén kiegészítve egy pontszámmal,
+ami a találatok sorrendjét adja meg.
+Ez a pontszám a __strict__ átirat és a találat
+`difflib.SequenceMatcher(...).ratio()` szerinti hasonlóságán
+valamint nevek esetében a név gyakoriságán alapul.
 
 A 5. pontban a közelítő keresést
 a python `difflib` [(11. rész)](#11-difflib) csomagja valósítja meg.
@@ -162,7 +164,20 @@ Az anyagból eltávolítottuk az orosz elöljárókat
 és végződéseket (`-ский/-ская`).
 
 
-### 5.2 _név_ mezők: [1], [2], [3]
+### 5.2 Szóalakok egyedi kezelése
+
+Bizonyos szóalakokat az algoritmus nem tud átírni [(3. rész, 7. pont)](#3-algoritmus).
+Ezek jelentős részét _egyedileg_ kezeljük. Ez annyit jelent, hogy
+SAR (search and replace) táblázatok segítségével
+egyszerűen lecseréljük őket a megfelelő átírt alakra.
+
+A táblázatok a `data/sar_tables` könyvtárban találhatók.
+
+Az így átírt nevek `/R` jelölést kapnak.
+Ezeket az előre átírt neveket az algoritmus átugorja.
+
+
+### 5.3 _név_ mezők: [1], [2], [3]
 
 Bár az adatbázis túlnyomó részben férfi keresztneveket tartalmaz,
 előfordulnak női keresztnevek is.
@@ -171,16 +186,9 @@ inkább ront az eredményen, mert így férfiak is női nevet kaphatnak
 (pl.: `Пауль -> Paula` `Матия -> Maja` `Гено -> Hana` `Алоис -> Aliz`),
 illetve adott adat mellett keveredhetnek a különböző nemű nevek
 (pl.: `Sándor;Santál`).
-
-Emiatt a női neveket az előfeldolgozás keretében _egyedileg_ kezeljük.
-Jelenleg a _leggyakoribb_ 200 a korábbiakban sikertelenül átírt nevet,
-köztük számos női nevet kezelünk így.
-Az így átírt nevek `/R` jelölést kapnak.
-Ezeket az előre átírt neveket az algoritmus átugorja.
-
-Az egyedi átíró táblázat (`data/sar_table.csv`) szakértői munkával készült,
-jópár automatikusan nem kezelhető esetet tartalmaz:
-`Яню -> János;Jenő` `Лануш -> János;Lajos` `Дерди -> György;Györgyi`.
+Emiatt a nehezen feldolgozható férfinevek mellett
+az összes női nevet is egyedileg kezeljük.
+Példák: `Яню -> János;Jenő` `Лануш -> János;Lajos` `Дерди -> György;Györgyi`.
 
 Az előfeldolgozás keretében elhagyjuk az apai keresztnév [3] mezőben
 előforduló, oroszban szokásos `-вич/-вна` végződést.
@@ -191,7 +199,7 @@ másodlagos zárójeles alakokat figyelmen kívül hagyjuk.
 A pontot elhagyjuk a nevek végéről.
 
 
-### 5.3 _hely_ mezők: [5] és [6]
+### 5.4 _hely_ mezők: [5] és [6]
 
 A _hely_ mezőket
 egyenként 4 mezőre bontottuk [(4. rész)](#4-az-átírt-adatbázis-szerkezete):
@@ -217,7 +225,7 @@ Az algoritmus kilépési pontjainak felel meg
 
 |algoritmus lépés|jel|
 |---:|---|
-|egyedi átírás [(5. rész)](#5-előfeldolgozás)|`/R`|
+|egyedi átírás [(5.2 rész)](#52-szóalakok-egyedi-kezelése)|`/R`|
 |4.|`/L`|
 |6.|`/D`|
 |7.|`=T`|
@@ -490,7 +498,7 @@ transzkriptorokat és helységlistát.
 Ezzel a megoldással elég rugalmasan
 meg tudjuk választani az épp szükséges eszközkészleteket.
 
-2020.12.07. _v8_ | 11.12. _v7_ | 08.13. _v6_ | 07.31. _v5_ | 07.09. _v4_ | 06.28. _v3_ | 06.22. _v2_ | 06.20. _v1_
+2020.12.18. _v9_ | 12.07. _v8_ | 11.12. _v7_ | 08.13. _v6_ | 07.31. _v5_ | 07.09. _v4_ | 06.28. _v3_ | 06.22. _v2_ | 06.20. _v1_
 
 Mittelholcz Iván (`Transcriptor` osztály)\
 Halász Dávid (helyek feldolgozása, részekre bontása)\
