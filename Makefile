@@ -223,7 +223,13 @@ CR_FLAGS=
 create_crafted_data:
 	@python $S/create_crafted_data.py $(CR_FLAGS) > $(DATADIR)/$(CR_FILE).csv
 
+# SAR tables from =T forms for manual transcription
+for_manual_work:
+	@echo "--- $@" 1>&2
+	@$S/for_manual_work.sh $(FILE)
+
+# tables for manual training data creation
 for_manual_training:
 	@echo "--- $@" 1>&2
-	@cat $(DATADIR)/$(FILE).csv | python3 $S/for_manual_training.py | sstat > for_manual_training.csv
+	@cat $(DATADIR)/$(FILE).csv | python3 $S/for_manual_training.py > $(DATADIR)/for_manual_training.$(FILE).csv
 

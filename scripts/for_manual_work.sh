@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# 2020.12.15. @b7394d9 alapján készült
-paste data/random_10000_42.preprocessed.csv out/random_10000_42.transcribed.new.csv > tmp.$$
+FILE=$1
 
-OUTDIR=data/sar_tables
+# 2020.12.15. @b7394d9 alapján készült random_10000_42 -ből
+paste data/${FILE}.preprocessed.csv out/${FILE}.transcribed.new.csv > tmp.$$
+
+OUTDIR=data/sar_tables/work
 
 # lastname.csv 2
 cat tmp.$$ | cols "2,33" | grep =T | sstat | sed "s/^  *//;s/ /	/" > $OUTDIR/lastname_T.csv
