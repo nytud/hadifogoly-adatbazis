@@ -233,3 +233,8 @@ for_manual_training:
 	@echo "--- $@" 1>&2
 	@cat $(DATADIR)/$(FILE).csv | python3 $S/for_manual_training.py > $(DATADIR)/for_manual_training.$(FILE).csv
 
+# rules from manual training data
+trainingdata2rules:
+	@echo "--- $@" 1>&2
+	@cat data/for_manual_training.work.Kart.csv | python3 scripts/trainingdata2rules.py
+

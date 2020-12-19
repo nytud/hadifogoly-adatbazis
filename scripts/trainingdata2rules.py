@@ -39,8 +39,15 @@ def main():
         for a, b in zip(orig, trans): # :)
             rules[a][b] += 1
 
-    for orig_char, trans_chars in rules.items():
-        print(orig_char, '->', sorted(trans_chars.items(), key=lambda item: item[1], reverse=True))
+    # print result with percentages
+    for orig_char, trans_chars in sorted(rules.items()):
+        summa = sum(trans_chars.values())
+        print(orig_char, '->', summa,
+            [f'{trans_char} {val/summa:.1%}({val})'
+            for trans_char, val in
+            sorted(trans_chars.items(),
+                key=lambda item: item[1],
+                reverse=True)])
 
 
 if __name__ == '__main__':

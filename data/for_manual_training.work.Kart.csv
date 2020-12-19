@@ -32,7 +32,7 @@
 13324	hly	губ.		orosz	
 12846	ker	южеф	jó zs e f		
 12806	ker	михай	m i h á ly		
-12316	vez	ковач	k o v á cs|ts|ch		
+12316	vez	ковач	k o v á ch|cs|ts		
 11641	hly	трансильвания		orosz	
 11618	ker	к а р о ль	k á r o ly		
 10753	ker	дю л а	gyu l a		
@@ -48,7 +48,7 @@
 8494	vez	сабо	sz a b ó		Sabó
 8328	ker	карой	k á r o ly		károL
 8163	ker	миклош	miklós		
-7990	ker	иосиф	j o sz i f		joSif józsef???
+7990	ker	иосиф	j ó zs e f		joszif???
 7882	ker	мартон	márton		
 7607	hly	ш о м о дь	s o m o gy		
 7567	ker	антон	anton		antal???
@@ -77,7 +77,7 @@
 4992	ker	б ей л о	béla		
 4976	hly	бекеш	békés		
 4954	hly	гевеш	heves		
-4866	hly	меде		nemkell	
+4866	hly	меде		nemkell	-меде
 4854	hly	кр.		orosz	
 4844	vez	н а дь	n a gy		
 4749	hly	боршод	borsod		
@@ -147,7 +147,7 @@
 2157	ker	ежеф	jó zs e f		
 2145	ker	к а ль м а н	kálmán		
 2142	vez	шимон	simon		
-2133	vez	токач	t a k á cs|ts|ch		
+2133	vez	токач	t a k á ch|cs|ts		
 2117	ker	элек	elek		
 2098	hly	т о ль н о	tolna		
 2097	ker	л а с л ов	l á sz l ó		
@@ -161,7 +161,7 @@
 2032	vez	т оу т	t ó t|th		
 1998	hly	на		orosz	
 1996	hly	де р	győ r		?????
-1995	hly	братислава		szlovák	
+1995	hly	братислава		cs/sz	
 1939	hly	мошон	moson		
 1933	ker	к о р о ль	k á r o ly		
 1916	hly	коложвар	k o l o zs v á r		
@@ -173,431 +173,431 @@
 1850	vez	поп	p a|o p|pp		
 1800	hly	чонад	cs a n á d		
 1788	ker	петр	petr		peter??? péter???
-1776	vez	балог			
-1771	ker	иозиф			
-1764	ker	южев			
-1736	vez	горват			
-1733	ker	эндре			
-1730	hly	украина			
-1724	hly	гемер			
-1717	ker	карол			
-1684	ker	павел			
-1678	ker	геза			
-1676	ker	андрей			
-1645	hly	будапешта			
-1629	ker	рудольф			
-1621	hly	венгрии			
-1606	hly	ужгород			
-1575	ker	онтол			
-1570	ker	бейла			
-1569	hly	бихор			
-1558	hly	арад			
-1556	ker	деже			
-1554	hly	земплен			
-1551	vez	югас			
-1538	hly	край			
-1535	hly	кечкемет			
-1533	vez	вереш			
-1529	vez	неймет			
-1516	ker	томаш			
-1512	hly	гайду			
-1506	ker	арпад			
-1499	ker	гейза			
-1499	ker	мария			
-1490	vez	фекете			
-1484	ker	балинд			
-1480	ker	бертолон			
-1478	ker	иосеф			
-1472	hly	саболч			
-1468	hly	берек			
-1457	hly	сегет			
-1457	ker	дёрдь			
-1450	ker	лаиош			
-1449	hly	чехосл.			
-1440	vez	ворго			
-1437	vez	форкош			
-1421	vez	мольнар			
-1413	ker	нандор			
-1404	vez	гал			
-1398	ker	михал			
-1397	ker	лаёш			
-1378	ker	антоль			
-1377	hly	станислав			
-1374	hly	укр.			
-1358	hly	под			
-1353	hly	бигар			
-1352	ker	денеш			
-1352	hly	острогожск			
-1339	hly	веспрем			
-1335	hly	бараня			
-1334	vez	товт			
-1325	hly	абауй			
-1322	ker	вильмош			
-1306	hly	унгвар			
-1303	ker	истван			
-1293	ker	виктор			
-1292	hly	берегово			
-1290	ker	иовжеф			
-1280	hly	мошонь			
-1274	hly	р.			
-1272	ker	иожев			
-1267	ker	ласлу			
-1259	vez	рац			
-1253	ker	йозеф			
-1249	hly	фегер			
-1249	vez	силади			
-1240	ker	миклуш			
-1238	ker	шитван			
-1234	ker	ян			
-1233	hly	уйпешт			
-1233	hly	нодь			
-1232	ker	шондор			
-1231	ker	дерть			
-1219	ker	шандур			
-1204	vez	пап			
-1203	hly	торда			
-1194	vez	биро			
-1191	hly	дюр			
-1179	vez	фаркаш			
-1178	hly	венг.			
-1178	ker	александр			
-1176	vez	лукач			
-1167	ker	гашпар			
-1164	hly	чехословак.			
-1159	vez	фодор			
-1153	hly	вена			
-1145	ker	гергей			
-1144	hly	соболч			
-1132	hly	пештмеде			
-1128	ker	эрне			
-1121	ker	генрих			
-1116	vez	кочиш			
-1109	hly	будо			
-1098	vez	пал			
-1097	hly	ст.			
-1089	ker	иоган			
-1082	ker	балаш			
-1082	hly	зак.			
-1078	ker	габур			
-1066	hly	близ			
-1064	hly	колошвар			
-1061	ker	вендель			
-1054	hly	бекиш			
-1046	hly	у			
-1040	ker	лайеш			
-1034	vez	мартон			
-1016	hly	бороня			
-999	vez	ласло			
-995	vez	шипош			
-992	vez	шандор			
-983	hly	гойду			
-979	vez	пинтер			
-975	hly	боршот			
-972	hly	сексард			
-956	ker	анна			
-949	hly	нитра			
-943	hly	дюло			
-934	hly	бихар			
-925	ker	пейтер			
-913	ker	езеф			
-906	hly	обоуй			
-905	hly	трансильв.			
-886	hly	бач			
-885	hly	бейкиш			
-883	ker	иштвон			
-882	vez	орос			
-875	hly	серенч			
-874	hly	шамодь			
-870	hly	сент			
-854	ker	иштва			
-850	ker	паал			
-847	ker	вендел			
-846	hly	шомоть			
-845	hly	дону			
-837	vez	терек			
-831	ker	анталь			
-827	ker	еужеф			
-827	ker	имра			
-823	hly	сентеш			
-822	vez	якоб			
-818	vez	собов			
-815	hly	тольна			
-809	hly	братислав			
-802	ker	степан			
-801	ker	дежи			
-800	hly	мукачево			
-789	vez	келемен			
-787	hly	ченград			
-782	hly	дёр			
-781	hly	зало			
-775	ker	мартын			
-773	ker	било			
-768	ker	игнат			
-767	hly	кишпешт			
-767	hly	комаро			
-764	vez	борош			
-760	ker	даниел			
-760	vez	сабов			
-759	hly	удворгей			
-757	vez	болог			
-755	ker	лаешь			
-752	ker	колман			
-752	vez	винце			
-749	vez	петер			
-747	ker	иванович			
-746	hly	бачбодрок			
-745	hly	марошторда			
-742	hly	мороштордо			
-740	hly	вблизи			
-740	ker	андор			
-739	ker	эмиль			
-738	vez	ваш			
-731	hly	чанад			
-729	ker	матяж			
-728	ker	пол			
-723	hly	феер			
-723	ker	ион			
-721	ker	мартин			
-715	hly	познань			
-713	hly	австр.			
-713	hly	комарум			
-709	ker	зольтан			
-707	ker	эржибет			
-704	ker	дейнеш			
-703	hly	киш			
-700	hly	удваргей			
-698	hly	медя			
-698	ker	даниель			
-694	hly	пешт-меде			
-694	ker	гезо			
-691	hly	тордо			
-685	hly	коломия			
-683	hly	чср			
-683	hly	сл.			
-682	hly	бороне			
-678	hly	торно			
-675	hly	шапрон			
-673	hly	станислава			
-672	hly	надь			
-667	ker	шимон			
-664	hly	шарвар			
-662	vez	шмидт			
-659	ker	давид			
-658	vez	орбан			
-654	vez	деак			
-652	hly	морош			
-651	ker	отто			
-649	hly	весприн			
-648	ker	иосифович			
-642	vez	мейсарош			
-637	hly	турда			
-637	hly	марош			
-637	vez	шомоди			
-636	hly	мункач			
-634	hly	ород			
-632	ker	людвиг			
-632	hly	сабоч			
-630	ker	лукач			
-630	hly	элек			
-629	ker	миклоуш			
-628	hly	нитро			
-628	vez	собо			
-627	hly	поличка			
-627	hly	колож			
-627	hly	ноуград			
-627	vez	сюч			
-624	hly	комарно			
-623	hly	угоча			
-622	hly	иванц			
-617	hly	дюла			
-616	hly	нодьварод			
-608	ker	юзефович			
-608	ker	балаж			
-606	hly	чехия			
-606	vez	балинт			
-605	hly	бачбодрог			
-604	hly	бачка			
-601	hly	вишк			
-601	vez	олах			
-601	vez	ференц			
-600	vez	керекеш			
-598	ker	жигмунд			
-598	hly	пейч			
-598	hly	вац			
-597	hly	кюстрин			
-597	ker	ондрош			
-596	vez	деметер			
-592	hly	харомсек			
-591	hly	бая			
-591	hly	клуж			
-590	ker	яне			
-584	hly	сатумаре			
-579	vez	сас			
-577	vez	томаш			
-575	hly	пожань			
-575	hly	колош			
-572	hly	к.			
-569	hly	закарпатская			
-567	vez	вош			
-566	vez	кун			
-565	hly	штаер			
-565	vez	давид			
-563	hly	мако			
-562	vez	месарош			
-557	vez	новак			
-555	hly	будапеште			
-555	ker	лосло			
-555	vez	пастор			
-554	hly	из			
-553	hly	фе			
-553	vez	боднар			
-553	vez	такач			
-552	ker	иштванович			
-551	ker	имря			
-551	ker	гергель			
-549	hly	австрии			
-549	vez	кирай			
-544	ker	матиас			
-543	hly	кечкемит			
-543	ker	яношь			
-542	hly	бл.			
-542	vez	сыч			
-538	hly	карпаты			
-537	ker	михайлович			
-537	ker	зигмунд			
-532	ker	матьяш			
-532	hly	дендеш			
-530	hly	монор			
-528	hly	меди			
-526	vez	дудаш			
-523	hly	печ			
-521	ker	питер			
-520	hly	берексас			
-516	ker	домокош			
-512	hly	америка			
-510	ker	лоренц			
-507	hly	сторожевое			
-505	hly	усср			
-504	vez	гуяш			
-502	hly	рум.			
-502	vez	богнар			
-502	vez	урбан			
-499	ker	болаш			
-497	ker	берталон			
-494	vez	фаркош			
-493	ker	мозеш			
-493	hly	боршодь			
-493	hly	миклош			
-492	hly	касторное			
-491	hly	фехер			
-491	vez	сабу			
-490	ker	юзев			
-489	ker	юла			
-489	vez	немеш			
-488	hly	комором			
-485	vez	маер			
-484	vez	барта			
-482	hly	оскол			
-482	hly	чех.			
-482	hly	баранья			
-478	hly	коломея			
-478	ker	антонович			
-478	vez	балаш			
-476	ker	элемир			
-474	hly	бароня			
-474	ker	янушевич			
-474	vez	форкаш			
-473	ker	ишван			
-473	ker	флориан			
-472	hly	дердь			
-471	vez	гашпар			
-470	ker	корой			
-469	ker	карай			
-468	hly	сарваш			
-467	ker	роберт			
-466	ker	янаш			
-464	hly	брно			
-464	ker	даниэль			
-464	ker	реже			
-462	vez	юхас			
-461	vez	миклош			
-460	hly	тольномедия			
-459	ker	дюрдь			
-459	vez	секереш			
-458	ker	эде			
-458	hly	русь			
-457	ker	агоштон			
-457	vez	добош			
-456	hly	будвайс			
-455	hly	шольт			
-455	vez	виг			
-454	hly	чоп			
-454	vez	майор			
-453	ker	адольф			
-453	hly	дерь			
-452	ker	алберт			
-452	vez	фегир			
-451	vez	санто			
-450	vez	пушкаш			
-448	hly	феир			
-448	hly	острогорск			
-447	ker	николай			
-443	hly	собоч			
-442	hly	кошут			
-442	hly	шопром			
-440	hly	пешта			
-439	ker	вилмош			
-438	ker	белла			
-438	ker	арпат			
-438	hly	закарп.			
-436	ker	фридеш			
-435	hly	хонт			
-435	hly	будапештская			
-435	hly	дьер			
-434	vez	сич			
-434	vez	мюллер			
-433	hly	главная			
-433	hly	николаевка			
-430	vez	балаж			
-425	hly	писек			
-425	hly	базин			
-424	vez	балок			
-420	ker	амбруш			
-418	hly	золомеде			
-413	vez	вагнер			
-410	ker	лойуш			
-410	hly	трансильван.			
-408	hly	ярош			
-407	hly	чехословакии			
-406	ker	юлиус			
-401	hly	прага			
-401	vez	вираг			
-399	ker	иужеф			
-399	vez	куруц			
-398	vez	ференци			
-397	ker	имрэ			
-396	hly	близь			
-396	vez	бодо			
-395	hly	бачко			
-393	ker	эден			
-393	vez	фабиан			
-392	hly	линц			
-392	hly	брук			
-390	hly	румын.			
-389	hly	угочо			
-389	hly	унтергайд			
-389	hly	муреш			
-387	vez	маркуш			
-385	hly	бичке			
-383	hly	герм.			
-383	vez	ач			
-382	hly	шапронь			
-382	vez	конц			
-379	hly	братиславль			
-379	ker	шамуэль			
-376	hly	соотмарская			
-375	hly	сентготхард			
-374	ker	миголь			
+1776	vez	балог	b a l o g|gh		
+1771	ker	иозиф	j ó zs e f		
+1764	ker	южев	jó zs e f		
+1736	vez	горват	h o r v á t|th		
+1733	ker	эндре	endre		
+1730	hly	украина		orosz	
+1724	hly	гемер	g|cs e|ö m e|ö r		
+1717	ker	карол	k á r o ly		
+1684	ker	павел	pável		pavel??? pál???
+1678	ker	геза	géza		
+1676	ker	андрей	andrej		andrás???
+1645	hly	б у д а п е ш та	budapest		
+1629	ker	р у д о ль ф	rudolf		
+1621	hly	венгрии		orosz	
+1606	hly	ужгород		orosz	
+1575	ker	онтол	antal		
+1570	ker	б ей л а	béla		
+1569	hly	бихор	bihar		
+1558	hly	арад	arad		
+1556	ker	деже	d e zs ő		
+1554	hly	земплен	zemplén		
+1551	vez	югас	ju h á sz		
+1538	hly	край		orosz	
+1535	hly	кечкемет	k e cs k e m é t		
+1533	vez	вереш	v e|ö r e|ö s|ss		
+1529	vez	н ей м е т	német		
+1516	ker	томаш	tamás		
+1512	hly	гайду	hajdú		
+1506	ker	арпад	árpád		
+1499	ker	г ей з а	géza		
+1499	ker	м а р ия	m á r ia		
+1490	vez	фекете	fekete		
+1484	ker	балинд	bálint		
+1480	ker	бертолон	bertalan		
+1478	ker	иосеф	j ó zs e f		
+1472	hly	саболч	sz a b o l cs		
+1468	hly	берек	b e r e g|k		
+1457	hly	сегет	sz e|i g e d|t		
+1457	ker	дё р дь	gyö r gy		
+1450	ker	лаиош	lajos		
+1449	hly	чехосл.		orosz	
+1440	vez	ворго	v a r g|gh a		
+1437	vez	форкош	farkas		
+1421	vez	м о ль н а р	molnár		
+1413	ker	нандор	nándor		
+1404	vez	гал	g aá|á l		
+1398	ker	михал	m i h á ly		
+1397	ker	лаёш	l a jo s		
+1378	ker	а н т о ль	antal		
+1377	hly	станислав		orosz	
+1374	hly	укр.		orosz	
+1358	hly	под		orosz	
+1353	hly	бигар	bihar		
+1352	ker	денеш	dénes		
+1352	hly	острогожск		orosz	
+1339	hly	веспрем	v e sz p r é m		
+1335	hly	б а р а ня	b a r a nya		
+1334	vez	т ов т	t ó t|th		
+1325	hly	абауй	abaúj		
+1322	ker	в и ль м о ш	vilmos		
+1306	hly	унгвар	ungvár		
+1303	ker	истван	istván		
+1293	ker	виктор	viktor		
+1292	hly	берегово		orosz	
+1290	ker	и ов ж е ф	j ó zs e f		
+1280	hly	м о ш о нь	moson		
+1274	hly	р.		orosz	
+1272	ker	иожев	j ó zs e f		
+1267	ker	ласлу	l á sz l ó		
+1259	vez	рац	r á c|cz|tz		
+1253	ker	йозеф	j ó zs e f		
+1249	hly	фегер	f e j|h é r		
+1249	vez	силади	sz i l á gy i		
+1240	ker	миклуш	miklós		
+1238	ker	ши т в а н	is t v á n		
+1234	ker	ян	já n		???
+1233	hly	уйпешт	újpest		
+1233	hly	н о дь	n a gy		
+1232	ker	шондор	sándor		
+1231	ker	де р ть	gyö r gy		
+1219	ker	шандур	sándor		
+1204	vez	пап	p a|o p|pp		
+1203	hly	торда	torda		
+1194	vez	биро	b i|í r ó		
+1191	hly	дю р	győ r		
+1179	vez	фаркаш	farkas		
+1178	hly	венг.		orosz	
+1178	ker	александр	a l e k sz a n d r		???
+1176	vez	лукач	l u k á cs		
+1167	ker	гашпар	gáspár		
+1164	hly	чехословак.		orosz	
+1159	vez	фодор	fodor		
+1153	hly	вена		orosz	
+1145	ker	гергей	g e r g e ly		
+1144	hly	соболч	sz a b o l cs		
+1132	hly	пештмеде		nemkell	-меде
+1128	ker	эрне	ernő		
+1121	ker	генрих	henrik		
+1116	vez	к о ч и ш	k o cs|ts i s		
+1109	hly	будо	buda		
+1098	vez	пал	p aá|á l		
+1097	hly	ст.		orosz	
+1089	ker	иоган	j o h a n|nn	német	
+1082	ker	б а л а ш	b a l á zs		
+1082	hly	зак.		orosz	
+1078	ker	габур	gábor		
+1066	hly	близ		orosz	
+1064	hly	колошвар	k o l o zs v á r		
+1061	ker	в е н д е ль	vendel		
+1054	hly	бекиш	békés		
+1046	hly	у		orosz	
+1040	ker	лайеш	lajos		
+1034	vez	мартон	márton		
+1016	hly	б о р о ня	b a r a nya		
+999	vez	ласло	l á sz l ó		
+995	vez	шипош	sipos		
+992	vez	шандор	sándor		
+983	hly	гойду	hajdú		
+979	vez	пинтер	pintér		
+975	hly	боршот	borsod		
+972	hly	сексард	sz e k sz á r d		
+956	ker	анна	anna		
+949	hly	ни т р а	nyi t r a		
+943	hly	дю л о	gyu l a		
+934	hly	бихар	bihar		
+925	ker	п ей т е р	péter		
+913	ker	езеф	jó zs e f		
+906	hly	обоуй	abaúj		
+905	hly	трансильв.		orosz	
+886	hly	бач	b á cs		
+885	hly	б ей к и ш	békés		
+883	ker	иштвон	istván		
+882	vez	орос	o r o sz		
+875	hly	серенч	sz e r e n cs		
+874	hly	ш а м о дь	s o m o gy		
+870	hly	сент	sz e n t		
+854	ker	и ш т в а	i s t v án		
+850	ker	п аа л	p aá|á l		
+847	ker	вендел	vendel		
+846	hly	ш о м о ть	s o m o gy		
+845	hly	дону		orosz	
+837	vez	терек	török		
+831	ker	а н т а ль	antal		
+827	ker	еужеф	j ó zs e f		
+827	ker	имра	imre		
+823	hly	сентеш	sz e n t es		
+822	vez	якоб	ja k a b		
+818	vez	с о б ов	sz a b ó		
+815	hly	т о ль н а	tolna		
+809	hly	братислав		cs/sz	
+802	ker	степан	stefan		sztyepan??? istván???
+801	ker	дежи	d e zs ő		
+800	hly	мукачево		orosz	
+789	vez	келемен	kelemen		
+787	hly	ченград	cs o n g r á d		
+782	hly	дё р	győ r		
+781	hly	зало	zala		
+775	ker	мартын	martin		márton???
+773	ker	било	béla		
+768	ker	игнат	ignác		
+767	hly	кишпешт	kispest		
+767	hly	комаро	k o m á r om		
+764	vez	борош	boros		
+760	ker	даниел	dániel		
+760	vez	с а б ов	sz a b ó		
+759	hly	удворгей	u d v a r h e ly		
+757	vez	болог	b a l o g|gh		
+755	ker	л а е шь	l a jo s		
+752	ker	колман	kálmán		
+752	vez	винце	vince		
+749	vez	петер	péter		
+747	ker	иванович		orosz	-ович
+746	hly	бачбодрок	b á cs- b o d r o g		kötjel?
+745	hly	марошторда	m a r o s- t o r d a		kötjel?
+742	hly	мороштордо	m a r o s- t o r d a		kötjel?
+740	hly	вблизи		orosz	
+740	ker	андор	andor		
+739	ker	э м и ль	emil		
+738	vez	ваш	v a s|ss		
+731	hly	чанад	cs a n á d		
+729	ker	м а тя ж	m á tyá s		
+728	ker	пол	pál		
+723	hly	ф е е р	f e jé|hé r		
+723	ker	ион	jon		jan, ján???
+721	ker	мартин	martin		márton???
+715	hly	познань		orosz	
+713	hly	австр.		orosz	
+713	hly	комарум	komárom		
+709	ker	з о ль т а н	zoltán		
+707	ker	эржибет	e r zs é b e t		
+704	ker	д ей н е ш	dénes		
+703	hly	киш	kis		
+700	hly	удваргей	u d v a r h e ly		
+698	hly	медя		nemkell	-меде
+698	ker	д а н и е ль	dániel		
+694	hly	пешт-меде		nemkell	-меде
+694	ker	гезо	géza		
+691	hly	тордо	torda		
+685	hly	коломия		orosz	
+683	hly	чср		orosz	???
+683	hly	сл.		orosz	
+682	hly	б о р о не	b a r a nya		
+678	hly	торно	torna		
+675	hly	шапрон	sopron		
+673	hly	станислава		orosz	
+672	hly	н а дь	n a gy		
+667	ker	шимон	simon		
+664	hly	шарвар	sárvár		
+662	vez	ш м и д т	sch m i d|t t	német	magyar név lehet
+659	ker	давид	dávid		
+658	vez	орбан	orbán		
+654	vez	деак	deák		
+652	hly	морош	maros		
+651	ker	отто	ottó		
+649	hly	весприн	v e sz p r é m		
+648	ker	иосифович		orosz	-ович
+642	vez	м ей с а р о ш	m é sz á r o s		
+637	hly	турда	torda		
+637	hly	марош	maros		
+637	vez	ш о м о ди	s o m o gyi		
+636	hly	мункач	m u n k á cs		
+634	hly	ород	arad		
+632	ker	лю д в и г	lu d w i g	német	németes
+632	hly	сабоч	sz a b á|ol cs		
+630	ker	лукач	l u k á cs		
+630	hly	элек	elek		
+629	ker	м и к л оу ш	miklós		
+628	hly	ни т р о	nyi t r a		
+628	vez	собо	sz a b ó		
+627	hly	поличка		cs/sz	???
+627	hly	колож	kolozs		
+627	hly	н оу г р а д	nógrád		
+627	vez	сюч	sz ű cs		
+624	hly	комарно		cs/sz	
+623	hly	угоча	u g o cs a		
+622	hly	иванц			???
+617	hly	дю л а	gyu l a		
+616	hly	н о дь в а р о д	n a gy v á r a d		
+608	ker	юзефович		orosz	-ович
+608	ker	балаж	b a l á zs		
+606	hly	чехия		orosz	
+606	vez	балинт	bálint		
+605	hly	бачбодрог	b á cs- b o d r o g		
+604	hly	бачка	b á cs k a		
+601	hly	вишк	visk		
+601	vez	олах	oláh		
+601	vez	ференц	ferenc		
+600	vez	керекеш	kerekes		
+598	ker	жигмунд	zs i g m o n d		
+598	hly	п ей ч	p é cs		
+598	hly	вац	vác		
+597	hly	кюстрин		orosz	
+597	ker	ондрош	andrás		
+596	vez	деметер	d e|ö m e|ö t e|ö r		
+592	hly	харомсек	h á r o m sz é k		
+591	hly	бая	b a ja		
+591	hly	клуж		román	
+590	ker	яне			???
+584	hly	сатумаре		román	
+579	vez	сас	sz á sz		
+577	vez	томаш	tamás		
+575	hly	п о ж а нь	p o zs o ny		
+575	hly	колош	k o l o zs		
+572	hly	к.		orosz	
+569	hly	закарпатская		orosz	
+567	vez	вош	v a s|ss		
+566	vez	кун	kun		
+565	hly	штаер		német	???
+565	vez	давид	dávid		
+563	hly	мако	makó		
+562	vez	месарош	m é sz á r o s		
+557	vez	новак	novák		
+555	hly	б у д а п е ш те	budapest		
+555	ker	лосло	l á sz l ó		
+555	vez	пастор	p á sz t o r		
+554	hly	из		orosz	
+553	hly	фе			???
+553	vez	боднар	bodnár		
+553	vez	такач	t a k á ch|cs|ts		
+552	ker	иштванович		orosz	-ович
+551	ker	имря	imre		
+551	ker	г е р г е ль	g e r g e ly		
+549	hly	австрии		orosz	
+549	vez	кирай	k i r á ly		
+544	ker	матиас	m a th i a s	német	mátyás???
+543	hly	кечкемит	k e cs k e m é t		
+543	ker	я н о шь	já n o s		
+542	hly	бл.		orosz	
+542	vez	сыч	sz ű cs		
+538	hly	карпаты			??? (utca)
+537	ker	михайлович		orosz	-ович
+537	ker	зигмунд	zs i g m o n d		
+532	ker	м а тья ш	m á tyá s		
+532	hly	де н де ш	gyö n gyö s		
+530	hly	монор	monor		
+528	hly	меди		nemkell	-меде
+526	vez	дудаш	dudás		
+523	hly	печ	p é cs		
+521	ker	питер	péter		
+520	hly	берексас	b e r e g sz á sz		
+516	ker	домокош	d o m o|on k o s		
+512	hly	америка	amerika		
+510	ker	лоренц	lorenz	német	lőrinc???
+507	hly	сторожевое		orosz	
+505	hly	усср		orosz	
+504	vez	гуяш	g u lyá s		
+502	hly	рум.		orosz	
+502	vez	богнар	bognár		
+502	vez	урбан	o|u r b á n		
+499	ker	болаш	b a l á zs		
+497	ker	берталон	bertalan		
+494	vez	фаркош	farkas		
+493	ker	мозеш	mózes		
+493	hly	б о р ш о дь	borsod		
+493	hly	миклош	miklós		
+492	hly	касторное		orosz	
+491	hly	фехер	f e j|h é r		
+491	vez	сабу	sz a b ó		
+490	ker	юзев	jó zs e f		
+489	ker	юла	gyu l a		
+489	vez	немеш	nemes		
+488	hly	комором	komárom		
+485	vez	маер	m a je|ye r	német	
+484	vez	барта	barta		
+482	hly	оскол			???
+482	hly	чех.		orosz	
+482	hly	б а р а нья	b a r a nya		
+478	hly	коломея		orosz	
+478	ker	антонович		orosz	-ович
+478	vez	балаш	b a l á zs		
+476	ker	элемир	elemér		
+474	hly	б а р о ня	b a r a nya		
+474	ker	янушевич		orosz	-ович
+474	vez	форкаш	farkas		
+473	ker	ишван	i st v á n		
+473	ker	флориан	flórián		
+472	hly	де р дь	gyö r gy		
+471	vez	гашпар	gáspár		
+470	ker	корой	k á r o ly		
+469	ker	карай	k á r o ly		
+468	hly	сарваш	sz a r v a s		
+467	ker	роберт	róbert		
+466	ker	янаш	já n o s		
+464	hly	брно		cs/sz	
+464	ker	д а н и э ль	d á n i e l		
+464	ker	реже	r e zs ő		
+462	vez	юхас	ju h á sz		
+461	vez	миклош	miklós		
+460	hly	тольномедия		nemkell	-меде
+459	ker	дю р дь	gyö r gy		
+459	vez	секереш	sz e k e r e s		
+458	ker	эде	ede		
+458	hly	русь			???
+457	ker	агоштон	ágoston		
+457	vez	добош	dobos		
+456	hly	б у д в ай с	b u d w ei s	német	
+455	hly	ш о ль т	solt		
+455	vez	виг	v i|í g|gh		
+454	hly	чоп	cs a p		
+454	vez	майор	major		
+453	ker	а д о ль ф	adolf		
+453	hly	де рь	győ r		
+452	ker	алберт	albert		
+452	vez	фегир	f e j|h é r		
+451	vez	санто	sz á n t ó		
+450	vez	пушкаш	puskás		
+448	hly	феир	f e jé|hé r		
+448	hly	острогорск		orosz	
+447	ker	николай		orosz	
+443	hly	собоч	sz a b á|ol cs		
+442	hly	кошут	k o s|ss u|ú t|th		
+442	hly	шопром	sopron		
+440	hly	п е ш та	pest		
+439	ker	вилмош	vilmos		
+438	ker	б е лл а	b e|é l|ll a		
+438	ker	арпат	árpád		
+438	hly	закарп.		orosz	
+436	ker	ф р и де ш	f r i gye s		
+435	hly	хонт	hont		
+435	hly	будапештская		orosz	-ская
+435	hly	дье р	győ r 		
+434	vez	сич	sz ű cs		
+434	vez	мюллер	müller		
+433	hly	главная		orosz	
+433	hly	николаевка		orosz	
+430	vez	балаж	b a l á zs		
+425	hly	писек			???
+425	hly	базин			???
+424	vez	балок	b a l o g|gh		
+420	ker	амбруш	ambrus		
+418	hly	золомеде		nemkell	-меде
+413	vez	вагнер	v|w a|á g n e r	német	
+410	ker	лойуш	lajos		
+410	hly	трансильван.		orosz	
+408	hly	ярош	já n o s	 	???
+407	hly	чехословакии		orosz	
+406	ker	юлиус	ju l i u s	német	
+401	hly	прага	prága		
+401	vez	вираг	virág		
+399	ker	иу ж е ф	jó zs e f		
+399	vez	куруц	k u r u c|cz		
+398	vez	ференци	f e r e n c|cz i|y		
+397	ker	имрэ	imre		
+396	hly	близь		orosz	
+396	vez	бодо	bodó		
+395	hly	бачко	b á cs k a		
+393	ker	эден	ödön		
+393	vez	фабиан	fábián		
+392	hly	линц	linz	német	
+392	hly	брук	b r u ck	német	
+390	hly	румын.		orosz	
+389	hly	угочо	u g o cs a		
+389	hly	унтергайд	unterhaid	német	???
+389	hly	муреш		román	
+387	vez	маркуш	márkus		
+385	hly	бичке	b i cs k e		
+383	hly	герм.		orosz	
+383	vez	ач	á cs		
+382	hly	ш а п р о нь	sopron		
+382	vez	конц	k o n c|cz		
+379	hly	братиславль		cs/sz	
+379	ker	ш а м у э ль	sámuel		
+376	hly	соотмарская		orosz	-ская
+375	hly	сентготхард	sz e n t g o tt h á r d		
+374	ker	м и г о ль	m i h á ly		
 372	hly	по			
 370	hly	возле			
 370	hly	х.			
