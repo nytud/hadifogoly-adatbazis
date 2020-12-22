@@ -7,19 +7,21 @@ import sys
 from collections import defaultdict
 
 
-rules = defaultdict(lambda: defaultdict(int)) # :)
-bigram_rules = defaultdict(lambda: defaultdict(int))
-trigram_rules = defaultdict(lambda: defaultdict(int))
+# True: nehezen dönthetők elöl <--> False: sima ábécésorrend
+SORT_DIFFICULT_TO_DECIDE = False
 
+# külön vegyük-e a {szóeleji,szóbelseji,szóvégi}-t
+MARK_BEGIN_END = False
 
-# XXX 1-char kódolás -- lehetne mindenhol
-one_chars = {
-#    'gy': 'G',
+# empty trans mark
+EMPTY = '0'
+
+# XXX 1-char kódolás -- lehetne mindenhol -- melyik irányba is? :)
+ONE_CHARS = {
 }
 
-
 # XXX [aáo] --> 'A', azaz ezeket nem különítjük el, mert nehéz!
-mergesimplify = {
+MERGESIMPLIFY = {
     'a': 'A',
     'á': 'A',
     'o': 'A',
@@ -27,39 +29,57 @@ mergesimplify = {
 #    'h': 'H'
 }
 
+rules = defaultdict(lambda: defaultdict(int)) # :)
+bigram_rules = defaultdict(lambda: defaultdict(int))
+trigram_rules = defaultdict(lambda: defaultdict(int))
+
 
 def main():
     """Main."""
 
+    counter = 0
     # stdin -> stdout identity filter
     for line in sys.stdin:
+
+        counter += 1
+
         fields = line.strip().split('\t')
         if len(fields) < 4:
             continue
         orig, trans = fields[2:4]
 
-        orig = orig.split(' ') if ' ' in orig else [ch for ch in orig]
-        trans = trans.split(' ') if ' ' in trans else [ch for ch in trans]
+        if trans == EMPTY: # ha üres a megfelelője, akkor marad, ahogy van
+            orig = [orig]
+        elif ' ' in orig:
+            orig = orig.split(' ')
+        else:
+            orig = list(orig)
+
+        if ' ' in trans:
+            trans = trans.split(' ')
+        else:
+            trans = list(trans)
 
         if len(trans) == 0:
             continue
         if len(orig) != len(trans):
-            print(f'ERR: "{orig}" -> "{trans}"')
+            print(f'ERR {len(orig)} vs {len(trans)} @line{counter}: "{orig}" -> "{trans}"')
             continue
 
         # ha szeretnénk 1-kar kódolást -- és miért ne
-        for ch, one_char in one_chars.items():
-            trans = [char.replace(ch, one_char) for char in trans]
+        #for ch, one_char in ONE_CHARS.items():
+        #    trans = [char.replace(ch, one_char) for char in trans]
 
         # XXX ha össze akarunk vonni "eldönthetetleneket" egybe
-        for ch, merged in mergesimplify.items():
+        for ch, merged in MERGESIMPLIFY.items():
             trans = [char.replace(ch, merged) for char in trans]
 
         # XXX ha el akarjuk különíteni a szó elejét és végét
-        #orig[0] = '^' + orig[0]
-        #orig[-1] = orig[-1] + '$'
-        #trans[0] = '^' + trans[0]
-        #trans[-1] = trans[-1] + '$'
+        if MARK_BEGIN_END:
+            orig[0] = '^' + orig[0]
+            orig[-1] = orig[-1] + '$'
+            trans[0] = '^' + trans[0]
+            trans[-1] = trans[-1] + '$'
 
         # unigrams
         for a, b in zip(orig, trans): # :)
@@ -82,15 +102,23 @@ def main():
 
     # print result with percentages
 
-    # -- eredeti orosz karakter szerint ábécében
-    #for orig_char, trans_chars in sorted(rules.items()):
-
-    # -- legnagyobb %-os érték szerint = elöl a nehezen eldönthetők
     for rule_list in [rules, bigram_rules, trigram_rules]:
-        for orig_char, trans_chars in sorted(rule_list.items(),
-                key=lambda rule: max(
-                d / sum(rule[1].values()) for d in rule[1].values())):
 
+        sorted_rules = (
+
+            # -- legnagyobb %-os érték szerint = elöl a nehezen eldönthetők
+            sorted(rule_list.items(),
+                key=lambda rule: max(
+                d / sum(rule[1].values()) for d in rule[1].values()))
+
+            if SORT_DIFFICULT_TO_DECIDE else
+
+            # -- eredeti orosz karakter szerint ábécében
+            sorted(rule_list.items())
+
+        )
+
+        for orig_char, trans_chars in sorted_rules:
             summa = sum(trans_chars.values())
             print(orig_char, '->', summa,
                 [f'{trans_char} {val/summa:.1%}({val})'
