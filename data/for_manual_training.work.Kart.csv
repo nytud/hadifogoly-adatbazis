@@ -1,4 +1,4 @@
-359122	hly	венгрия		oroszford	
+359122	hly	венгрия		oroszford	magyarország
 311756	hly	г.		orosznyelvi	
 306087	hly	с.		orosznyelvi	
 233850	hly	обл.		orosznyelvi	
@@ -16,14 +16,14 @@
 36744	ker	януш	já n o s		
 36178	ker	юзеф	jó zs e f		jóZef
 34680	ker	имре	imre		
-33924	hly	чехословакия		oroszford	
-33768	hly	австрия		oroszford	
+33924	hly	чехословакия		oroszford	csehszlovákia
+33768	hly	ав с т р ия	au sz t r ia	orosz-ru2hu	
 33451	hly	пешт	pest		
 28409	ker	иожеф	j ó zs e f		jóZef
 26413	ker	ласло	l á sz l ó		láSló
 22079	ker	андраш	andrás		
 21999	hly	уезд		orosznyelvi	
-21858	hly	румыния		oroszford	
+21858	hly	румыния		oroszford	románia
 20396	ker	мигай	m i h á ly		miháL
 20363	ker	пал	pál		... lehetne így
 16379	ker	лайош	lajos		
@@ -33,13 +33,13 @@
 12846	ker	южеф	jó zs e f		
 12806	ker	михай	m i h á ly		
 12316	vez	ковач	k o v á ch|cs|ts		
-11641	hly	трансильвания		oroszford	
+11641	hly	трансильвания		oroszford	erdély
 11618	ker	к а р о ль	k á r o ly		
 10753	ker	дю л а	gyu l a		
 10745	hly	ваш	vas		
 10611	ker	петер	péter		
 10502	ker	дю л о	gyu l a		
-10080	hly	венгр.		oroszford	
+10080	hly	венгр.		röv	венгрия
 9968	ker	габор	gábor		
 9544	ker	лаеш	l a jo s		
 9161	hly	золо	zala		
@@ -51,7 +51,7 @@
 7990	ker	иосиф	j ó zs e f		joszif???
 7882	ker	мартон	márton		
 7607	hly	ш о м о дь	s o m o gy		
-7567	ker	антон	anton		antal???
+7567	ker	антон	anton		németford: antal???
 7187	hly	бигор	bihar		
 7005	hly	р-не		orosznyelvi	
 6999	ker	ференс	ferenc		
@@ -66,13 +66,13 @@
 5965	ker	антол	antal		
 5917	vez	хорват	h o r v á t|th		
 5744	hly	берег	bereg		
-5643	hly	чехослов.		oroszford	
+5643	hly	чехослов.		röv	чехословакия 
 5555	ker	андрош	andrás		
 5471	ker	бела	béla		
 5351	ker	ондраш	andrás		
 5324	hly	буда	buda		
 5320	ker	калман	kálmán		
-5185	ker	георг	georg		györgy???
+5185	ker	георг	georg		németford: györgy???
 5036	hly	шопрон	sopron		
 4992	ker	б ей л о	béla		
 4976	hly	бекеш	békés		
@@ -84,13 +84,13 @@
 4698	ker	м и г а ль	m i h á ly		
 4687	hly	сотмар	sz a t m á r		Satmár
 4610	ker	антал	antal		
-4561	hly	югославия		oroszford	
-4472		м и х а ил	m i h á ly		mihail???
+4561	hly	ю г о с л а в ия	ju g o sz l á v ia	orosz-ru2hu	
+4472	ker	м и х а ил	m i h á ly		mihail???
 4426	ker	лаюш	l a jo s		
 4028	hly	с о б о ль ч	sz a b o l cs		
 3980	hly	хевеш	heves		
 3976	ker	м и х а ль	m i h á ly		
-3953	hly	германия		oroszford	
+3953	hly	германия		oroszford	németország
 3915	hly	зола	zala		
 3876	hly	земплин	zemplén		
 3810	ker	лоюш	l a jo s		
@@ -100,9 +100,9 @@
 3621	hly	около		orosznyelvi	
 3489	ker	адам	ádám		
 3388	hly	у.		orosznyelvi	
-3385	ker	карл	karl		károly???
+3385	ker	карл	karl		németford: károly???
 3342	hly	н ов г р а д	nógrád		
-3335	hly	польша		oroszford	
+3335	hly	польша		oroszford	lengyelország
 3333	ker	лойош	lajos		
 3308	ker	игнац	ignác		
 3289	ker	лоеш	l a jo s		
@@ -110,7 +110,7 @@
 3190	hly	весприм	v e sz p r é m		veSprém stb...
 3156	hly	дебрецен	debrecen		
 3154	vez	варга	v a r g|gh a		
-3094	hly	словакия		oroszford	
+3094	hly	с л о в а к ия	sz l o v á k ia	orosz-ru2hu	
 3082	hly	км		orosznyelvi	
 3076	hly	м.		orosznyelvi	
 3017	hly	п о ж о нь	p o zs o ny		poZoN
@@ -120,12 +120,12 @@
 2903	ker	г ей з о	g é z a		
 2902	ker	золтан	zoltán		
 2894	ker	м а тя ш	m á tyá s		
-2881	ker	франц	franz	ru2de	ferenc???
+2881	ker	франц	franz	ru2de	németford: ferenc???
 2857	hly	ш о п р о нь	sopron		
 2768	hly	толно	tolna		
 2744	hly	фегир	f e j|h é r		
 2709	ker	винце	vince		
-2590	ker	стефан	stefan	ru2de	istván???
+2590	ker	стефан	stefan	ru2de	németford: istván???
 2481	ker	п а ль	pál		
 2434	hly	с и л а дь	sz i l á gy		
 2431	ker	дье р дь	gyö r gy		
@@ -136,7 +136,7 @@
 2313	hly	толна	tolna		
 2311	hly	пров.		orosznyelvi	
 2262	hly	о.		orosznyelvi	
-2246	ker	штефан	stefan	ru2de	istván???
+2246	ker	штефан	stefan	ru2de	németford: istván???
 2240	hly	от		orosznyelvi	ez vajon mi?
 2216	ker	йожеф	j ó zs e f		
 2209	ker	якоб	ja k a b		
@@ -153,41 +153,41 @@
 2097	ker	л а с л ов	l á sz l ó		
 2090	ker	иван	iván		
 2084	ker	бело	béla		
-2069	ker	п а у ль	paul		pál???
+2069	ker	п а у ль	paul		németford: pál???
 2062	hly	унг	ung		
 2059	ker	жигмонд	zs i g m o n d		
 2044	hly	эгер	eger		
 2038	vez	варго	v a r g|gh a		
 2032	vez	т оу т	t ó t|th		
 1998	hly	на		orosznyelvi	
-1996	hly	де р	győ r		?????
+1996	hly	дер			győr???
 1995	hly	братислава		ru2cs	
 1939	hly	мошон	moson		
 1933	ker	к о р о ль	k á r o ly		
 1916	hly	коложвар	k o l o zs v á r		
 1878	hly	с о ль н о к	sz o l n o k		
-1874	ker	георгий	georgij		georg??? györgy???
+1874	ker	георгий	georgij		georg??? györgy??? németford?
 1867	ker	тибор	tibor		
 1863	hly	ноград	nógrád		
 1851	ker	густав	g u sz t á v		
 1850	vez	поп	p a|o p|pp		
 1800	hly	чонад	cs a n á d		
-1788	ker	петр	petr		peter??? péter???
+1788	ker	петр	petr		peter??? péter??? csehford?
 1776	vez	балог	b a l o g|gh		
 1771	ker	иозиф	j ó zs e f		
 1764	ker	южев	jó zs e f		
 1736	vez	горват	h o r v á t|th		
 1733	ker	эндре	endre		
-1730	hly	украина		oroszford	
+1730	hly	украина	ukrajna	orosz-ru2hu	
 1724	hly	гемер	g|cs e|ö m e|ö r		
 1717	ker	карол	k á r o ly		
-1684	ker	павел	pável		pavel??? pál???
+1684	ker	павел	pável		pavel??? pál??? csehford?
 1678	ker	геза	géza		
-1676	ker	андрей	andrej		andrás???
+1676	ker	андрей	andrej		andrás??? oroszford?
 1645	hly	б у д а п е ш та	budapest		
 1629	ker	р у д о ль ф	rudolf		
-1621	hly	венгрии		oroszford	
-1606	hly	ужгород		oroszford	
+1621	hly	венгрии		rag	венгрия
+1606	hly	ужгород		oroszford	ungvár
 1575	ker	онтол	antal		
 1570	ker	б ей л а	béla		
 1569	hly	бихор	bihar		
@@ -213,7 +213,7 @@
 1457	hly	сегет	sz e|i g e d|t		
 1457	ker	дё р дь	gyö r gy		
 1450	ker	лаиош	lajos		
-1449	hly	чехосл.		oroszford	
+1449	hly	чехосл.		röv	чехословакия 
 1440	vez	ворго	v a r g|gh a		
 1437	vez	форкош	farkas		
 1421	vez	м о ль н а р	molnár		
@@ -236,7 +236,7 @@
 1306	hly	унгвар	ungvár		
 1303	ker	истван	istván		
 1293	ker	виктор	viktor		
-1292	hly	берегово		oroszford	
+1292	hly	берегово		oroszford	beregszász
 1290	ker	и ов ж е ф	j ó zs e f		
 1280	hly	м о ш о нь	moson		
 1274	hly	р.		orosznyelvi	
@@ -259,13 +259,13 @@
 1194	vez	биро	b i|í r ó		
 1191	hly	дю р	győ r		
 1179	vez	фаркаш	farkas		
-1178	hly	венг.		oroszford	
-1178	ker	александр	a l e k sz a n d r		???
+1178	hly	венг.		röv	венгрия
+1178	ker	александр	a l e k sz a n d r		??? oroszford: sándor?
 1176	vez	лукач	l u k á cs		
 1167	ker	гашпар	gáspár		
-1164	hly	чехословак.		oroszford	
+1164	hly	чехословак.		röv	чехословакия 
 1159	vez	фодор	fodor		
-1153	hly	вена		oroszford	
+1153	hly	вена		oroszford	bécs
 1145	ker	гергей	g e r g e ly		
 1144	hly	соболч	sz a b o l cs		
 1132	hly	п е ш т меде	pest0		-меде
@@ -277,7 +277,7 @@
 1097	hly	ст.		orosznyelvi	
 1089	ker	иоган	j o h a nn	ru2de	
 1082	ker	б а л а ш	b a l á zs		
-1082	hly	зак.		oroszford	
+1082	hly	зак.		röv	закарпатская
 1078	ker	габур	gábor		
 1066	hly	близ		orosznyelvi	
 1064	hly	колошвар	k o l o zs v á r		
@@ -301,7 +301,7 @@
 925	ker	п ей т е р	péter		
 913	ker	езеф	jó zs e f		
 906	hly	обоуй	abaúj		
-905	hly	трансильв.		oroszford	
+905	hly	трансильв.		röv	трансильвания
 886	hly	бач	b á cs		
 885	hly	б ей к и ш	békés		
 883	ker	иштвон	istván		
@@ -313,7 +313,7 @@
 850	ker	п аа л	p aá|á l		
 847	ker	вендел	vendel		
 846	hly	ш о м о ть	s o m o gy		
-845	hly	дону		oroszford	
+845	hly	дону		oroszford	don???
 837	vez	терек	török		
 831	ker	а н т а ль	antal		
 827	ker	еужеф	j ó zs e f		
@@ -323,14 +323,14 @@
 818	vez	с о б ов	sz a b ó		
 815	hly	т о ль н а	tolna		
 809	hly	братислав		ru2cs	
-802	ker	степан	stefan		sztyepan??? istván???
+802	ker	степан	stefan		sztyepan??? istván??? németford/oroszford?
 801	ker	дежи	d e zs ő		
-800	hly	мукачево		oroszford	
+800	hly	мукачево		oroszford	munkács
 789	vez	келемен	kelemen		
 787	hly	ченград	cs o n g r á d		
 782	hly	дё р	győ r		
 781	hly	зало	zala		
-775	ker	мартын	martin		márton???
+775	ker	мартын	martin		márton??? csehford?
 773	ker	било	béla		
 768	ker	игнат	ignác		
 767	hly	кишпешт	kispest		
@@ -357,9 +357,9 @@
 728	ker	пол	pál		
 723	hly	ф е е р	f e jé|hé r		
 723	ker	ион	jon		jan, ján???
-721	ker	мартин	martin		márton???
+721	ker	мартин	martin		márton??? csehford?
 715	hly	п о з н а нь	poznań		vagy csak simán: poznan?
-713	hly	австр.		oroszford	
+713	hly	австр.		röv	австрия
 713	hly	комарум	komárom		
 709	ker	з о ль т а н	zoltán		
 707	ker	эржибет	e r zs é b e t		
@@ -372,7 +372,7 @@
 694	ker	гезо	géza		
 691	hly	тордо	torda		
 685	hly	коломия	k o l o m i ja	orosz-ru2hu	
-683	hly	чср		oroszford	???
+683	hly	чср		oroszford	usa???
 683	hly	сл.		orosznyelvi	
 682	hly	б о р о не	b a r a nya		
 678	hly	торно	torna		
@@ -402,7 +402,7 @@
 629	ker	м и к л оу ш	miklós		
 628	hly	ни т р о	nyi t r a		
 628	vez	собо	sz a b ó		
-627	hly	поличка		ru2cs	???
+627	hly	поличка	polička	ru2cs	
 627	hly	колож	k o l o zs		
 627	hly	н оу г р а д	nógrád		
 627	vez	сюч	sz ű cs		
@@ -413,7 +413,7 @@
 616	hly	н о дь в а р о д	n a gy v á r a d		
 608	ker	ю з е ф ович	jó zs e f 0		-ович
 608	ker	балаж	b a l á zs		
-606	hly	чехия		oroszford	
+606	hly	чехия		oroszford	csehország
 606	vez	балинт	bálint		
 605	hly	бачбодрог	b á cs- b o d r o g		
 604	hly	бачка	b á cs k a		
@@ -424,7 +424,7 @@
 598	ker	жигмунд	zs i g m o n d		
 598	hly	п ей ч	p é cs		
 598	hly	вац	vác		
-597	hly	кюстрин	k ju sz t r i n	orosz-ru2hu	???
+597	hly	кюстрин	k ju sz t r i n	orosz-ru2hu	
 597	ker	ондрош	andrás		
 596	vez	деметер	d e|ö m e|ö t e|ö r		
 592	hly	харомсек	h á r o m sz é k		
@@ -437,7 +437,7 @@
 575	hly	п о ж а нь	p o zs o ny		
 575	hly	колош	k o l o zs		
 572	hly	к.		orosznyelvi	
-569	hly	закарпатская		oroszford	
+569	hly	закарпатская		oroszford	kárpátalja???
 567	vez	вош	v a s|ss		
 566	vez	кун	kun		
 565	hly	штаер		ru2de	???
@@ -455,9 +455,9 @@
 552	ker	и ш т в а н ович	istván0		-ович
 551	ker	имря	imre		
 551	ker	г е р г е ль	g e r g e ly		
-549	hly	австрии		oroszford	
+549	hly	австрии		rag	австрия
 549	vez	кирай	k i r á ly		
-544	ker	матиас	m a th i a s	ru2de	mátyás???
+544	ker	матиас	m a th i a s	ru2de	mátyás??? németford?
 543	hly	кечкемит	k e cs k e m é t		
 543	ker	я н о шь	já n o s		
 542	hly	бл.		orosznyelvi	
@@ -475,11 +475,11 @@
 520	hly	берексас	b e r e g sz á sz		
 516	ker	домокош	d o m o|on k o s		
 512	hly	америка	amerika		
-510	ker	лоренц	lorenz	ru2de	lőrinc???
+510	ker	лоренц	lorenz	ru2de	lőrinc??? (németford?)
 507	hly	сторожевое	sz t o r o zs e v o je	orosz-ru2hu	
-505	hly	усср		oroszford	
+505	hly	усср		oroszford	ussr = szovjetúnió
 504	vez	гуяш	g u lyá s		
-502	hly	рум.		oroszford	
+502	hly	рум.		röv	румыния
 502	vez	богнар	bognár		
 502	vez	урбан	o|u r b á n		
 499	ker	болаш	b a l á zs		
@@ -498,10 +498,10 @@
 485	vez	маер	m a je|ye r	ru2de	német/magyar
 484	vez	барта	barta		
 482	hly	оскол			???
-482	hly	чех.		oroszford	
+482	hly	чех.		röv	чехословакия
 482	hly	б а р а нья	b a r a nya		
 478	hly	коломея	k o l o m i ja	orosz-ru2hu	
-478	ker	а н т о н ович	antal0		-ович anton???
+478	ker	а н т о н ович	anton0		-ович németford: antal???
 478	vez	балаш	b a l á zs		
 476	ker	элемир	elemér		
 474	hly	б а р о ня	b a r a nya		
@@ -541,7 +541,7 @@
 450	vez	пушкаш	puskás		
 448	hly	феир	f e jé|hé r		
 448	hly	острогорск	o sz t r o g o zs sz k	orosz-ru2hu	
-447	ker	николай			???
+447	ker	николай			??? oroszford: miklós?
 443	hly	собоч	sz a b á|ol cs		
 442	hly	кошут	k o s|ss u|ú t|th		
 442	hly	шопром	sopron		
@@ -549,7 +549,7 @@
 439	ker	вилмош	vilmos		
 438	ker	б е лл а	b e|é l|ll a		
 438	ker	арпат	árpád		
-438	hly	закарп.		oroszford	
+438	hly	закарп.		röv	закарпатская
 436	ker	ф р и де ш	f r i gye s		
 435	hly	хонт	hont		
 435	hly	б у д а п е ш т ская	budapest0		-ск..
@@ -566,15 +566,15 @@
 418	hly	з о л о меде	zala0		-меде
 413	vez	вагнер	v|w a|á g n e r	ru2de	német/magyar
 410	ker	лойуш	lajos		
-410	hly	трансильван.		oroszford	
+410	hly	трансильван.		röv	трансильвания 
 408	hly	ярош	já n o s		???
-407	hly	чехословакии		oroszford	
+407	hly	чехословакии		rag	чехословакия
 406	ker	юлиус	ju l i u s	ru2de	
 401	hly	прага	prága		
 401	vez	вираг	virág		
 399	ker	иу ж е ф	jó zs e f		
 399	vez	куруц	k u r u c|cz		
-398	vez	ференци	f e r e n c|cz i|y		
+398	vez	ференци	f e r e n c|cz|tz i|y		
 397	ker	имрэ	imre		
 396	hly	близь		orosznyelvi	
 396	vez	бодо	bodó		
@@ -583,16 +583,16 @@
 393	vez	фабиан	fábián		
 392	hly	линц	linz	ru2de	
 392	hly	брук	b r u ck	ru2de	
-390	hly	румын.		oroszford	
+390	hly	румын.		röv	румыния
 389	hly	угочо	u g o cs a		
 389	hly	унтергайд	unterhaid	ru2de	
 389	hly	муреш	mureș	ru2ro	??? simán mures?
 387	vez	маркуш	márkus		
 385	hly	бичке	b i cs k e		
-383	hly	герм.		oroszford	
+383	hly	герм.		röv	германия 
 383	vez	ач	á cs		
 382	hly	ш а п р о нь	sopron		
-382	vez	конц	k o n c|cz		
+382	vez	конц	k o n c|cz|tz		
 379	hly	братиславль		ru2cs	
 379	ker	ш а м у э ль	sámuel		
 376	hly	с оо т м а р ская	sz a t m á r 0		-ск..
@@ -614,7 +614,7 @@
 359	hly	токай	tokaj		
 358	hly	хуст	h u sz t		
 358	vez	папп	papp		
-354	ker	а н д р е евич	a n d r ás 0		andrej???
+354	ker	а н д р е евич	a n d r ej 0		oroszford: andrás???
 354	hly	чунград	cs o n g r á d		
 353	ker	я н о ш евич	já n o s 0		
 350	hly	абоуй	abaúj		
@@ -623,14 +623,14 @@
 348	ker	п е т р ович	p é te r 0		
 348	hly	папа	pápa		
 348	hly	унтергайт	unterhaid	ru2de	
-348	hly	зап.		oroszford	???
+348	hly	зап.		oroszford	??? röv: закарпатская???
 348	hly	де р дю	gye r gyó		
 347	hly	чанград	cs o n g r á d		
 347	hly	в о р о не ж ская	v o r o nye zs 0		
 347	hly	дунавече	d u n a v e cs e		
 344	vez	хайду	hajdú		
 342	ker	я к о в	ja k a b		
-341	hly	чук	cs í k		??? ciuc???
+341	hly	чук	cs í k		??? ciuc??? románford?
 340	hly	капошвар	kaposvár		
 340	ker	михаи	m i h á ly		
 340	ker	дью л а	gyu l a		
@@ -653,11 +653,11 @@
 328	hly	б о р о нь о	b a r a ny a		
 326	vez	амбруш	ambrus		
 325	vez	фишер	f i sch e r	ru2de	
-324	ker	п ау л	pál		paul???
+324	ker	п ау л	pál		paul??? németford?
 323	hly	п е чь	p é cs		
 323	hly	месту			???
 323	hly	старый		orosznyelvi	
-321	hly	карей	carei	ru2ro	???
+321	hly	карей	carei	ru2ro	??? románford: nagykároly?
 320	hly	эрд	érd		
 320	vez	фазекаш	fazekas		
 319	ker	део р дь	gyö r gy		
@@ -665,7 +665,7 @@
 317	hly	берексаз	b e r e g sz á sz		
 317	hly	цеглед	cegléd		
 317	vez	гергей	g e r g e ly		
-316	hly	галиция		oroszford	
+316	hly	г а л и ц ия	g a l í c ia	orosz-ru2hu	
 316	hly	жительства		orosznyelvi	
 314	vez	фозекош	fazekas		
 313	hly	провинция		orosznyelvi	
@@ -695,7 +695,7 @@
 298	vez	фюлеп	f ü l e|ö p		
 297	hly	ни р е дь х а з о	nyí r e gy h á z a		
 296	hly	н а дь к а н и ж а	n a gy k a n i zs a		
-296	hly	ч-словакия		oroszford	
+296	hly	ч-словакия		röv	чехословакия 
 295	vez	ш н ай д е р	sch n ei d e r	ru2de	
 292	hly	кошица	košice	ru2cs	
 292	vez	лазар	lázár		
@@ -704,200 +704,200 @@
 290	vez	берец	b e r e c|cz|tz		
 289	ker	я н о вич	já n os 0		így kódoljuk???
 288	hly	береч	bereg		???
-288	ker	м и х а е ль	m i ch a e l		mihály?
+288	ker	м и х а е ль	m i ch a e l		mihály? németford?
 287	ker	л о е шь	l a jo s		
 285	ker	в е н ц е ль	vencel		
 285	ker	о ль б е р т	albert		
-284	hly	янош			
-282	hly	вестприм			
-281	vez	альберт			
-278	ker	лоёш			
-277	hly	ракоци			
-277	ker	изеф			
-277	hly	эрчи			
-276	hly	дунафельдвар			
-275	hly	деречке			
-275	vez	бенце			
-275	vez	майер			
-274	hly	воронеж.			
-270	hly	будопешта			
-270	vez	гуляш			
-267	ker	георгиевич			
-267	hly	кечкемед			
-266	ker	гизо			
-266	hly	дания			
-266	ker	дьордь			
-263	ker	михайл			
-262	ker	леринц			
-262	hly	эгри			
-262	vez	хойду			
-261	hly	обауй			
-260	hly	чепель			
-260	hly	паркань			
-259	hly	бистрица			
-257	vez	дердь			
-256	hly	эржибет			
-256	ker	яну			
-256	ker	михель			
-256	vez	галь			
-254	ker	шамуель			
-254	vez	борбей			
-254	vez	кираль			
-253	vez	маты			
-251	hly	силезия			
-251	hly	фрайштадт			
-250	hly	ижак			
-249	hly	бач-бодрог			
-249	ker	василий			
-249	hly	воронеж			
-248	hly	эстергон			
-247	ker	степанович			
-245	ker	эрны			
-245	hly	сенц			
-245	ker	дьёрдь			
-245	ker	шандорович			
-244	vez	болаж			
-244	vez	кульчар			
-243	hly	поросло			
-243	ker	жигмонт			
-243	ker	елизавета			
-243	vez	леринц			
-242	hly	зента			
-242	ker	юзиф			
-242	ker	болдижар			
-242	ker	мотяш			
-242	vez	часар			
-241	hly	будафок			
-240	hly	пеш			
-240	ker	лазарь			
-240	hly	вошь			
-240	hly	нодьконижо			
-240	vez	хегедуш			
-239	hly	чикмеде			
-239	ker	лайаш			
-238	hly	фельдбах			
-237	ker	иужев			
-236	ker	юзеф.			
-236	vez	элек			
-236	hly	девечер			
-236	vez	фабиян			
-235	vez	холас			
-234	hly	ч/словакия			
-233	ker	карлович			
-232	ker	юло			
-230	hly	унч			
-230	hly	феут			
-230	vez	вайда			
-230	vez	матей			
-229	hly	чаквар			
-229	ker	болаж			
-229	hly	часартультыш			
-229	hly	ясберень			
-229	hly	могач			
-228	hly	эстерго			
-228	hly	эдек			
-228	vez	мадьяр			
-227	ker	поль			
-227	ker	йовжеф			
-227	hly	фё			
-227	vez	пете			
-226	ker	элемер			
-225	hly	кирай			
-225	ker	ференцович			
-224	ker	эрнст			
-224	vez	лацко			
-223	hly	сомбатхей			
-223	hly	поличко			
-223	hly	дерцен			
-223	vez	палфи			
-223	vez	попп			
-222	ker	янушович			
-222	ker	йосиф			
-221	ker	лоринц			
-221	hly	кошице			
-220	ker	стефанович			
-220	vez	салай			
-219	hly	кондензово			
-219	vez	чордаш			
-218	ker	федор			
-218	vez	рожа			
-218	vez	чики			
-217	ker	адамович			
-217	hly	фельбах			
-216	hly	хонд			
-216	hly	зирц			
-216	vez	кох			
-215	hly	цеглид			
-214	ker	матияш			
-213	vez	уйвари			
-212	hly	чемер			
-211	hly	дебрецень			
-210	vez	чаки			
-209	hly	земилин			
-208	vez	федор			
-208	vez	чикош			
-207	vez	шефер			
-206	vez	берецки			
-206	vez	франк			
-205	hly	фей			
-205	hly	фю			
-205	vez	фехер			
-205	vez	филип			
-204	ker	ежев			
-204	hly	цико			
-204	ker	дырдь			
-204	vez	мигай			
-203	hly	батю			
-203	vez	филеп			
-202	hly	каплиц			
-202	ker	михой			
-202	ker	михаиль			
-201	vez	гофман			
-201	vez	чик			
-200	ker	юлия			
-200	hly	уйкечке			
-200	hly	уй			
-200	hly	могошфок			
-200	ker	иовжер			
-200	vez	фееш			
-200	vez	шварц			
-199	hly	ференц			
-199	hly	дунайская			
-198	ker	енё			
-197	hly	орошхазо			
-197	ker	янос			
-197	vez	козак			
-197	vez	ковачь			
-197	vez	фараго			
-196	ker	венцел			
-196	vez	эрдей			
-193	vez	секей			
-192	hly	молоцки			
-191	hly	фрайштат			
-190	ker	июзеф			
-188	ker	яношович			
-188	ker	эне			
-188	vez	матяш			
-187	hly	нодьконижа			
-187	ker	ены			
-186	hly	хотван			
-186	hly	виз			
-185	hly	удвархей			
-185	hly	золоэгерсек			
-185	ker	фердинанд			
-184	hly	бейч			
-183	hly	лейбниц			
-183	ker	эржебет			
-183	hly	свалява			
-182	hly	яраш			
-182	hly	мадяр			
-182	hly	кенигрец			
-182	ker	эрни			
-181	ker	иштфан			
-181	ker	режи			
-180	hly	воронежа			
-180	ker	янош (януш)			
-180	hly	сенготхард			
+284	hly	янош	já n o s		
+282	hly	в е ст п р и м	v e sz p r é m		
+281	vez	а ль б е р т	albert		
+278	ker	лоёш	l a jo s		
+277	hly	ракоци	r á k ó c|cz i		
+277	ker	изеф	jó zs e f		
+277	hly	эрчи	e r cs i		
+276	hly	д у н а ф е ль д в а р	dunaföldvár		
+275	hly	деречке	d e r e cs k e		
+275	vez	бенце	bence		
+275	vez	майер	m a j|y e r		
+274	hly	воронеж.		röv	воронеж
+270	hly	б у д о п е ш та	budapest		
+270	vez	г у ля ш	g u lyá s		
+267	ker	гео р ги евич	gyö r gy 0		gergely??? georgij+oroszford?
+267	hly	кечкемед	k e cs k e m é t		
+266	ker	гизо	géza		
+266	hly	дания	d á n i el		danija???
+266	ker	дьо р дь	gyö r gy		
+263	ker	м и х а йл	m i h á ly		
+262	ker	леринц	lőrinc		
+262	hly	эгри	egri		gondolom utca...
+262	vez	хойду	hajdú		
+261	hly	обауй	abaúj		
+260	hly	ч е п е ль	cs e p e l		
+260	hly	п а р к а нь	p á r k á ny		
+259	hly	бистрица	bistrica	ru2cs	ru2ro???
+257	vez	де р дь	gyö r gy		
+256	hly	эржибет	e r zs é b e t		
+256	ker	яну	já n os		janó???
+256	ker	м и х е ль	m i h á ly		michael??? (+ németford?)
+256	vez	г а ль	g aá|á l		
+254	ker	ш а м у е ль	sámuel		
+254	vez	борбей	b o r b é ly		
+254	vez	к и р а ль	k i r á ly		
+253	vez	маты			???
+251	hly	с и л е з ия	sz i l é z ia	orosz-ru2hu	
+251	hly	ф р ай ш т а д т	f r ei s t a d t	ru2de	
+250	hly	ижак	i zs á k		
+249	hly	б а ч- б о д р о г	b á cs- b o d r o g		
+249	ker	василий	v a sz i l i j	orosz-ru2hu	oroszford: lászló???
+249	hly	в о р о не ж	v o r o nye zs		
+248	hly	эстергон	e sz t e r g o m		
+247	ker	степанович			oroszford: istván??? (stefan?)
+245	ker	эрны	ernő		
+245	hly	сенц	sz e n c		
+245	ker	дьё р дь	gyö r gy		
+245	ker	ш а н д о р ович	s á n d o r 0		
+244	vez	болаж	b a l á zs		
+244	vez	к у ль ч а р	k u l cs á r		
+243	hly	поросло	p o r o sz l ó		
+243	ker	жигмонт	zs i g m o n d		
+243	ker	елизавета			oroszford: erzsébet???
+243	vez	леринц	lőrinc		
+242	hly	зента	zenta		
+242	ker	юзиф	jó zs e f		
+242	ker	болдижар	b o l d i zs á r		
+242	ker	м о тя ш	m á tyá s		
+242	vez	часар	cs á sz á r		
+241	hly	будафок	budafok		
+240	hly	пеш			??? pest? pécs?
+240	ker	л а з а рь	lázár		
+240	hly	в о шь	vas		
+240	hly	н о дь к о н и ж о	n a gy k a n i zs a		
+240	vez	хегедуш	hegedűs		
+239	hly	ч и к меде	cs í k 0		
+239	ker	лайаш	lajos		
+238	hly	ф е ль д б а х	f e l d b a ch	ru2de	
+237	ker	иу ж е в	jó zs e f		
+236	ker	юзеф.		röv	юзеф
+236	vez	элек	elek		
+236	hly	девечер	d e v e cs e r		
+236	vez	ф а б ия н	f á b iá n		
+235	vez	холас	h a l á sz		
+234	hly	ч/словакия		röv	чехословакия 
+233	ker	к а р л ович	karl0		németford: károly???
+232	ker	юло	gyu l a		
+230	hly	унч	ung		
+230	hly	феут			???
+230	vez	вайда	vajda		
+230	vez	матей			???
+229	hly	чаквар	cs á k v á r		
+229	ker	болаж	b a l á zs		
+229	hly	ч а с а р т у ль т ы ш	cs á sz á r t ö l t é s		
+229	hly	я с б е р е нь	já sz b e r é ny		
+229	hly	могач	m o h á cs		
+228	hly	эстерго	e sz t e r g om		
+228	hly	э де к	e gye k		etyek???
+228	vez	м а дья р	m a gya r		
+227	ker	п о ль	p á l		
+227	ker	й ов ж е ф	j ó zs e f		
+227	hly	фё	fő		(utca)
+227	vez	пете	pető		
+226	ker	элемер	elemér		
+225	hly	кирай	k i r á ly		
+225	ker	ф е р е н ц ович	ferenc0		
+224	ker	эрнст	ernst	ru2de	németford???
+224	vez	лацко	l a c|cz|tz k ó		
+223	hly	сомбатхей	sz o m b a t h e ly		
+223	hly	поличко	polička	ru2cs	
+223	hly	дерцен	dercen		(kárpátaljai község)
+223	vez	палфи	p á l f|ff i|y		
+223	vez	п о пп	p a|o p|pp		
+222	ker	я н у ш ович	já n o s 0		
+222	ker	йосиф	j ó zs e f		
+221	ker	лоринц	lőrinc		
+221	hly	кошице	košice	ru2cs	
+220	ker	стефанович			oroszford: istván??? (stefan?)
+220	vez	салай	sz a l a i|y		
+219	hly	кондензово		orosznyelvi	
+219	vez	чордаш	cs o r d á s		
+218	ker	федор	fedor		??? fjodor? oroszford????
+218	vez	рожа	r ó zs a		
+218	vez	чики	cs i|í k i|y		
+217	ker	а д а м ович	ádám0		
+217	hly	ф е ль б а х	f e ld b a ch	ru2de	
+216	hly	хонд	hont		
+216	hly	зирц	zirc		
+216	vez	кох	k o ch	ru2de	???
+215	hly	цеглид	cegléd		
+214	ker	м а тия ш	m á tyá s		
+213	vez	уйвари	u|ú j v á r i|y		
+212	hly	чемер	g|cs e|ö m e|ö r		
+211	hly	д е б р е ц е нь	debrecen		
+210	vez	чаки	cs á k i|y		
+209	hly	земилин	zemplén		
+208	vez	федор	fedor		
+208	vez	чикош	cs i k ó s		
+207	vez	шефер	sch ä f e r	ru2de	??? németford?
+206	vez	берецки	b e r e c|cz|tz k i|y		
+206	vez	франк	frank		
+205	hly	фей			??? röv: fejér???
+205	hly	фю			???
+205	vez	фехер	f e h é r		
+205	vez	филип	f i|ü l e|i|ö p		
+204	ker	ежев	jó zs e f		
+204	hly	цико			???
+204	ker	ды р дь	gyö r gy		
+204	vez	мигай	m i h á ly		
+203	hly	б а тю	b á tyú		(kárpátaljai község)
+203	vez	филеп	f i|ü l e|i|ö p		
+202	hly	каплиц			??? kaplice, csehország
+202	ker	михой	m i h á ly		
+202	ker	м и х а иль	m i h á ly		mihail???
+201	vez	гофман	h o f|ff m a n|nn	ru2de	
+201	vez	чик	cs í k		
+200	ker	ю л ия	jú l ia		
+200	hly	уйкечке	ú j k é cs k e		
+200	hly	уй			???
+200	hly	могошфок	magasfok		??? (szlovénia)
+200	ker	и ов ж е р	j ó zs e f		
+200	vez	фееш	f e je s		
+200	vez	шварц	sch w a r tz	ru2de	
+199	hly	ференц	ferenc		
+199	hly	дунайская		oroszford	duna...
+198	ker	енё	je n ő		
+197	hly	орошхазо	orosháza		
+197	ker	янос	já n o s		
+197	vez	козак	kozák		
+197	vez	к о в а чь	k o v á cs		
+197	vez	фараго	faragó		
+196	ker	венцел	vencel		
+196	vez	эрдей	e r d e i|y		
+193	vez	секей	sz é k e ly		
+192	hly	молоцки	malacki		(szlovákia)
+191	hly	ф р ай ш т а т	f r ei s t a dt		
+190	ker	ию з е ф	jó zs e f		
+188	ker	я н о ш ович	já n o s 0		
+188	ker	эне	je n ő		
+188	vez	м а тя ш	m á tyá s		
+187	hly	н о дь к о н и ж а	n a gy k a n i zs a		
+187	ker	ены	je n ő		
+186	hly	хотван	hatvan		
+186	hly	виз			???
+185	hly	удвархей	u d v a r h e ly		
+185	hly	золоэгерсек	z a l a e g e r sz e g		
+185	ker	фердинанд	ferdinánd		
+184	hly	б ей ч	b é cs		
+183	hly	л ей б н и ц	l ei b n i tz|z	ru2de	
+183	ker	эржебет	e r zs é b e t		
+183	hly	с в а ля в а	sz v a lja v a	orosz-ru2hu	oroszford: szolyva
+182	hly	яраш	já r á s		ez mondjuk nem kell!
+182	hly	м а дя р	m a gya r		
+182	hly	кенигрец	k ö n i gg r ä tz	ru2de	
+182	ker	эрни	ernő		
+181	ker	иштфан	istván		
+181	ker	режи	r e zs ő		
+180	hly	воронежа		rag	воронеж
+180	ker	янош (януш)			zárójeles
+180	hly	сенготхард	sz e nt g o tt h á r d		
 180	hly	карпатах			
 180	vez	хусар			
 179	hly	корцог			
