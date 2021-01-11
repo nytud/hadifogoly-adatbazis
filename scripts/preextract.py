@@ -8,44 +8,21 @@ import re
 import sys
 
 
-COUNTRY_NAME_ABBREVS = {
-    'Авст.': 'Австрия',
-    'Австр.': 'Австрия',
-    'Австрии': 'Австрия',
-    'Венг.': 'Венгрия',
-    'Венгр.': 'Венгрия',
-    'Венгрии': 'Венгрия',
-    'Венгрия.': 'Венгрия',
-    'Унгария': 'Венгрия',
-    'Чех.': 'Чехословакия',
-    'Чехосл.': 'Чехословакия',
-    'Чехослов.': 'Чехословакия',
-    'Чехословак.': 'Чехословакия',
-    'Чехословакии': 'Чехословакия',
-    'Ч.-Словакия': 'Чехословакия',
-    'Словакии': 'Словакия',
-    'Словак.': 'Словакия',
-    'Германии': 'Германия',
-    'Рум.': 'Румыния',
-    'Румын.': 'Румыния',
-    'Румынии': 'Румыния',
-    'Югослав.': 'Югославия',
-    'Югославии': 'Югославия',
-    'Транс.': 'Трансильвания',
-    'Трансильв.': 'Трансильвания',
-    'Трансильван.': 'Трансильвания',
-    'Укр.': 'Украина'
-# Польша
-}
+# XXX hardcoded
+COUNTRY_NAME_ABBREVS_FILE = 'data/prelists/orszagok_ru_rovidites.csv'
+COUNTRY_NAME_ABBREVS = {}
 
 
 def process():
     """Do the thing."""
 
-    reader = csv.reader(sys.stdin, delimiter='\t')
-    writer = csv.writer(sys.stdout, delimiter='\t')
+    with open(COUNTRY_NAME_ABBREVS_FILE, encoding='utf-8') as abbrevs:
+        for row in csv.reader(abbrevs, delimiter='\t'):
+            full, abbr = row[:2]
+            if full != abbr:
+                COUNTRY_NAME_ABBREVS[abbr] = full
 
-    for row in reader:
+    for row in csv.reader(sys.stdin, delimiter='\t'):
         to_print = []
         for col, val in enumerate(row):
 
@@ -53,8 +30,9 @@ def process():
 
             # handle country name abbreviations
             if col in {5, 6}:
-                for abbrev, fullform in COUNTRY_NAME_ABBREVS.items():
-                    val = val.replace(abbrev, fullform)
+                tokens = re.split('([ ,])', val) # jó lesz, vö: extract_location_parts.py / split
+                converted = [COUNTRY_NAME_ABBREVS[token] if token in COUNTRY_NAME_ABBREVS else token for token in tokens]
+                val = ''.join(converted)
 
             to_print.append(val)
 

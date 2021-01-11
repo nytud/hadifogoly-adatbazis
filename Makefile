@@ -38,7 +38,7 @@ preprocess:
 	@echo "--- $@" 1>&2
 	@cat $(INPUT) | python3 $S/preextract.py | python3 $S/separate_location_parts.py | python3 $S/omit_parenth_names.py | python3 $S/preprocess.py > $(INPUT_PREPROCESSED)
 
-preparation: convert_rules convert_metarules complete_sar_tables
+preparation: process_countries convert_rules convert_metarules complete_sar_tables
 	@echo "--- $@" 1>&2
 
 SPLITDIR=splits
@@ -53,7 +53,6 @@ split_and_parallel: preparation
 
 
 # ===== EVAL
-
 
 EVAL_INPUT=out/$(FILE).transcribed.new.csv
 EVAL_OUTPUT=out/$(FILE).eval.new.out
@@ -81,12 +80,34 @@ eval_by_col_diff:
 
 # ===== RULES & LISTS
 
+# listák generálásához való adatbázisok
+PRELISTSDIR=data/prelists
+# listák könyvtára
+LISTSDIR=data/lists
+
+# országok kezelése
+# XXX ez a 'grep -v internált' katasztrófa -- kihagyjuk, mert nem ország
+#     vmi általánosabb megoldás kellene erre, de egyelőre ez az 1 szó van...
+# mezők: Ország/hu Ország/ru Előfordulás Országtöredék/rövidítés Példa
+COUNTRIES_INPUT=$(PRELISTSDIR)/orszagok.csv
+COUNTRIES_OUTPUT=$(LISTSDIR)/countries.csv
+process_countries:
+	# magyar országlista -> transcribe.py
+	cat $(COUNTRIES_INPUT) | grep -v internált | tail -n +2 | cut -d '	' -f 1,2 | sort -u | cut -d '	' -f 1 > $(COUNTRIES_OUTPUT)
+	# orosz országlista -> extract_location_parts.py
+	cat $(COUNTRIES_INPUT) | grep -v internált | tail -n +2 | cut -d '	' -f 1,2 | sort -u | cut -d '	' -f 2 > $(PRELISTSDIR)/orszagok_ru.csv
+	# orosz-magyar országlista -> rules
+	paste -d ' ' $(PRELISTSDIR)/orszagok_ru.csv $(COUNTRIES_OUTPUT) | sed "s/^/\\\\\\\\b/;s/ /\\\\\\\\b /" | sort > rules/countries.rules
+	# ország-rövidítések feloldása -> preextract.py [itt nagyon kell az 'internált' is!
+	cat $(COUNTRIES_INPUT) | tail -n +2 | cut -d '	' -f 2,4 | sed "s/,//g" | sort -u > $(PRELISTSDIR)/orszagok_ru_rovidites.csv
 
 # XXX itt az összes szabályrendszer kezelendő, amit használunk!
 convert_rules:
 	@echo "--- $@" 1>&2
-	@cat rules/ru2hu.rules rules/frequent_placenames.txt > rules/ru2hu_places.rules
+	@cat rules/ru2hu.rules rules/countries.rules > rules/ru2hu_countries.rules
+	@cat rules/ru2hu.rules rules/frequent_placenames.rules > rules/ru2hu_places.rules
 	@python3 $S/rules2json.py rules/ru2hu
+	@python3 $S/rules2json.py rules/ru2hu_countries
 	@python3 $S/rules2json.py rules/ru2hu_places
 	@python3 $S/rules2json.py rules/ru2de
 	@python3 $S/rules2json.py rules/nat
@@ -97,7 +118,6 @@ convert_metarules: complete_counties_list complete_places_list complete_places_l
 	@echo "--- $@" 1>&2
 	@python3 $S/metarules2json.py $(METARULES_INPUT) > $(METARULES_OUTPUT)
 
-LISTSDIR=data/lists
 COUNTIES_INPUT=$(LISTSDIR)/*megyek*
 COUNTIES_OUTPUT=$(LISTSDIR)/counties.csv
 complete_counties_list:

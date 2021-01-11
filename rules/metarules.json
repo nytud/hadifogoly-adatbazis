@@ -18,8 +18,8 @@
         "freqlist": "fq_keresztnev_nagyhaboru"
     },
     "5": {
-        "loose": "ru2hu_loose",
-        "strict": "ru2hu_strict",
+        "loose": "ru2hu_countries_loose",
+        "strict": "ru2hu_countries_strict",
         "termlist": "countries",
         "freqlist": null
     },
@@ -104,8 +104,8 @@
         }
     },
     "12": {
-        "loose": "ru2hu_loose",
-        "strict": "ru2hu_strict",
+        "loose": "ru2hu_countries_loose",
+        "strict": "ru2hu_countries_strict",
         "termlist": "countries",
         "freqlist": null
     },

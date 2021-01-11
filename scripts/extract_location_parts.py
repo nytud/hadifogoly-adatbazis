@@ -119,25 +119,10 @@ city - város
 #     'Шомоть',
 # }
 
-FREQUENT_COUNTRIES = [
-    'Австрия',
-    'Белоруссия',
-    'Бессарабия',
-    'Болгария',
-    'Венгрия',
-    'Галиция',
-    'Германия',
-    'Дания',
-    'Латвия',
-    'Польша',
-    'Румыния',
-    'Силезия',
-    'Словакия',
-    'Трансильвания',
-    'Украина',
-    'Чехия',
-    'Чехословакия',
-    'Югославия']
+FREQUENT_COUNTRIES = []
+# XXX hardcoded
+with open('data/prelists/orszagok_ru.csv', encoding='utf-8') as f:
+    FREQUENT_COUNTRIES = [line.rstrip('\n') for line in f]
 
 PAT_NUM = re.compile(r'\d+')
 

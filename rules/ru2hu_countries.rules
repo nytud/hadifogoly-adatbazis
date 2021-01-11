@@ -134,3 +134,33 @@
 #
 # 'megye' nem kell a végére!
 мед(е|и|я|ье|ь)\\b ''
+\\bАвстрия\\b Ausztria
+\\bАвстрия-Чехословакия\\b Ausztria-Csehszlovákia
+\\bАвстро-Венгрия\\b Ausztria-Magyarország
+\\bАзССР\\b Azerbajdzsán
+\\bАССР\\b Krími_Autonóm_SZSZK
+\\bБелоруссия\\b Belorusszia
+\\bБессарабия\\b Besszarábia
+\\bБолгария\\b Bulgária
+\\bВенгрия\\b Magyarország
+\\bВенгрия-Румыния\\b Magyarország-Románia
+\\bГалиция\\b Galícia
+\\bГермания\\b Németország
+\\bДания\\b Dánia
+\\bЛатвия\\b Lettország
+\\bЛитва\\b Litván_SZSZK
+\\bМолдава\\b Moldávia
+\\bМоравия\\b Morvaország
+\\bПольша\\b Lengyelország
+\\bПруссия\\b Poroszország
+\\bРумыния\\b Románia
+\\bСилезия\\b Szilézia
+\\bСловакия\\b Szlovákia
+\\bСССР\\b Szovjetúnió
+\\bСША\\b Amerikai_Egyesült_Államok
+\\bТрансильвания\\b Erdély
+\\bУкраина\\b Ukrajna
+\\bФранция\\b Franciaország
+\\bХорватия\\b Horvátország
+\\bЧехословакия\\b Csehszlovákia
+\\bЮгославия\\b Jugoszlávia

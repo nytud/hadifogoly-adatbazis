@@ -35,7 +35,7 @@
 
 # Mesto_r (hely, cím)
 # +  5/ 5 F = Mesto_r/country
-5 ru2hu_loose ru2hu_strict countries
+5 ru2hu_countries_loose ru2hu_countries_strict countries
 # +  6/ 5 F = Mesto_r/county
 6 ru2hu_loose ru2hu_strict counties
 6/5=Австрия ru2de_loose ru2de_strict places_de
@@ -56,7 +56,7 @@
 
 # Mesto_pl (hely, cím)
 # + 12/ 6 G = Mesto_pl/country
-12 ru2hu_loose ru2hu_strict countries
+12 ru2hu_countries_loose ru2hu_countries_strict countries
 # + 13/ 6 G = Mesto_pl/county
 13 ru2hu_loose ru2hu_strict counties
 13/12=Австрия ru2de_loose ru2de_strict places_de
