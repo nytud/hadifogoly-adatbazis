@@ -47,7 +47,8 @@ SPLIT_TO=2399
 SPLIT_OUT=o
 SPLIT_ERR=e
 # egy csomó minden a scriptben van beállítva...
-split_and_parallel: preparation
+# prereq: make preparation
+split_and_parallel:
 	@echo "--- $@" 1>&2
 	rm -rf $(SPLITDIR) ; date ; time $S/split_and_parallel.sh $(SPLIT_FROM) $(SPLIT_TO) > $(SPLIT_OUT) 2> $(SPLIT_ERR) ; date
 
@@ -130,11 +131,14 @@ complete_places_list:
 	@echo "--- $@" 1>&2
 	@cat $(PLACES_INPUT) | cut -d '	' -f 1 | sort -u > $(PLACES_OUTPUT)
 
+# XXX St. = Sankt hekk :)
 PLACES_DE_INPUT=$(LISTSDIR)/places_de_wikipedia.csv
 PLACES_DE_OUTPUT=$(LISTSDIR)/places_de.csv
 complete_places_list_de:
 	@echo "--- $@" 1>&2
 	@cat $(PLACES_DE_INPUT) | cut -d '	' -f 2 | sort -u > $(PLACES_DE_OUTPUT)
+	@cat $(PLACES_DE_OUTPUT) | grep "Sankt " | sed "s/Sankt /St. /" >> $(PLACES_DE_OUTPUT)
+	@cat $(PLACES_DE_OUTPUT) | grep "St\. " | sed "s/St\. /Sankt /" >> $(PLACES_DE_OUTPUT)
 
 SAR_TABLES_DIR=data/sar_tables
 complete_sar_tables:

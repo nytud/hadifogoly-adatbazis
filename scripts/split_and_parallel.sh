@@ -45,6 +45,7 @@ do
   rm -f $PREFIX$i$ADD_SUFFIX
 done
 
+LOCKFILE=/var/lock/mylockfile
 NUMBER_OF_FILES=$(($TO-$FROM+1))
 
 echo "--- run for $NUMBER_OF_FILES files"
@@ -56,7 +57,7 @@ for file in $CHUNKS_FILES_PATTERN ; do
         # commands executed under lock
         echo -n "$file "
         date
-    ) 9>/var/lock/mylockfile
+    ) 9>$LOCKFILE
 
     ((i=i%CORES)); ((i++==0)) && wait
 
@@ -73,3 +74,4 @@ for file in $CHUNKS_FILES_PATTERN ; do
 
 done
 
+rm -f $LOCKFILE

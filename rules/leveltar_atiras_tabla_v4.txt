@@ -50,6 +50,7 @@
 к k g|gg|kk
 К K
 л l ly|ll|lly
+ль l
 Л L
 м m s|mm
 М M
@@ -74,7 +75,7 @@
 Р R
 с sz z|c|s|ssz
 С Sz S|C
-т t d|g|c|tt|tth
+т t d|g|c|th|tt|tth
 Т T D
 # >>> betűkapcsolatok a hivatalosból
 тю tyu
