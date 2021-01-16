@@ -233,9 +233,37 @@ create_pseudo:
 # = n db random sor, sorokon belül persze nincs randomizálás!
 RANDOM_SIZE=10000
 RANDOM_SEED=42
+RANDOM_FILE=random_$(RANDOM_SIZE)_$(RANDOM_SEED).csv
+RANDOM_PATH=$(DATADIR)/$(RANDOM_FILE)
 create_random:
 	@echo "--- $@" 1>&2
-	$S/random_data.sh $(DATAFILE) $(RANDOM_SIZE) $(RANDOM_SEED) > $(DATADIR)/random_$(RANDOM_SIZE)_$(RANDOM_SEED).csv
+	$S/random_data.sh $(DATAFILE) $(RANDOM_SIZE) $(RANDOM_SEED) > $(RANDOM_PATH)
+
+# create random data for precision evaluation = "real" evaluation
+PE_RANDOM_SIZE=100
+PE_RANDOM_SEED=53
+PE_RANDOM_FILE=random_$(PE_RANDOM_SIZE)_$(PE_RANDOM_SEED).csv
+PE_OUTDIR=prec_eval
+create_prec_eval:
+	@echo "--- $@" 1>&2
+	@make create_random RANDOM_SIZE=$(PE_RANDOM_SIZE) RANDOM_SEED=$(PE_RANDOM_SEED) RANDOM_PATH=re.data
+	@make create_random DATAFILE=out/Kart.transcribed.new.csv RANDOM_SIZE=$(PE_RANDOM_SIZE) RANDOM_SEED=$(PE_RANDOM_SEED) RANDOM_PATH=re.out
+	@paste re.data re.out | cols 2,21 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f2.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 3,22 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f3.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 4,23 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f4.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 6,25 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f6o.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 6,26 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f6m.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 6,27 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f6j.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 6,28 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f6t.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 7,32 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f7o.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 7,33 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f7m.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 7,34 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f7j.$(PE_RANDOM_FILE)
+	@paste re.data re.out | cols 7,35 | sed "s/^/ . /" > $(PE_OUTDIR)/prec_eval.f7t.$(PE_RANDOM_FILE)
+
+# !!! be careful -- this can delete you manual evaluation !!!
+create_prec_eval_start:
+	@for i in $(PE_OUTDIR)/prec_eval* ; do j=`echo $$i | sed "s/prec_eval/prec_eval.MANUAL/"` ; cp -p $$i $$j ; done
+	@rm -f re.data re.out
 
 # create one crafted data record for testing
 # in $(DATADIR)/$(CR_FILE).csv
