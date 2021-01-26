@@ -1,122 +1,1707 @@
-40	Братислава	Pozsony/R
-12	Братислав	Pozsony/R
-10	Ужгород	Ungvár/R
-4	Сатумаре	Szatmárnémeti/R
-3	Клуж	Kolozsvár/R
-2	Уйнешт	Újpest/R
-1	Нойморуш	Nagymaros/R
-1	Мезуйбери	Mezőberény/R
-1	Зетолоко	Zetelaka/R
-	интернирован	kitelepített/R
-220	Ирд	Érd/R
-122	Минцент	Mindszent/R
-115	Мезейтур	Mezőtúr/R
-110	Мезуйберень	Mezőberény/R
-101	Болмос-Уйворош	Balmazújváros/R
-72	Алмаш-Комараш	Almáskamarás/R
-59	Ясбери	Jászberény/R
-59	Цеглед-Берцель	Ceglédbercel/R
-56	Язбери	Jászberény/R
-47	Бекеш-Чабо	Békéscsaba/R
-46	Болмас Уйворош	Balmazújváros/R
-43	Дебрецент	Debrecen/R
-40	Бекеш-Чобо	Békéscsaba/R
-39	Конувар	Kapuvár/R
-37	Шарбогар	Sárbogárd/R
-37	Тошнад-Санто	Tasnádszántó/R
-36	Цеглет-Берцел	Ceglédbercel/R
-36	Минцен	Mindszent/R
-36	Канувар	Kapuvár/R
-36	Болмос Уйворош	Balmazújváros/R
-33	Нодьвард	Nagyvárad/R
-33	Мейзопетри	Mezőpetri/R
-32	Мезуйберин	Mezőberény/R
-32	Мезоберинг	Mezőberény/R
-32	Алмаш-Камараш	Almáskamarás/R
-29	Мезуйберн	Mezőberény/R
-29	Балмос-Уйварош	Balmazújváros/R
-28	Мезуйтур	Mezőtúr/R
-27	Терексенмиклош	Törökszentmiklós/R
-27	Ниретхазо	Nyíregyháza/R
-26	Дебрецек	Debrecen/R
-25	Болмос-Уйварош	Balmazújváros/R
-25	Балмос Уйварош	Balmazújváros/R
-24	Якобсалаш	Jakabszállás/R
-24	Нюль	Nyúl/R
-24	Мезойфейн	Mezőfény/R
-24	Мезитур	Mezőtúr/R
-24	Каношвар	Kaposvár/R
-24	Дебрецени	Debrecen/R
-23	Уйбешт	Újpest/R
-23	Полотопожек	Palotabozsok/R
-23	Болмас Уйварош	Balmazújváros/R
-22	Нередьхазо	Nyíregyháza/R
-22	Дербецен	Debrecen/R
-21	Ясентондраш	Jászszentandrás/R
-21	Ниретгазо	Nyíregyháza/R
-21	Кочкемет	Kecskemét/R
-20	Шоушкут	Sóskút/R
-20	Нодькомраш	Nagykamarás/R
-20	Кестчей	Keszthely/R
-20	Иршекуйвар	Érsekújvár/R
-19	Петервашар	Pétervására/R
-19	Морошвашергей	Marosvásárhely/R
-18	Коповар	Kapuvár/R
-17	Фельдеяк	Feldeák/R
-17	Синер-Вараля	Szinérváralja/R
-17	Мезуйберинь	Mezőberény/R
-16	Ясентласло	Jászszentlászló/R
-16	Хайду Собосло	Hajdúszoboszló/R
-16	Тошнад-Санту	Tasnádszántó/R
-16	Пийч	Pécs/R
-16	Мезойфейни	Mezőfény/R
-16	Кишморье	Kismarja/R
-16	Кишкунфельдхазо	Kiskunfélegyháza/R
-16	Ирпоток	Érpatak/R
-16	Диошдиор	Diósgyőr/R
-16	Бодва-Силаш	Bódvaszilas/R
-16	Балмаш-уйваруш	Balmazújváros/R
-15	Сент-Иштван	Szentistván/R
-15	Мезеутур	Mezőtúr/R
-15	Марошвашергей	Marosvásárhely/R
-15	Бекеш-Чоба	Békéscsaba/R
-15	Бекеш-Чаба	Békéscsaba/R
-14	Нодь Карой	Nagykároly/R
-14	Нодь Варод	Nagyvárad/R
-14	Минцет	Mindszent/R
-14	Мезытур	Mezőtúr/R
-14	Мезекевеш	Mezőkövesd/R
-14	Кочкемит	Kecskemét/R
-14	Балмаш Уйваруш	Balmazújváros/R
-13	Терексент Миклош	Törökszentmiklós/R
-13	Секешфекервар	Székesfehérvár/R
-13	Мейзетур	Mezőtúr/R
-13	Мезойтур	Mezőtúr/R
-13	Алмаш Комараш	Almáskamarás/R
-12	Дебрецем	Debrecen/R
-12	Дебрецел	Debrecen/R
-12	Деберецен	Debrecen/R
-11	Шарошноток	Sárospatak/R
-11	Тоуткомлош	Tótkomlós/R
-11	Нодь-Кереш	Nagykőrös/R
-11	Бейкеш-Чобо	Békéscsaba/R
-10	Хайдубесерми	Hajdúböszörmény/R
-10	Сигеценмартон	Szigetszentmárton/R
-10	Мэзойберень	Mezőberény/R
-10	Мезуй-Петри	Mezőpetri/R
-10	Балмашуйваруш	Balmazújváros/R
-8	Эреглок	Öreglak/R
-3	Ясберы	Jászberény/R
-3	Язберы	Jászberény/R
-3	Ереглок	Öreglak/R
-2	Мэзытур	Mezőtúr/R
-2	Мезойберень	Mezőberény/R
-1	Язбэры	Jászberény/R
-1	Хайдубесермы	Hajdúböszörmény/R
-1	Нэредьхазо	Nyíregyháza/R
-1	Нирэтхазо	Nyíregyháza/R
-1	Мэзитур	Mezőtúr/R
-1	Минцэнт	Mindszent/R
-1	Мезёйтур	Mezőtúr/R
-1	Мезеетур	Mezőtúr/R
-1	Дебрецены	Debrecen/R
+Абадсалон	Abádszalók/R
+Абауй	Abaúj/R
+Абауйнадаш	Abaújnádasd/R
+Абаусанту	Abaújszántó/R
+Абацсалок	Abádszalók/R
+Абоусанто	Abaújszántó/R
+Абофало	Abafalva/R
+Абофалово	Abafalva/R
+Абофальо	Abafalva/R
+Абуйсанто	Abaújszántó/R
+Австрийская граница	osztrák határ/R
+Автрия	Ausztria/R
+Агчерны	Ágcsernyő/R
+Албаюлия	Gyulafehérvár/R
+Александровка	Ósándorfalva;Alekszandrovka;Oleksandrivka/R
+Алексеевка	Alekszejevka/R
+Алмаш-Камараш	Almáskamarás/R
+Алмаш комараш	Almáskamarás/R
+Алмаш Комараш	Almáskamarás/R
+Алмаш-Комараш	Almáskamarás/R
+Алмаш-Комораш	Almáskamarás/R
+Алтлибе	Alt Liebe;Stará Libavá/R
+Алшоирш	Alsóörs/R
+Альнар	Alpár;Váradalpár/R
+Альпер	Alpár;Váradalpár/R
+Альтлибе	Alt Liebe;Stará Libavá/R
+Альтовсентиван	Alsószentiván/R
+Альшо-Жольца	Alsózsolca/R
+Альшо-Сели	Alsószeli/R
+Америка	Amerika/R
+Амстердам	Amszterdam/R
+Амштетен	Amstetten/R
+Андоут	Mosontarcsa/R
+Андрашидо	Andráshida/R
+Андраш-Хидо	Andráshida/R
+арестован на родине	otthon letartóztatták/R
+Арноут	Arnót/R
+Ароктуй	Ároktő/R
+Арокты	Ároktő/R
+Архангельск	Arhangelszk/R
+Архангельское	Arkhangelskoye;Arkhangel'skoye/R
+Аюд	Nagyenyed/R
+Багбодрок	Bács-Bodrog/R
+Багмос-Уйварош	Balmazújváros/R
+Бадюксовайто	Bágyogszovát/R
+Балмаш-уйваруш	Balmazújváros/R
+Балмашуйваруш	Balmazújváros/R
+Балмаш Уйваруш	Balmazújváros/R
+Балмаш-Уйваруш	Balmazújváros/R
+Балмос Уйварош	Balmazújváros/R
+Балмос-Уйварош	Balmazújváros/R
+Балмос-Уйворош	Balmazújváros/R
+Балмош Уйварош	Balmazújváros/R
+Банека-Бистрица	Besztercebánya/R
+Банска-Бистрица	Besztercebánya/R
+Банскобистрица	Besztercebánya/R
+Банфигунст	Bánffyhunyad/R
+Банфихупет	Bánffyhunyad/R
+Баньска Бистрица	Besztercebánya/R
+Баньска-Бистрица	Besztercebánya/R
+Баньска Быстрица	Besztercebánya/R
+Баньско-Бистрица	Besztercebánya/R
+Барло-Фалу	Bátorfalu/R
+Баскабистрица	Besztercebánya/R
+Батаркесе	Bátorkeszi/R
+Батор-Кеси	Bátorkeszi/R
+Бачбодрок	Bács-Bodrog/R
+Бачбокуд	Bácsbokod/R
+Бачкопетрово	Petrőc/R
+Бач-Олмаш	Bácsalmás/R
+Бая-Маре	Nagybánya/R
+Бегуйгей	Bécsújhely;Wiener Neustadt/R
+Бейкеш Чабо	Békéscsaba/R
+Бейкеш-Чоба	Békéscsaba/R
+Бейкеш-Чобо	Békéscsaba/R
+Бейкеш Шамшон	Békéssámson/R
+Бейкиш-Чаба	Békéscsaba/R
+Бейчуйгей	Bécsújhely;Wiener Neustadt/R
+Бейшаркань	Bősárkány/R
+Бекетчаба	Békéscsaba/R
+Бекешамшу	Békéssámson/R
+Бекеш Габо	Békéscsaba/R
+Бекеш-Габо	Békéscsaba/R
+Бекеш гобо	Békéscsaba/R
+Бекешгово	Békéscsaba/R
+Бекеш-Меде	Békés/R
+Бекешсабо	Békéscsaba/R
+Бекеш Чаба	Békéscsaba/R
+Бекеш-Чаба	Békéscsaba/R
+Бекеш Чабо	Békécsaba/R
+Бекеш-Чабо	Békéscsaba/R
+Бекеш-Чебо	Békéscsaba/R
+Бекешчево	Békéscsaba/R
+Бекеш Чоба	Békéscsaba/R
+Бекеш-Чоба	Békéscsaba/R
+Бекеш Чобо	Békéscsaba/R
+Бекеш-Чобо	Békéscsaba/R
+Бекеш Шамшон	Békéssámson/R
+Бекиш-Чаба	Békéscsaba/R
+Бекиш-Чоба	Békéscsaba/R
+Бенешау	Benešov/R
+Бенешов	Benešov/R
+Бенешчоба	Békéscsaba/R
+Бенкешчобо	Békéscsaba/R
+Берегдейдо	Beregdéda/R
+Берег-Дороуц	Beregdaróc/R
+Берег Дороц	Beregdaróc/R
+Берег-Дороц	Beregdaróc/R
+Берег ракуш	Beregrákos/R
+Береграном	Beregrákos/R
+Берег-Саз	Beregszász/R
+Берег-Сас	Beregszász/R
+Берегуйсралу	Beregújfalu/R
+Берегуйфола	Beregújfalu/R
+Берекдейдо	Beregdéda/R
+Берексасо	Beregszász/R
+Берексеас	Beregszász/R
+Берекшурян	Beregsurány/R
+Берете Уйфалу	Berettyóújfalu/R
+Беречово	Beregszász/R
+Берзете Гэмэр	Berzéte, Gömör és Kis-Hont megye/R
+Берксас	Beregszász/R
+Берлином	Berlin/R
+Бероксаш	Beregszász/R
+Бигордиусен	Bihardiószeg/R
+Бигор-Меде	Bihar/R
+Бигор-Торда	Bihartorda/R
+Бигоршай	Biharsályi/R
+Биркфельд	Balmazújváros/R
+Бобруйск	Bobrujszk;Babrujszk/R
+Бодва-Силаш	Bódvaszilas/R
+Бодрокеростул	Bodrogkeresztúr/R
+Боимос-Уйворош	Balmazújváros/R
+Болгарди	Polgárdi/R
+Болгарды	Polgárdi/R
+Болдыревка	Boldirevka;Boldyrevka/R
+Болмас Уйварош	Balmazújváros/R
+Болмас Уйворош	Balmazújváros/R
+Болмаш-Уйваруш	Balmazújváros/R
+Болмос-Уйварош	Balmazújváros/R
+Болмос Уйворош	Balmazújváros/R
+Болмос-Уйворош	Balmazújváros/R
+Болоток	Balaton/R
+Болотон-Килити	Balatonkiliti/R
+Болошо-Дермот	Balassagyarmat/R
+Болшос-Уйворош	Balmazújváros/R
+Борнхольм	Bornholm/R
+Боршонадош	Borsodnádasd/R
+Б-пешт	Budapest/R
+Б. Пешт	Budapest/R
+Брадислава	Pozsony/R
+Бранденбург	Brandenburg/R
+Бранишовице	Branišovice/R
+Братислав	Pozsony/R
+Братислав.	Pozsony/R
+Братислава	Pozsony/R
+Братиславе	Pozsony/R
+Братиславль	Pozsony/R
+Братиславо	Pozsony/R
+Братиславь	Pozsony/R
+Братислау	Pozsony/R
+Братислов	Pozsony/R
+Братисловль	Pozsony/R
+Брашев	Brassó/R
+Брашоф	Brassó/R
+Бресбург	Pozsony/R
+Бреслау	Wroclaw;Boroszló;Breslau/R
+Брест-Литовск	Breszt-Litovszk;Breszt/R
+Брест Литовск	Breszt-Litovszk/R
+Бротислава	Pozsony/R
+Бротиславль	Pozsony/R
+Брошоу	Brassó/R
+Брошув	Brassó/R
+Брюн	Brünn;Brno/R
+Брюнь	Brünn;Brno/R
+Брюп	Brünn;Brno/R
+Брюц	Brünn;Brno/R
+БССР	BSzSzR;Belorusz Szovjet Szocialista Köztársaság/R
+Буда (Будапешт)	Buda (Budapest)/R
+Буда Пест	Budapest/R
+Будапешт VIII	Budapest VIII. kerület/R
+Будапешт XIII	Budapest XIII. kerület/R
+Будапешт (Буда)	Budapest (Buda)/R
+Буда-Пешть	Budapest/R
+Будваис	Budweis;České Budějovice/R
+Будвайс	Budweis;České Budějovice/R
+Будванс	Budweis;České Budějovice/R
+Будвейс	Budweis;České Budějovice/R
+Буденовка	Bugyenovka;Budenovka/R
+Будисава	Tiszakálmánfalva/R
+Будисово	Tiszakálmánfalva/R
+Будоери	Budaörs/R
+Будокесе	Budakeszi/R
+Будокеш	Budakeszi/R
+Будоп.	Budapest/R
+Будопет.	Budapest/R
+Будопешт VIII	Budapest VIII. kerület/R
+Будопешт XII	Budapest XII. kerület/R
+Будо-Пеште	Budapest/R
+Будо-Пешто	Budapest/R
+Будопештом	Budapest/R
+Будофон	Budafok/R
+Бургенланд	Burgenland/R
+Бургерланд	Burgenland/R
+Бухгольц	Buchholz/R
+Бюдсент-Мигай	Bűdszentmihály/R
+Бюд-Сент-Мигай	Bűdszentmihály/R
+Бюдсент Михай	Bűdszentmihály/R
+Бюксентмигаль	Bükkszentmihály;Bűdszentmihály/R
+Бюст-Сент-Михаль	Bűdszentmihály/R
+Бютсенмигай	Bűdszentmihály/R
+Вагфаркош	Vágfarkasd/R
+Вагфоркош	Vágfarkasd/R
+Вайтхофен	Waidhofen/R
+Вакфоркаш	Vágfarkasd/R
+Валуйки	Valujki/R
+Вамошбалог	Vámosbalog/R
+Вамошбалок	Vámosbalog/R
+Вамошболог	Vámosbalog/R
+Вамошдердь	Vámosgyörk/R
+Вамошете	Vámosatya/R
+Вамошото	Vámosatya/R
+Вамушоте	Vámosatya/R
+Ванкут	Bánkút/R
+Варналота	Várpalota/R
+Варнолота	Várpalota/R
+Ваусентласло	Vácszentlászló/R
+Вацратоут	Vácrátót/R
+Вашарошноми	Vásárosnamény/R
+Вашгидекут	Vashidegkút/R
+Ваш Кут	Vaskút/R
+Вашсильват	Vasszilvágy/R
+Векешчобо	Békéscsaba/R
+Венгерская граница	magyar határ/R
+Венрия	Magyarország/R
+Венчелюй	Vencsellő/R
+Венчемо	Vencsellő/R
+Вернелет	Verpelét/R
+Вернелит	Verpelét/R
+Верпелин	Verpelét/R
+Верполит	Verpelét/R
+Вертеш-Шомло	Vértessomló/R
+Весирим	Veszprém/R
+Весплин	Veszprém/R
+Веспрель	Veszprém/R
+Вестрим	Veszprém/R
+Вестрин	Veszprém/R
+взят дома	otthonról elhurcolt/R
+взят из дома	otthonról elhurcolt/R
+взят из дому	otthonról elhurcolt/R
+взят на дому	otthonról elhurcolt/R
+взят на квартире	lakásából elhurcolt/R
+взят с дома	otthonról elhurcolt/R
+Вилдон	Wildon/R
+Вильдон	Wildon/R
+Владимир-Волынск	Volodymyr-Volynsky;Vladimir-Volinsky/R
+Вовкань	Vokány/R
+Войдочку	Vajdácska/R
+Вородсюйлиш	Váradszőllős;Peczeszőllős;Szőllős/R
+Воронеж	Voronyezs/R
+Воронежа	Voronyezs/R
+Воронежем	Voronyezs/R
+Воронежом	Voronyezs/R
+Воронежский фронт	voronyezsi front/R
+Вош-Меде	Vas/R
+Гайдубесерман	Hajdúböszörmény/R
+Гайду-Бесермен	Hajdúböszörmény/R
+Гайдубысырмень	Hajdúböszörmény/R
+Гайду-Собослав	Hajdúszoboszló/R
+Гайду-Собослов	Hajdúszoboszló/R
+Гаслах	Haslach/R
+Гевеш Меде	Heves/R
+Гевеш-Меде	Heves/R
+Геделев	Gödöllő/R
+Гедешолом	Hegyeshalom/R
+Гейкенеш	Gyékényes/R
+Генрих дорф	Heinrichsdorf/R
+Генрихдорф	Heinrichsdorf/R
+Генрихздорф	Heinrichsdorf/R
+Генрихсдорф	Heinrichsdorf/R
+Гергейугорне	Gergelyiugornya/R
+Герцегут	Hercegkút/R
+Герцекут	Hercegkút/R
+Герценсанто	Hercegszántó/R
+Гиралтовце	Girált/R
+Гогенау	Gaggenau/R
+Годмезевашарге	Hódmezővásárhely/R
+Годмезевашергей	Hódmezővásárhely/R
+Головка	Golovka/R
+Гондмезийвашарий	Hódmezővásárhely/R
+Гончаровка	Goncsarovka;Goncharovka/R
+Гори	Gori/R
+Гормсек	Háromszék/R
+Городенка	Gorogyenka;Horodenka/R
+Горомсейк	Háromszék/R
+Госсупай	Hosszúpályi/R
+Госубай	Hosszúpályi/R
+Госупай	Hosszúpályi/R
+Граз	Graz/R
+Грайсвалд	Greifswald/R
+Грайсвальд	Greifswald/R
+Грайсфальд	Greifswald/R
+Грайфевальд	Greifswald/R
+Грайфсвальд	Greifswald/R
+Гранфевальд	Grafenwald/R
+Грейсвалд	Greifswald/R
+Грейсвальд	Greifswald/R
+Грейфсвальд	Greifswald/R
+Гренфсвалд	Greinfswald/R
+Гройсвальд	Greifswald/R
+Гудопешт	Budapest/R
+Гулатч	Gulács/R
+Гюдейс	Hőgyész/R
+Гюдис Толна	Hőgyész, Tolna megye/R
+Гюйдес	Hőgyész/R
+Гюнц-Русско	Göncruszka/R
+Давоване	Dévaványa/R
+Дайглансберг	Deutschlandsberg/R
+Дайсланберг	Deutschlandsberg/R
+Дайчламберг	Deutschlandsberg/R
+Дайчландеберг	Deutschlandsberg/R
+Дайчландсберг	Deutschlandsberg/R
+Дайчландсборг	Deutschlandsberg/R
+Дайчлансберг	Deutschlandsberg/R
+Дайчлонберг	Deutschlandsberg/R
+Дайчлондберг	Deutschlandsberg/R
+Дальни-уезд	Dolní Újezd/R
+Дальниуезд	Dolní Újezd/R
+Д.-Брод	Deutschbrod/R
+Деберецен	Debrecen/R
+Деблецен	Debrecen/R
+Дебренец	Debrecen/R
+Дебренин	Debrecen/R
+Дебрецей	Debrecen/R
+Дебрецек	Debrecen/R
+Дебрецел	Debrecen/R
+Дебрецель	Debrecen/R
+Дебрецем	Debrecen/R
+Дебрецени	Debrecen/R
+Дебрецент	Debrecen/R
+Дебрецены	Debrecen/R
+Дебрецеш	Debrecen/R
+Дебрецн	Debrecen/R
+Дебрецон	Debrecen/R
+Дебрецы	Debrecen/R
+Дебрецын	Debrecen/R
+Дебрешен	Debrecen/R
+Дебрицы	Debrecen/R
+Деброцен	Debrecen/R
+Дебрцен	Debrecen/R
+Деваванва	Dévaványa/R
+Девовани	Dévaványa/R
+Девованс	Dévaványa/R
+Девованю	Dévaványa/R
+Деичланцберг	Deutschlandsberg/R
+Дейвованё	Dévaványa/R
+Дейвовани	Dévaványa/R
+Дейвованс	Dévaványa/R
+Дейвовань	Dévaványa/R
+Дейвованю	Dévaványa/R
+Дейгброт	Deutschbrod/R
+Дейг-Брот	Deutschbrod/R
+Дейтчброт	Deutschbrod;Havlíčkův Brod/R
+Дейчброд	Deutschbrod;Havlíčkův Brod/R
+Дейчброт	Deutschbrod;Havlíčkův Brod/R
+Дейч-Брот	Deutschbrod;Havlíčkův Brod/R
+Дейчламберг	Deutschlandsberg/R
+Дейчландберг	Deutschlandsberg/R
+Дейчланцберг	Deutschlandsberg/R
+Делатин	Deljatin;Deliatyn;Delatyn/R
+Делатын	Deljatin;Deliatyn;Delatyn/R
+Делатынь	Deljatin;Deliatyn;Delatyn/R
+Делашин	Deljatin;Deliatyn;Delatyn/R
+Делотин	Deljatin;Deliatyn;Delatyn/R
+Делятин	Deljatin;Deliatyn;Delatyn/R
+Дембрецен	Debrecen/R
+Демешбюк	Gyimesbükk/R
+Демиш	Gyimes/R
+Дендешното	Gyöngyöspata/R
+Дендештаря	Gyöngyöstarján/R
+Деождер	Diósgyőr/R
+Дербецен	Debrecen/R
+Дербрецен	Debrecen/R
+Дердесаргеть	Gyergyószárhegy/R
+Дердиоремете	Gyergyóremete/R
+Дердитидро	Gyergyóditró;Ditró/R
+Дердитюлдеш	Gyergyótölgyes/R
+Дердю Дитро	Gyergyóditró;Ditró/R
+Дердюсаргет	Gyergyószárhegy/R
+Дердю-Сент-Миклош	Gyergyószentmiklós/R
+Деречко	Derecske/R
+Деусек	Diószeg/R
+Деяки	Deáki/R
+Диашдер	Diósgyőr/R
+Дивовань	Dévaványa/R
+Диож-Берин	Diósberény/R
+Диождердь	Diósgyőr/R
+Диондеш	Gyöngyös/R
+Диошдгор	Diósgyőr/R
+Диошдиор	Diósgyőr/R
+Диошдьердь	Diósgyőr/R
+Дисалек	Tiszalök/R
+Дисеберце	Tiszabercel/R
+Диснош-Хорват	Disznóshorvát/R
+Дитроу	Ditró/R
+Длождер	Diósgyer/R
+Добишно	Dobsina/R
+Догланберг	Deutschlandsberg/R
+Доич-Брот	Deutschbrod/R
+Дойгланберг	Deutschlandsberg/R
+Дойглансберг	Deutschlandsberg/R
+Дойглонберг	Deutschlandsberg/R
+Дойтшлянберг	Deutschlandsberg/R
+Дойчброд	Deutschbrod;Havlíčkův Brod/R
+Дойчброт	Deutschbrod;Havlíčkův Brod/R
+Дойчламберг	Deutschlandsberg/R
+Дойчланберг	Deutschlandsberg/R
+Дойчландеберг	Deutschlandsberg/R
+Дойчландсберг	Deutschlandsberg/R
+Дойчлансберг	Deutschlandsberg/R
+Дойчлансбург	Deutschlandsberg/R
+Дойчленберг	Deutschlandsberg/R
+Дойчломберг	Deutschlandsberg/R
+Долкубин	Alsókubin;Dolný Kubín/R
+Долнорозинка	Dolní Rožínka/R
+Дольна розинка	Dolní Rožínka/R
+Дольно-Розинка	Dolní Rožínka/R
+Домрад	Dombrád/R
+дому	otthon/R
+Донбасс	Donbass;Donbasz;Donyec-medence/R
+Донтшлянберг	Deutschlandsberg/R
+Дончланберг	Deutschlandsberg/R
+Допишно	Dobsina/R
+Дорнаватра	Dornavátra/R
+Дорноватра	Dornavátra/R
+Дорноватро	Dornavátra/R
+Дорослово	Doroszló/R
+Дотбовар	Dombóvár/R
+Дочлонберг	Deutschlandsberg/R
+Дочлонсберг	Deutschlandsberg/R
+Дрезден	Drezda/R
+Дулопотой	Dunapataj/R
+Дуна Богдань	Dunabogdány/R
+Дунайская Страда	Dunaszerdahely/R
+Дунайская стреда	Dunaszerdahely/R
+Дунайская Стреда	Dunaszerdahely/R
+Дунафельвор	Dunaföldvár/R
+Дунафельдвард	Dunaföldvár/R
+Дуначуй	Dunacsún/R
+Дуно-Адонь	Adony;Duna-Adony/R
+Дуногорост	Dunaharaszti/R
+Дунокелете	Dunakiliti/R
+Дунокелеты	Dunakiliti/R
+Дунокесе	Dunakeszi/R
+Дунокишты	Dunakiliti/R
+Дунокоси	Dunakeszi/R
+Дунонотой	Dunapataj/R
+Дуносендерт	Dunaszentgyörgy/R
+Дуносердгей	Dunaszerdahely/R
+Дуносердо	Dunaszerdahely/R
+Дуносердогейм	Dunaszerdahely/R
+Дуносердогой	Dunaszerdahely/R
+Дуносердохейм	Dunaszerdahely/R
+Дунофельвар	Dunaföldvár/R
+Дунофельд	Dunaföldvár/R
+Дунофельдвари	Dunaföldvár/R
+Дунофельдварт	Dunaföldvár/R
+Дуноэтьгаз	Dunaegyháza/R
+Дупобогдан	Dunabogdány/R
+Дупофюльдвар	Dunaföldvár/R
+Духовече	Dunavecse/R
+Дывованё	Dévaványa/R
+Дымшыд	Dömsöd/R
+Дюерзамой	Győrzámoly/R
+Дюпо	Gyula/R
+Егертово	Egerlövő/R
+Ейч	Encs/R
+Екатериновка	Jekatyerinovka/R
+Ереглок	Öreglak/R
+Еркеньтабор	Örkénytábor/R
+Ершуйфалу	Örsújfalu/R
+Жамбен	Zsámbék;Zsámbok/R
+Жамбич	Zsámbék;Zsámbok/R
+Жамбой	Zsámbok;Zsámbék/R
+Ждало	Zsdála/R
+Забагей	Zebegény/R
+Забегай	Zebegény/R
+Забегей	Zebegény/R
+Забидово	Zábidó/R
+Заводь Толна	Závod, Tolna megye/R
+за Карпатами	Kárpátalja/R
+Закарпатской Украине	Kárpátaljai Ukrajna/R
+Закарпатье	Kárpátalja/R
+Залалева	Zalalövő/R
+Зала-Леве	Zalalövő/R
+Заланеве	Zalalövő/R
+Заласенбораш	Zalaszentbalázs/R
+Зала-Эгерсеч	Zalaegerszeg/R
+Запорожье	Zaporozsje;Zaporizzsja/R
+Затолоко	Zetelaka/R
+Зволен	Zólyom/R
+Зелегерсек	Zalaegerszeg/R
+Земплем	Zemplén/R
+Земпли	Zemplén/R
+Земплиногор	Zemplénagárd/R
+Земто	Zenta/R
+Зетелоно	Zetelaka/R
+Зетелько	Zetelaka/R
+Зетолого	Zetelaka/R
+Зетолоко	Zetelaka/R
+Золагерсек	Zalaegerszeg/R
+Золагерсен	Zalaegerszeg/R
+Золалева	Zalalövő/R
+Золалевс	Zalalövő/R
+Зола Медья	Zala/R
+Золовск	Zalavég/R
+Зологейн	Zalacsány/R
+Зологерсак	Zalaegerszeg/R
+Зологерсег	Zalaegerszeg/R
+Зологерсек	Zalaegerszeg/R
+Зологерск	Zalaegerszeg/R
+Зологерсок	Zalaegerszeg/R
+Золоегерсе	Zalaegerszeg/R
+Золоегерсен	Zalaegerszeg/R
+Золоконань	Zalakoppány/R
+Золокорош	Zalakőrös/R
+Зололева	Zalalövő/R
+Золо-Леве	Zalalövő/R
+Золо-Левей	Zalalövő/R
+Золо Леви	Zalalövő/R
+Зололевь	Zalalövő/R
+Зололиве	Zalalövő/R
+Золо-Меде	Zala/R
+Золомедеш	Zalameggyes/R
+Золомедья	Zala/R
+Золопаты	Zalaapáti/R
+Золо-Санто	Zalaszántó/R
+Золосгерсек	Zalaegerszeg/R
+Золосенболаш	Zalaszentbalázs/R
+Золосенто	Zalaszántó/R
+Золо-Собар	Zalaszabar/R
+Золотарно	Zalatárnok/R
+Золотартюк	Zalatárnok/R
+Золоэгер	Zalaegerszeg/R
+Золоэгерсе	Zalaegerszeg/R
+Золо Эгерсег	Zalaegerszeg/R
+Золо Эгерсек	Zalaegerszeg/R
+Золо-Эгерсек	Zalaegerszeg/R
+Золо-Эгер-Сек	Zalaegerszeg/R
+Золоэгерсен	Zalaegerszeg/R
+Золоэгерск	Zalaegerszeg/R
+Золоэгерсок	Zalaegerszeg/R
+Золоэрсек	Zalaegerszeg/R
+Зомбо Толна	Zomba, Tolna megye/R
+Ивиз	Hévíz/R
+Игла	Iglau;Jihlava;Igló/R
+Иглау	Iglau;Jihlava;Igló/R
+Иглоу	Iglau;Jihlava;Igló/R
+Игляу	Iglau;Jihlava;Igló/R
+Илежд	Élesd/R
+Иначкакуч	Inárcs-Kakucs/R
+Инойбел	Ipolybél/R
+Инойсалка	Ipolyszalka/R
+Инойшаг	Ipolyság/R
+Инойшак	Ipolyság/R
+Инойшач	Ipolyság/R
+Инольшак	Ipolyság/R
+Интернирован	internált/R
+интернирован	kitelepített/R
+интернирована	internálták;internált/R
+интернирован из Будапешта	internálták Budapestről/R
+интернирован из дома	otthonról internálták/R
+интернирован из дому	otthonról internálták/R
+интернирован на родине	internálták otthonról/R
+интернирован по месту жительства	lakóhelyéről internálva/R
+интернирован с Будапешт	internálták Budapestről/R
+интернирован с места жительства	internálták a lakóhelyéről/R
+интренирован	internált/R
+Иозеф-Салаш	Józsefszállás/R
+Ипой	Ipoly/R
+Ипойвшик	Ipolyvisk/R
+Ипойкеш	Ipolykeszi;Ipolykér/R
+Ипойша	Ipolyság/R
+Ипойшад	Ipolyság/R
+Иполь	Ipoly/R
+Ирд	Érd/R
+Иркеберкут	Érköbölkút/R
+Ирмигай	Érmihályfalva/R
+Ирмигайфолво	Érmihályfalva/R
+Ирпоток	Érpatak/R
+Ирсокачи	Érszakácsi/R
+Ирсолог	Érszalacs/R
+Ирторго	Értarcsa/R
+Иршекуйвар	Érsekújvár/R
+Иршекуйвор	Érsekújvár/R
+Иршемен	Érsemjén/R
+Истемир	Isztimér/R
+Ишагес	Isaszeg/R
+Ишосен	Isaszeg/R
+Йобади	Jobbágyi/R
+Каломея	Kolomija;Kolomjia/R
+Каношвар	Kaposvár/R
+Канувар	Kapuvár/R
+Каплиц	Kaplice/R
+Каполашник	Kápolnásnyék/R
+Карлштифт	Karlstift/R
+Карпатами	Kárpátok/R
+Карпатах	Kárpátok/R
+Карпенково	Karpenkovo/R
+Касторная	Kastornoye;Kasztornoje/R
+Касторное	Kastornoye;Kasztornoje/R
+Касторной	Kastornoye;Kasztornoje/R
+Касторноя	Kastornoye;Kasztornoje/R
+Каташвар	Kaposvár/R
+Кашуйсалаш	Kisújszállás/R
+Кебань	Kőbánya/R
+Кебанья	Kőbánya/R
+Кебелнут	Köbölkút/R
+Кегнемит	Kecskemét/R
+Кежмарок	Késmárk/R
+Келдереш	Kenderes/R
+Келькемет	Kecskemét/R
+Кенегрец	Königgrätz;Hradec Králové/R
+Кенезлы	Kenézlő/R
+Кениггрец	Königgrätz;Hradec Králové/R
+Кенигрен	Königgrätz;Hradec Králové/R
+Кенигрец	Königgrätz;Hradec Králové/R
+Кёнигрец	Königgrätz/R
+Кенигсгрец	Königgrätz;Hradec Králové/R
+Кенизлаю	Kenézlő/R
+Кенизлою	Kenézlő/R
+Кенизлы	Kenézlő/R
+Кеникгрец	Königgrätz;Hradec Králové/R
+Кениксгрец	Königgrätz;Hradec Králové/R
+Кенингрец	Königgrätz/R
+Кеосек	Kőszeg/R
+Кереш-Ладань	Körösladány/R
+Кереш-Лодань	Körösladány/R
+Керкасенткарай	Kerkaszentkirály/R
+Кеснитер	Kesznyéten/R
+Кесткей	Keszthely/R
+Кестрей	Keszthely/R
+Кестчей	Keszthely/R
+Кетедьян	Kötegyán/R
+Кетедян	Kötegyán/R
+Кётедян	Kötegyán/R
+Кеусек	Kőszeg/R
+Кечкамы	Kecskemét/R
+Кечкелент	Kecskemét/R
+Кечкелист	Kecskemét/R
+Кечкемед.	Kecskemét/R
+Кечке-Мет	Kecskemét/R
+Кечколит	Kecskemét/R
+Кечкомат	Kecskemét/R
+Кибелькут	Köbölkút/R
+Кидиуш	Kigyós/R
+Кинегрец	Königgrätz;Hradec Králové/R
+Кирайдоруну	Királydaróc/R
+Кирайдорунц	Királydaróc/R
+Кирайфия	Királyfia/R
+Кирай хазо	Királyháza/R
+Кираль-Гельмиц	Királyhelmec/R
+Кирошториян	Kőröstarján/R
+Кисуйшалаш	Kisújszállás/R
+Киш-Бейгань	Kisbégány/R
+Киш-Бород	Kisbáród/R
+Кишвайне Толна	Kisvejke, Tolna megye/R
+Киш Вардо	Kisvárda/R
+Киш-Вардо	Kisvárda/R
+Киш-Варшань	Kisvarsány/R
+Киш-Добро	Kisdobra/R
+Кишинев	Kisinyov;Kisjenő;Chișinău/R
+Кишкирс	Kisköre;Kiskőrös/R
+Кишковачвагаш	Kiskovácsvágása/R
+Кишковачвагош	Kiskovácsvágása/R
+Кишкомойша	Kiskunmajsa/R
+Кишкун Голаш	Kiskunhalas/R
+Кишкунголот	Kiskunhalas/R
+Кишкунгомеш	Kiskunhalas/R
+Кишкун Майшо	Kiskunmajsa/R
+Кишкунмойта	Kiskunmajsa/R
+Кишкунмойте	Kiskunmajsa/R
+Кишкун-Мойша	Kiskunmajsa/R
+Кишкунфельдхазо	Kiskunfélegyháza/R
+Кишкюриш	Kiskőrös/R
+Киш Мария	Kismarja/R
+Кишморье	Kismarja/R
+Кишморьё	Kismarja/R
+Кишнунголош	Kiskunhalas/R
+Кишняарад	Kisnyárád/R
+Киш-Ракуш	Kisrákos/R
+Кишрануш	Kisrákos/R
+Киштеиглаш	Kistéglás/R
+Киштелаш	Kistéglás;Kistelek/R
+Кишт-Пешт	Kispest/R
+Киштэйглаш	Kistéglás/R
+Кишуй Салаш	Kisújszállás/R
+Киш-Уйсалаш	Kisújszállás/R
+Киш-Уйсалош	Kisújszállás/R
+Кишуйшалаш	Kisújszállás/R
+Клагенфурт	Klagenfurt/R
+Клаузенбург	Kolozsvár/R
+Клецко	Klecko/R
+Клуж	Kolozsvár/R
+Клюж	Kolozsvár/R
+Коваена	Kovászna/R
+Ковасло	Kovászna/R
+Ковач-Рейт	Kovácsrét/R
+Ковель	Kovel/R
+Кодьконижо	Nagykanizsa/R
+Кокувар	Kapuvár;Kaposvár/R
+Колбино	Kolbino/R
+Кололия	Kolomija;Kolomjia/R
+Коломея	Kolomija;Kolomjia/R
+Коломия	Kolomija;Kolomjia/R
+Коломыя	Kolomija;Kolomjia/R
+Колотвер	Kolozsvár/R
+Колошкориат	Kolozskorpád/R
+Колош-Корнад	Kolozskorpád/R
+Колош Корпат	Kolozskorpád/R
+Комароно	Komárom/R
+Кониграц	Königgrätz/R
+Конторянош	Kántorjánosi/R
+Конувар	Kapuvár/R
+Конушвар	Kaposvár;Kapuvár/R
+Коплиц	Kaplice/R
+Коповар	Kapuvár/R
+Копотвар	Kapuvár;Kaposvár/R
+Копошвари	Kaposvár/R
+Копуар	Kapuvár;Kaposvár;Konyár/R
+Копувари	Kapuvár;Kaposvár/R
+Копушфель	Kaposfő/R
+Кормед	Körmend/R
+Косторное	Kastornoye;Kasztornoje/R
+Котофе	Kaposfő/R
+Котувар	Kapuvár;Kaposvár/R
+Коутой	Kótaj/R
+Кочетовка	Kocsetovka;Kochetovka/R
+Кочкамит	Kecskemét/R
+Кочкемет	Kecskemét/R
+Кочкемит	Kecskemét/R
+Кочкомет	Kecskemét/R
+Кошизе	Kassa/R
+Краснобелтск	Krasznabéltek/R
+Краснобельта	Krasznabéltek/R
+Краснобельты	Krasznabéltek/R
+Краснобельтык	Krasznabéltek/R
+Краснобельтых	Krasznabéltek/R
+Красношандор	Krasznasándorfalu/R
+Красношандофоль	Krasznasándorfalu/R
+Красный Теребет	Krasznaterebes/R
+Кремс	Krems/R
+Кротошин	Krotoszyn;Krotoshyn/R
+Куженмиклош	Kunszentmiklós/R
+Куйсек	Kőszeg/R
+Кулагото	Kunágota/R
+Кунагут	Kunágota/R
+Кунсен-Мартон	Kunszentmárton/R
+Купагуто	Kunágota/R
+Купгедеш	Kunhegyes/R
+Купмадорош	Kunmadaras/R
+Курлат-Хельмец	Királyhelmec/R
+Курском	Kurszk/R
+Кшиварда	Kisvárda/R
+Кювсек	Kőszeg/R
+Кюисек	Kőszeg/R
+Кюйбань	Kőbánya/R
+Кюйбаня	Kőbánya/R
+Кюйсег	Kőszeg/R
+Кюйсек	Kőszeg/R
+Кюйсеч	Kőszeg/R
+Кюйтелен	Kőtelek/R
+Кюнегрец	Königgrätz;Hradec Králové/R
+Кюрмед	Körmend/R
+Кюрмен	Körmend/R
+Кюсаргет	Kőszárhegy/R
+Кюсяг	Kőszeg/R
+Кютелен	Kőtelek/R
+Лаваминд	Lavamünd/R
+Лаеш-Комаро	Lajoskomárom/R
+Лайбинц	Leibnitz/R
+Лайбниц	Leibnitz/R
+Ландеберг	Landsberg/R
+Ландсберг	Landsberg/R
+Лансберг	Landsberg/R
+Ланцберг	Landsberg/R
+Лаюш-Миже	Lajosmizse/R
+Левенте	Levente/R
+Левоча	Lőcse/R
+Лейбниц	Leibnitz/R
+Леобен	Leoben/R
+Литорадлице	Litoradlice/R
+Ловаш-Берин	Lovasberény/R
+Ловаш-Беринь	Lovasberény/R
+Лодань-Бене	Ladánybene/R
+Лоешкомаро	Lajoskomárom/R
+Лоеш-Миже	Lajosmizse/R
+Лукач Хазо	Lukácsháza/R
+Лученец	Losonc/R
+Люблин	Lublin/R
+Люкенвальде	Luckenwalde/R
+Ляйбниц	Leibnitz/R
+Мадяр-Бангедеш	Magyarbánhegyes/R
+Мадяр Сумбат	Magyarszombatfa/R
+Мазайтур	Mezőtúr/R
+Мазоифейнь	Mezőfény/R
+Мазуйбери	Mezőberény/R
+Марбург	Marburg/R
+Марибор	Maribor/R
+Мария-Вельд	Máriavölgy/R
+Мариякемент	Máriakéménd/R
+Мария Уйфало	Máriaújfalu/R
+Марияуйфалу	Máriaújfalu/R
+Марморош Сигет	Máramarossziget/R
+Марморош-Сигет	Máramarossziget/R
+Мароморошенгет	Máramarossziget/R
+Мароморош-Сигед	Máramarossziget/R
+Марошваршаргей	Marosvásárhely/R
+Марошвашагей	Marosvásárhely/R
+Марошвашергей	Marosvásárhely/R
+Мароштольдо	Maros-Torda/R
+Марушвашар	Marosvásárhely/R
+Марушторда	Maros-Torda/R
+Мастюгино	Masztjugyino;Mastyugino/R
+Матешфельд	Mátyásföld/R
+Матродеречко	Mátraderecske/R
+Матронова	Mátranovák/R
+Матронован	Mátranovák/R
+Матросентиштван	Mátraszentistván/R
+Матыйсолко	Mátészalka/R
+Мезайтур	Mezőtúr/R
+Мезатур	Mezőtúr/R
+Мезевчад	Mezőcsát/R
+Мезедян	Mezőgyán/R
+Мезеетур	Mezőtúr/R
+Мезейбари	Mezőberény/R
+Мезейберин	Mezőberény/R
+Мезейбэрин	Mezőberény/R
+Мезейгад	Mezőcsát/R
+Мезейгат	Mezőcsát/R
+Мезейкевежд	Mezőkövesd/R
+Мезейкевешт	Mezőkövesd/R
+Мезейту	Mezőtúr/R
+Мезей-тур	Mezőtúr/R
+Мезейтур	Mezőtúr/R
+Мезёйтур	Mezőtúr/R
+Мезейчат	Mezőcsát/R
+Мезекевеш	Mezőkövesd/R
+Мезекивешт	Mezőkövesd/R
+Мезековач	Mezőkovácsháza/R
+Мезековеш	Mezőkövesd/R
+Мезекомаро	Mezőkomárom/R
+Мезекувеш	Mezőkövesd/R
+Мезекювеш	Mezőkövesd/R
+Мезенетри	Mezőpetri/R
+Мезе-Нодь-Мигай	Mezőnagymihály/R
+Мезертур	Mezőtúr/R
+Мезетура	Mezőtúr/R
+Мезеутур	Mezőtúr/R
+Мезешур	Mezőtúr/R
+Мезеютур	Mezőtúr/R
+Мезибери	Mezőberény/R
+Мезикевеш	Mezőkövesd/R
+Мезикивеш	Mezőkövesd/R
+Мезикосо	Mezőkaszony/R
+Мезитур	Mezőtúr/R
+Мезитуро	Mezőtúr/R
+Мезоберинг	Mezőberény/R
+Мезоифейль	Mezőfény/R
+Мезойберень	Mezőberény/R
+Мезойбери	Mezőberény/R
+Мезойтур	Mezőtúr/R
+Мезойфейн	Mezőfény/R
+Мезойфейни	Mezőfény/R
+Мезойфен	Mezőfény/R
+Мезонфень	Mezőfény/R
+Мезо-Петри	Mezőpetri/R
+Мезошамшон	Mezősámsond/R
+Мезоюкосонь	Mezőkaszony/R
+Мезубери	Mezőberény/R
+Мезуберн	Mezőberény/R
+Мезубернив	Mezőberény/R
+Мезуйберен	Mezőberény/R
+Мезуйберень	Mezőberény/R
+Мезуйбери	Mezőberény/R
+Мезуй-Бери	Mezőberény/R
+Мезуйберин	Mezőberény/R
+Мезуйберинь	Mezőberény/R
+Мезуйберн	Mezőberény/R
+Мезуйбернив	Mezőberény/R
+Мезуйган	Mezőgyán/R
+Мезуйкевеш	Mezőkövesd/R
+Мезуйкосонь	Mezőkaszony/R
+Мезуйпетре	Mezőpetri/R
+Мезуй-Петри	Mezőpetri/R
+Мезуйпонит	Mezőpanit/R
+Мезуйтелек	Mezőtelegd;Mezőtelki/R
+Мезуйтур	Mezőtúr/R
+Мезуйчаз	Mezőcsát/R
+Мезуйчат	Mezőcsát/R
+Мезунгат	Mezőcsát/R
+Мезуртур	Mezőtúr/R
+Мезуютур	Mezőtúr/R
+Мезыберин	Mezőberény/R
+Мезывари	Mezővári/R
+Мезытур	Mezőtúr/R
+Мезюйкевешд	Mezőkövesd/R
+Мезюйтур	Mezőtúr/R
+Мезю-Чаваш	Mezőcsávás/R
+Мейзентур	Mezőtúr/R
+Мейзетур	Mezőtúr/R
+Мейзопетри	Mezőpetri/R
+Мейзуйтур	Mezőtúr/R
+Мейзучад	Mezőcsát/R
+Мейкуш	Mélykút/R
+Мексикопусто	Mekszikópuszta;Mexikópuszta/R
+Мерзучат	Mezőcsát/R
+Мерк	Mérk/R
+Микенерч	Mikepércs/R
+Микоуйфало	Mikóújfalu/R
+Микошсенлок	Mikosszéplak/R
+Минден	Mindszent/R
+Миндент	Mindszent/R
+Миндсенкало	Mindszentkálla/R
+Миндцен	Mindszent/R
+Минск	Minszk/R
+Минцант	Mindszent/R
+Минцен	Mindszent/R
+Минценд	Mindszent/R
+Минценит	Mindszent/R
+Минцент	Mindszent/R
+Минцень	Mindszent/R
+Минцет	Mindszent/R
+Минцэнт	Mindszent/R
+Мирабрань	Nyírábrány/R
+Митоу	Mitau;Jelgava/R
+Мишкульцев	Miskolc/R
+Мкачев	Munkács/R
+Моглоу	Maglód/R
+Моглу	Maglód/R
+Модер-Дейче	Magyardécse/R
+Модероувар	Magyaróvár/R
+Модер-Печко	Magyarpécska/R
+Модьяровар	Magyaróvár/R
+Модьяроувар	Magyaróvár/R
+Модярдейга	Magyardécse/R
+Модярдейче	Magyardécse/R
+Модярова	Magyaróvár/R
+Мозойкосу	Mezőkeszü/R
+Мозуйковежд	Mezőkövesd/R
+Мозуйшамшон	Mezősámsond/R
+Моклер	Maklár/R
+Мокляр	Maklár/R
+Морошваргей	Marosvásárhely/R
+Морошватаргей	Marosvásárhely/R
+Морошвашергей	Marosvásárhely/R
+Морош-Вашергей	Marosvásárhely/R
+Морошгейвич	Maroshévíz/R
+Морошевиз	Maroshévíz/R
+Морош-Людош	Marosludas/R
+Морошторде	Maros-Torda/R
+Мороштордо	Maros-Torda/R
+Мороштурда	Maros-Torda/R
+Морошхевез	Maroshévíz/R
+Морош Яро	Marosjára/R
+Морош-Яру	Marosjára/R
+Мортон Вашар	Martonvásár/R
+Мортонвашер	Martonvásár/R
+Моруштурдо	Maros-Torda/R
+Мошон-Модяр-Овар	Mosonmagyaróvár/R
+Мошонь-Модяровар	Mosonmagyaróvár/R
+Мукагево	Munkács/R
+Мукачев	Munkács/R
+Мукачева	Munkács/R
+Мукачово	Munkács/R
+Мукочево	Munkács/R
+Мункачев	Munkács/R
+Мункачево	Munkács/R
+Муракез	Muraköz/R
+Муроратно	Murarátka/R
+Мэзитур	Mezőtúr/R
+Мэзойберень	Mezőberény/R
+Мэзытур	Mezőtúr/R
+Надвория	Nadvorna;Nadvirna/R
+Надворка	Nadvorna;Nadvirna/R
+Надворна	Nadvorna;Nadvirna/R
+Надворно	Nadvorna;Nadvirna/R
+Надворня	Nadvorna;Nadvirna/R
+Надошлодань	Nádasdladány/R
+Надувар	Nádudvar/R
+Надудвар	Nádudvar/R
+Надь Варод	Nagyvárad/R
+Надь-Карой	Nagykároly/R
+Надь-Като	Nagykáta/R
+Надькоуни	Nagykónyi/R
+Найдморош	Nagymaros/R
+Найморуш	Nagymaros/R
+Недведице	Nedvědice/R
+Немецкий брод	Deutschbrod;Havlíčkův Brod;Nemecky Brod/R
+Немецкий Брод	Deutschbrod;Havlíčkův Brod;Nemecky Brod/R
+Нередьхазо	Nyíregyháza/R
+Неретьгазо	Nyíregyháza/R
+Нестельбак	Nestelbach/R
+Нестельбах	Nestelbach/R
+Нестербах	Nestelbach/R
+Нечкемет	Kecskemét/R
+Нивнице	Nivnice/R
+Николаевка	Nikolaevka;Nikolayevka;Mykolaivka;Mikolaivka/R
+Нирбато	Nyírbátor/R
+Нирбашор	Nyírbátor/R
+Ниредьказо	Nyíregyháza/R
+Ниретгазо	Nyíregyháza/R
+Ниретхазе	Nyíregyháza/R
+Ниретхазо	Nyíregyháza/R
+Ниретхозо	Nyíregyháza/R
+Ниретязо	Nyíregyháza/R
+Ниродо	Nyíradony/R
+Нирэтхазо	Nyíregyháza/R
+Новгород	Novgorod/R
+Новисад	Újvidék/R
+Новые Замки	Érsekújvár/R
+Новый Оскол	Novij Oszkol/R
+Новый сад	Újvidék/R
+Новый Сад	Újvidék/R
+Нодоварод	Nagyvárad/R
+Нодудвар	Nádudvar/R
+Нодьбань	Nagybánya/R
+Нодьбанья	Nagybánya/R
+Нодь-Берек	Nagybereg/R
+Нодьвард	Nagyvárad/R
+Нодьваро	Nagyvárad/R
+Нодь Варод	Nagyvárad/R
+Нодь Добронь	Nagydobrony/R
+Нодь Иван	NagyIván/R
+Нодь-Кало	Nagykálló/R
+Нодь Канижа	Nagykanizsa/R
+Нодь Карой	Nagykároly/R
+Нодь-Кароль	Nagykároly/R
+Нодь-Като	Nagykáta/R
+Нодь Кереш	Nagykőrös/R
+Нодь-Кереш	Nagykőrös/R
+Нодькомраш	Nagykamarás/R
+Нодь Конижа	Nagykanizsa/R
+Нодь-Конижо	Nagykanizsa/R
+Нодькорош	Nagykőrös/R
+Нодь-Кюреш	Nagykőrös/R
+Нодь-Мойтен	Nagymajtény/R
+Нодьмутой	Nagymuzsaly;Nagymihály/R
+Нойморуш	Nagymaros/R
+Н. Оскол	Novij Oszkol/R
+Нотькойрош	Nagykőrös/R
+Ноуград	Nógrád/R
+Нью-Иорк	New York/R
+Нью-Йорк	New York/R
+Нэредьхазо	Nyíregyháza/R
+Нюль	Nyúl/R
+Оберблан	Oberplan;Horní Plana/R
+Оберплан	Oberplan;Horní Plana/R
+Обоуй	Abaúj/R
+Обоче	Óbecse/R
+Обошару	Abasár/R
+Обоян	Obojan;Oboyan/R
+Обоянь	Obojan;Oboyan/R
+Одерберг	Oderberg/R
+Одесса	Odessza/R
+Ождян	Osgyán/R
+оз. Балатон	Balaton tó/R
+Ойтоз	Ojtoz/R
+Ойтуз	Ojtoz/R
+Окидеш	Újkígyós/R
+окрестностях Коломея	Kolomija környékén;Kolomjia környékén/R
+Олмаш-Комраш	Almáskamarás/R
+Олоб	Alap/R
+Ольмиц	Olmütz;Olomouc/R
+Ольмица	Olmütz;Olomouc/R
+Ондоут	Ondód/R
+Орош-Хазо	Orosháza/R
+Оскино	Oskino;Os'kino/R
+Осоуд	Aszód/R
+Острогожек	Osztrogozsszk;Ostrogozhsk/R
+Острогожк	Osztrogozsszk;Ostrogozhsk/R
+Острогожск	Osztrogozsszk;Ostrogozhsk/R
+Острогоржск	Osztrogozsszk;Ostrogozhsk/R
+Острогорс	Osztrogozsszk;Ostrogozhsk/R
+Острогорск	Osztrogozsszk;Ostrogozhsk/R
+Острогос	Osztrogozsszk;Ostrogozhsk/R
+Оськино	Oskino;Os'kino/R
+Отения	Otinia;Otinija;Otyniya/R
+Отиния	Otinia;Otinija;Otyniya/R
+Отынья	Otinia;Otinija;Otyniya/R
+Отыня	Otinia;Otinija;Otyniya/R
+Оунод	Ónod/R
+Оучо	Ócsa/R
+Офало	Ófalu/R
+Пардубиц	Pardubice/R
+Парканьнана	Párkánynána;Párkány-Nána/R
+Парканьнано	Párkánynána;Párkány-Nána/R
+Перлеберг	Perleberg/R
+Песшент-Лоринц	Pestszentlőrinc/R
+Песшент Эржибет	Pestszenterzsébet/R
+Песшент-Эржибет	Pestszenterzsébet/R
+Петервашар	Pétervására/R
+Пештгидекут	Pesthidegkút/R
+Пештидекут	Pesthidegkút/R
+Пешт Меде	Pest/R
+Пешт-Меде	Pest/R
+Пештхидекут	Pesthidegkút/R
+Пизен	Pilsen;Plzeň/R
+Пийч	Pécs/R
+Пилешверешвар	Pilisvörösvár/R
+Пишнеклодань	Püspökladány/R
+Пойрад	Poprád/R
+Полотопожек	Palotabozsok/R
+Польша	Lengyelország/R
+по местожительству	lakóhelyén/R
+по месту жит.	lakóhelyén/R
+по месту жительства	lakóhelyén/R
+по месту жительству	lakóhelyén/R
+Понрад	Poprád/R
+Прегартен	Pregarten/R
+Пресбург	Pozsony/R
+Прешов	Eperjes/R
+Пустошоморье	Pusztasomorja/R
+Рабоковач	Rábakovácsi/R
+Рабочече	Rábacsécsény/R
+Ракомаш	Rakamaz/R
+Ракош-Полота	Rákospalota/R
+Ратибор	Ratiboř/R
+Репьевка	Repjevka;Rep'yevka/R
+р-не Барановичи	Baranovicsi/R
+р-не Бекеш	Békés/R
+р-не Берегово	Beregszász;Beregszászi járás/R
+р-не Берлина	Berlin/R
+р-не Братислава	Pozsony;Pozsonyi járás/R
+р-не Брест Литовск	Breszt-Litovszk;Breszt/R
+р-не Брно	Brünn;Brno/R
+р-не Буда	Buda/R
+р-не Будапешт	Budapest/R
+р-не Будапешта	Budapest/R
+р-не Будапеште	Budapest/R
+р-не Будо	Buda/R
+р-не Будопешт	Budapest/R
+р-не Будопешта	Budapest/R
+р-не Варшава	Varsó/R
+р-не Варшавы	Varsó/R
+р-не Ваш	Vas/R
+р-не Весприм	Veszprém;Veszprémi járás/R
+р-не Воронежа	Voronyezs/R
+р-не Вош	Vas/R
+р-не Гевеш	Heves/R
+р-не Дебрецен	Debrecen/R
+р-не Делатин	Deljatin;Deliatyn;Delatyn/R
+р-не Дер	Győr;Győri járás/R
+р-не Дёр	Győr;Győri járás/R
+р-не Дубно	Dubno/R
+р-не Дунофельдвар	Dunaföldvár;Dunaföldvári járás/R
+р-не Дюр	Győr;Győri járás/R
+р-не Зала	Zala/R
+р-не Зола	Zala/R
+р-не Золо	Zala/R
+р-не Касторное	Kastornoye;Kasztornoje/R
+р-не Касторной	Kastornoye;Kasztornoje/R
+р-не Кечкемет	Kecskemét;Kecskeméti járás/R
+р-не Кечкемит	Kecskemét;Kecskeméti járás/R
+р-не Ковель	Kovel/R
+р-не Ковеля	Kovel/R
+р-не Коложвар	Kolozsvár;Kolozsvári járás/R
+р-не Коломея	Kolomija;Kolomjia/R
+р-не Коломия	Kolomija;Kolomjia/R
+р-не Коломня	Kolomija;Kolomjia/R
+р-не Коломыи	Kolomija;Kolomjia/R
+р-не Коломыя	Kolomija;Kolomjia/R
+р-не Колошвар	Kolozsvár;Kolozsvári járás/R
+р-не Комаром	Komárom;Komáromi járás/R
+р-не Комароми	Komárom;Komáromi járás/R
+р-не Кошице	Kassa;Kassai járás/R
+р-не Курск	Kurszk/R
+р-не Курска	Kurszk/R
+р-не Мишкольц	Miskolc;Miskolci járás/R
+р-не Мошон	Moson;Mosoni járás/R
+р-не Мошонь	Moson;Mosoni járás/R
+р-не Мукачево	Munkács;Munkácsi járás/R
+р-не Надворна	Nadvorna;Nadvirna/R
+р-не Нодьконижо	Nagykanizsa;Nagykanizsai járás/R
+р-не Нодь-Конижо	Nagykanizsa;Nagykanizsai járás/R
+р-не Острогожск	Osztrogozsszk;Ostrogozhsk/R
+р-не Острогожска	Osztrogozsszk;Ostrogozhsk/R
+р-не Перекопа	Perekop/R
+р-не Перлеберг	Perleberg/R
+р-не Пешт	Pest/R
+р-не Пешта	Pest/R
+р-не Прешов	Eperjes;Eperjesi járás/R
+р-не Ровно	Rovno;Rivne/R
+р-не Сегед	Szeged;Szegedi járás/R
+р-не Сойва	Szolyva,Szolyvai járás/R
+р-не Солнок	Szolnok;Szolnoki járás/R
+р-не Старый Оскол	Sztarij Oszkol/R
+р-не Торда	Torda;Tordai járás/R
+р-не Тордо	Torda;Tordai járás/R
+р-не Ужгород	Ungvár;Ungvári járás/R
+р-не Ужгорода	Ungvár;Ungvári járás/R
+р-не Унгвар	Ungvár;Ungvári járás/R
+р-не Унгвара	Ungvár;Ungvári járás/R
+р-не Чоп	Csap;Csapi járás/R
+р-не Шомодь	Somogy/R
+р-не Шопрон	Sopron;Soproni járás/R
+р-не Шопронь	Sopron;Soproni járás/R
+р-не Эгер	Eger;Egri járás/R
+р-не Эстергом	Esztergom;Esztergomi járás/R
+Розенау	Rosenau/R
+Розенбург	Rosenburg/R
+Роуносек	Rónaszék/R
+Румыния	Románia/R
+Рунгури	Rungury;Runhury/R
+Сабоцалаш	Szabadszállás/R
+Самбатай	Szombathely/R
+Самботель	Szombathely/R
+Самботкей	Szombathely/R
+Самботой	Szombathely/R
+Сампельтен	Sankt Pölten/R
+Санкпельтен	Sankt Pölten/R
+Санктпельтен	Sankt Pölten/R
+Санкт Пельтен	Sankt Pölten/R
+Санкт-Пельтен	Sankt Pölten/R
+Санкт-Пёльтен	Sankt Pölten/R
+Санктпольтен	Sankt Pölten/R
+Санктфлория	Sankt Florian/R
+Санпелтен	Sankt Pölten/R
+Санпельтен	Sankt Pölten/R
+Сан Пельтен	Sankt Pölten/R
+Сан-Пельтен	Sankt Pölten/R
+Санпертен	Sankt Pölten/R
+Санпольтен	Sankt Pölten/R
+Санпультен	Sankt Pölten/R
+Санпюльтен	Sankt Pölten/R
+Сантнельтен	Sankt Pölten/R
+Сант-Палтен	Sankt Pölten/R
+Сантпелтен	Sankt Pölten/R
+Сантпельтен	Sankt Pölten/R
+Сант Пельтен	Sankt Pölten/R
+Сант-Пельтен	Sankt Pölten/R
+Сант-Полтен	Sankt Pölten/R
+Сантпольтен	Sankt Pölten/R
+Сантпюлтен	Sankt Pölten/R
+Сантпюльтен	Sankt Pölten/R
+Сантфлориан	Sankt Florian/R
+Сантфлория	Sankt Florian/R
+Сантфлориян	Sankt Florian/R
+Санфлориан	Sankt Florian/R
+Санфлория	Sankt Florian/R
+Сараево	Szarajevó/R
+Сатумаре	Szatmárnémeti/R
+Сату-Маре	Szatmárnémeti;Szatmár/R
+Сваляво	Szolyva/R
+Сволява	Szolyva/R
+с дома	otthonról/R
+с дому	otthonából/R
+Севастополь	Szevasztopol/R
+Седерки	Szederkény/R
+Секгард	Szekszárd/R
+Секеард	Szekszárd/R
+Секешфекервар	Székesfehérvár/R
+Сексару	Szekszárd/R
+Секхолм	Szeghalom/R
+Семпельтен	Sankt Pölten/R
+Сенготгард	Szentgotthárd/R
+Сенготхарт	Szentgotthárd/R
+Сенпелтен	Sankt Pölten/R
+Сенпельтен	Sankt Pölten/R
+Сенсард	Szekszárd/R
+Сентандре	Szentendre/R
+Сентандрей	Szentendre/R
+Сентготард	Szentgotthárd/R
+Сент-Готард	Szentgotthárd/R
+Сентендре	Szentendre/R
+Сент Иштван	Szentistván/R
+Сент-Иштван	Szentistván/R
+Сент-Ласло	Szentlászló/R
+Сентпелтен	Sankt Pölten/R
+Сентпельтен	Sankt Pölten/R
+Сент-Пельтен	Sankt Pölten/R
+Сентпетер	Szentpéter/R
+Сент-Томаш	Szenttamás/R
+Сентфлориа	Sankt Florian/R
+Сентфлориан	Sankt Florian/R
+Сентфлориант	Sankt Florian/R
+Сентфлорион	Sankt Florian/R
+Сентфлория	Sankt Florian/R
+Сентфлориян	Sankt Florian/R
+Сенфлория	Sankt Florian/R
+Сербобран	Szenttamás/R
+Сербобрань	Szenttamás/R
+Середина Буда	Buda közepe/R
+Середино-Будо	Buda közepe/R
+Сетфлориан	Sankt Florian/R
+Сигецемартон	Szigetszentmárton/R
+Сигеценмартон	Szigetszentmárton/R
+Синер-Вараля	Szinérváralja/R
+Славонице	Slavonice/R
+с места жительства	lakóhelyéről/R
+Собоцалаш	Szabadszállás/R
+Соксард	Szekszárd/R
+Солнцево	Szolncevo;Solntsevo/R
+Солотвино	Aknaszlatina/R
+Сомпельтен	Sankt Pölten/R
+Сотмаргет	Szatmárhegy/R
+Сотмарнемет	Szatmárnémeti/R
+Сотмарнемете	Szatmárnémeti/R
+СССР	SzSzSzR;Szovjet Szocialista Köztársaságok Szövetsége;Szovjetunió/R
+Сталинград	Sztálingrád/R
+Старожевое	Sztorozsevoje;Storozhevoye 1-Ye/R
+Стар. Оскол	Sztarij Oszkol/R
+Старый Оскол	Sztarij Oszkol/R
+Сторжевое	Sztorozsevoje;Storozhevoye 1-Ye/R
+Сторожево	Sztorozsevoje;Storozhevoye 1-Ye/R
+Сторожевое	Sztorozsevoje;Storozhevoye 1-Ye/R
+Сторожеево	Sztorozsevoje;Storozhevoye 1-Ye/R
+Ст. Оскол	Sztarij Oszkol/R
+Страконец	Strakonice/R
+Страконица	Strakonice/R
+Страконице	Strakonice/R
+Страконицы	Strakonice/R
+Стракопице	Strakonice/R
+Сулейман	Szulimán/R
+Сумбатай	Szombathely/R
+Сумботай	Szombathely/R
+Сумботей	Szombathely/R
+Сырбобран	Szenttamás/R
+Таниобичке	Tápióbicske/R
+Таниоселе	Tápiószele/R
+Тапиодердь	Tápiógyörgye/R
+Тарнополь	Tarnopol;Ternopil/R
+Тевел Толна	Tevel, Tolna megye/R
+Телишвар	Temesvár/R
+Темишора	Temesvár/R
+Терексенмиклош	Törökszentmiklós/R
+Терексент Миклош	Törökszentmiklós/R
+Терексент-Миклош	Törökszentmiklós/R
+Тимишара	Temesvár/R
+Тисовеч	Tiszabecs/R
+Торноуц	Tarnóc/R
+Тороксенмиклош	Törökszentmiklós/R
+Тотобань	Tatabánya/R
+Тоусек	Tószeg/R
+Тоуткомлош	Tótkomlós/R
+Тошнад-Санто	Tasnádszántó/R
+Тошнад-Санту	Tasnádszántó/R
+Трансильвании	Erdély/R
+Требань	Třeboň/R
+Треболь	Třeboň/R
+Требонь	Třeboň/R
+Туркевс	Túrkeve/R
+Турулунг	Túrterebes/R
+Тыргумуреш	Marosvásárhely/R
+Тыргу-Муреш	Marosvásárhely/R
+Уеглед	Cegléd/R
+Ужвар	Ungvár/R
+Ужгород	Ungvár/R
+Ужгорода	Ungvár/R
+Ужгородь	Ungvár/R
+Уий-Пешт	Újpest/R
+Уитергайт	Unterhaid/R
+Уйбешт	Újpest/R
+Уйведек	Újvidék/R
+Уйгортан	Újhartyán/R
+Уйкедеш	Újkígyós/R
+Уйкешт	Újpest/R
+Уйкидеш	Újkígyós/R
+Уйлешт	Újpest/R
+Уймешт	Újpest/R
+Уйнешт	Újpest/R
+Уйпеш	Újpest/R
+Уй-Пешт	Újpest/R
+Уйполоро	Újpalota/R
+Уйполот	Újpalota/R
+Уйудвар	Újudvar/R
+Уйфеирто	Újfehértó/R
+Уйферто	Újfehértó/R
+Уйфешрто	Újfehértó/R
+Укечке	Újkécske/R
+Украине	Ukrajna/R
+Ульмерфельд	Ulmerfeld/R
+Ульпешт	Újpest/R
+Умвар	Ungvár/R
+Унгвард	Ungvár/R
+Унпешт	Újpest/R
+Унтергаид	Unterhaid/R
+Унтергаит	Unterhaid/R
+Унтергай	Unterhaid/R
+Унтергайд	Unterhaid/R
+Унтергайдт	Unterhaid/R
+Унтергайм	Unterhaid/R
+Унтергайн	Unterhaid/R
+Унтергайт	Unterhaid/R
+Унтергалд	Unterhaid/R
+Унтергальд	Unterhaid/R
+Унтергальт	Unterhaid/R
+Унтерганд	Unterhaid/R
+Унтергант	Unterhaid/R
+Унтергей	Unterhaid/R
+Унтергейт	Unterhaid/R
+Унтергойд	Unterhaid/R
+Унтергойт	Unterhaid/R
+Унтергольд	Unterhaid/R
+Унтерхаит	Unterhaid/R
+Унтерхай	Unterhaid/R
+Унтерхайд	Unterhaid/R
+Унтерхайдт	Unterhaid/R
+Унтерхайт	Unterhaid/R
+Унтерхаль	Unterhaid/R
+Унтерхат	Unterhaid/R
+Унтерхойд	Unterhaid/R
+Упешт	Újpest/R
+Уриф	Uriv/R
+Успенка	Uszpenka/R
+УССР	USzSzR;Ukrán Szovjet Szocialista Köztársaság/R
+Ушгород	Ungvár/R
+Ушгорот	Ungvár/R
+Ушород	Ungvár/R
+Фат	Fót/R
+Федвернен	Fegyvernek/R
+Федвернск	Fegyvernek/R
+Фекетич	Bácsfeketehegy/R
+Фекетсардо	Feketeardó/R
+Фельдеяк	Feldeák/R
+Фельшенайно	Felsőnána/R
+Фельшенойно	Felsőnána/R
+Фельшидонса	Felsődobsza/R
+Фельшидопса	Felsődobsza/R
+Фельшунейно	Felsőnána/R
+Филаково	Fülek/R
+Филипсалаш	Fülöpszállás/R
+Фокшани	Foksány;Focșani/R
+Фокшаны	Foksány;Focșani/R
+Фоот	Fót/R
+Фоут	Fót/R
+Франкфурт	Frankfurt/R
+Франкфурт на Одере	Frankfurt am Oder;Frankfurt an der Oder;Odera-Frankfurt/R
+Фюленсалаш	Fülöpszállás/R
+Хайдубесерман	Hajdúböszörmény/R
+Хайдубесерми	Hajdúböszörmény/R
+Хайдубесермы	Hajdúböszörmény/R
+Хайдунакаш	Hajdúnánás/R
+Хайду Собосло	Hajdúszoboszló/R
+Харьков	Harkov;Kharkiv;Harkiv/R
+Хаслах	Haslach/R
+Хогенау	Hagenau/R
+Ходмезевашергей	Hódmezővásárhely/R
+Хойду-Собосло	Hajdúszoboszló/R
+Хосупай	Hosszúpályi/R
+Хосупан	Hosszúpályi/R
+Цартлесдорф	Zartlesdorf;Rybník/R
+Цветель	Zwettl/R
+Цветл	Zwettl/R
+Цветли	Zwettl/R
+Цветль	Zwettl/R
+Цвитау	Zwittau;Svitavy/R
+Цеглед-Берцель	Ceglédbercel/R
+Цеглет Берцел	Ceglédbercel/R
+Цеглет-Берцел	Ceglédbercel/R
+Цегмит	Cegléd/R
+Цейглед	Cegléd/R
+Цейглид	Cegléd/R
+Цейглит	Cegléd/R
+Цибоказо	Cibakháza/R
+Ципешт	Újpest/R
+Чакбери	Csákberény/R
+Чактория	Csáktornya/R
+Чалокез	Csallóköz/R
+Часартетыш	Császártöltés/R
+Часатультыш	Császártöltés/R
+Чехос.	Csehszlovákia;Csehország/R
+Чехославакия	Csehszlovákia/R
+Чехословакия	Csehszlovákia/R
+Чешска Липа	Česká Lípa/R
+Чешска-Липа	Česká Lípa/R
+Чикминцент	Csíkmindszent/R
+Чиксердо	Csíkszereda/R
+Чинград	Csongrád/R
+Чомград	Csongrád/R
+Чонадонацо	Csanádapáca/R
+Чонтовар	Csantavér/R
+Чоон	Csap/R
+Чопп	Csap/R
+Чопрон	Sopron/R
+Ч/словакия	Csehszlovákia/R
+ЧСР	ČSR;Csehszlovák Köztársaság;Csehszlovákia/R
+Чуйвар	Csővár/R
+Шанрон	Sopron/R
+Шарбогар	Sárbogárd/R
+Шарбогат	Sárbogárd/R
+Шарбугар	Sárbogárd/R
+Шарошноток	Sárospatak/R
+Шарошпатон	Sárospatak/R
+Шатороургей	Sátoraljaújhely/R
+Шерегиш	Seregélyes/R
+Шиофон	Siófok/R
+Шлофак	Siófok/R
+Шлофок	Siófok/R
+Шолокшар	Soroksár/R
+Шольдводке	Soltvadkert/R
+Шонрок	Sopron/R
+Шопрон	Sopron/R
+Шороншар	Soroksár/R
+Шоушкут	Sóskút/R
+Шофон	Sopron/R
+Шпофок	Siófok/R
+Штокерау	Stockerau/R
+Эгерсолу	Egerszalók/R
+Эгор	Eger/R
+Эденбург	Sopron/R
+Энсбах	Ensbach/R
+Эпинг	Enying/R
+Эрдлигет	Érdliget/R
+Эреглок	Öreglak/R
+Эркешери	Érkeserű/R
+Эрюсенпетер	Őriszentpéter/R
+Эсеик	Eszék/R
+Эстаргом табор	Esztergom-Tábor/R
+Эстельгам	Esztergom/R
+Эстергом-Табор	Esztergom-Tábor/R
+Эстергунд	Esztergom/R
+Эсторган	Esztergom/R
+Эсторгаш	Esztergom/R
+Эсторгон	Esztergom/R
+Эстрегам	Esztergom/R
+Этвешкони	Ötvöskónyi/R
+Этгазошголош	Egyházashollós/R
+Этгазошхолош	Egyházashollós/R
+Этьгазош-Радоу	Egyházasrádóc/R
+Этьгазошрадоуц	Egyházasrádóc/R
+Этьхазамрадоуш	Egyházasrádóc/R
+Этьхазогирадуц	Egyházasrádóc/R
+Эшекувар	Érsekújvár/R
+Южефазо	Józsefháza/R
+южнее Будапешт	Budapesttől délre/R
+Южный фронт	déli front/R
+Юзефазо	Józsefháza/R
+Юйвидич	Újvidék/R
+Юйпешт	Újpest/R
+Юллё	Üllő/R
+Юргалон	Őrhalom/R
+Юреглог	Öreglak/R
+Юренсенпетер	Őriszentpéter/R
+Юрисантпетер	Őriszentpéter/R
+Юркель	Örkény;Őrhely/R
+Юркень	Örkény/R
+Юр-Салаш	Őrszállás/R
+Яббади	Jobbágyi/R
+Яблонов	Szepesalmás/R
+Яблочное	Jablocsnoje;Yablochnoye/R
+Ягопати	Jászapáti/R
+Ягопаты	Jászapáti/R
+Язбереж	Jászberény/R
+Язберек	Jászberény/R
+Язберекь	Jászberény/R
+Язберенч	Jászberény/R
+Язберет	Jászberény/R
+Язбереш	Jászberény/R
+Язбери	Jászberény/R
+Язберий	Jászberény/R
+Язберит	Jászberény/R
+Язберни	Jászberény/R
+Язберы	Jászberény/R
+Язбрень	Jászberény/R
+Язбринь	Jászberény/R
+Язбэры	Jászberény/R
+Язверень	Jászberény/R
+Яздоуш	Jászdózsa/R
+Якароксалаш	Jászárokszállás/R
+Якдгодош	Jákóhodos/R
+Якобсалам	Jakabszállás/R
+Якобсалаш	Jakabszállás/R
+Якоб Салаш	Jakabszállás/R
+Якоб-Салаш	Jakabszállás/R
+Якобсалош	Jakabszállás/R
+Якоб-Фалва	Jakabfalva;Jakabfalu/R
+Якобшалаш	Jakabszállás/R
+Яковходш	Jákóhodos/R
+Янаросолош	Jászárokszállás/R
+Яногодош	Jákóhodos/R
+Яноголма	Jánoshalma/R
+Яножоза	Jánosháza/R
+Янош Гезо	Jánosháza/R
+Янош-Гольмо-Бачко	Jánoshalma, Bácska/R
+Янош Хаза	Jánosháza/R
+Янош-Хазо	Jánosháza/R
+Янош Хальзо	Jánosháza/R
+Янош Хозан	Jánosháza/R
+Янош Хозе	Jánosháza/R
+Яношхолли	Jánoshalma/R
+Янош-Холма	Jánoshalma/R
+Янушаза	Jánosháza/R
+Януш голма	Jánoshalma/R
+Янушидо	Jánoshida/R
+Януш-Идо	Jánoshida/R
+Януш-Халма	Jánoshalma/R
+Януш-Хозо	Jánosháza/R
+Янушхолма Бачка	Jánoshalma, Bácska/R
+Янушхомио	Jánoshalma/R
+Ясаадань	Jászladány/R
+Ясакухолма	Jászjákóhalma/R
+Ясалоты	Jászapáti/R
+Ясаната	Jászapáti/R
+Ясанати	Jászapáti/R
+Яс-Апатти	Jászapáti/R
+Ясапать	Jászárokszállás/R
+Ясарксалаш	Jászárokszállás/R
+Яс-Арок	Jászárokszállás/R
+Ясароксалали	Jászárokszállás/R
+Ясарок салаш	Jászárokszállás/R
+Ясарок-Салаш	Jászárokszállás/R
+Яс-Арок-Салаш	Jászárokszállás/R
+Ясароксало	Jászárokszállás/R
+Ясарок-Салош	Jászárokszállás/R
+Ясароксамаш	Jászárokszállás/R
+Ясароксанаш	Jászárokszállás/R
+Ясаропсалаш	Jászárokszállás/R
+Ясарук Салаж	Jászárokszállás/R
+Ясары-Салаш	Jászárokszállás/R
+Ясбере	Jászberény/R
+Ясбери	Jászberény/R
+Ясберии	Jászberény/R
+Ясберы	Jászberény/R
+Ясборин	Jászberény/R
+Ясдош	Jászdózsa/R
+Ясдошу	Jászdózsa/R
+Ясдужен	Jászdózsa/R
+Ясенкласо	Jászszentlászló/R
+Ясенондраш	Jászszentandrás/R
+Ясент Андраш	Jászszentandrás/R
+Ясент-Андраш	Jászszentandrás/R
+Ясентиасло	Jászszentlászló/R
+Ясентласло	Jászszentlászló/R
+Ясентондрам	Jászszentandrás/R
+Ясентондраш	Jászszentandrás/R
+Ясент-Ондраш	Jászszentandrás/R
+Ясеруксалош	Jászárokszállás/R
+Ясе-Фельшу-Сент-Георгий	Jászfelsőszentgyörgy/R
+Яскарасне	Jászkarajenő/R
+Яскешер	Jászkisér/R
+Яскишель	Jászkisér/R
+Яскишень	Jászkisér/R
+Яскораны	Jászkarajenő/R
+Яскорено	Jászkarajenő/R
+Яскоро	Jászkarajenő/R
+Яскоровери	Jászkarajenő/R
+Яскороенш	Jászkarajenő/R
+Яскорони	Jászkarajenő/R
+Яскороны	Jászkarajenő/R
+Яскоросны	Jászkarajenő/R
+Яскорояне	Jászkarajenő/R
+Яскорояни	Jászkarajenő/R
+Яскоро-Яну	Jászkarajenő/R
+Яскороянуй	Jászkarajenő/R
+Яскорояню	Jászkarajenő/R
+Яскорояпу	Jászkarajenő/R
+Яскорояш	Jászkarajenő/R
+Яскоряни	Jászkarajenő/R
+Яскоряню	Jászkarajenő/R
+Яскроято	Jászkarajenő/R
+Яскшимер	Jászkisér/R
+Ясладар	Jászladány/R
+Яслода	Jászladány/R
+Яслодень	Jászladány/R
+Ясло Дон	Jászladány/R
+Яслодян	Jászladány/R
+Яснишер	Jászkisér/R
+Яснодан	Jászladány/R
+Яснодань	Jászladány/R
+Яснодекуне	Jász-Nagykun-Szolnok/R
+Яснодь-Кулсолнок	Jász-Nagykun-Szolnok/R
+Яснопати	Jászapáti/R
+Яснорояне	Jászkarajenő/R
+Яснотьульсельнок	Jász-Nagykun-Szolnok/R
+Ясолшусендер	Jászalsószentgyörgy/R
+Ясольшу-Сентдерть	Jászalsószentgyörgy/R
+Ясонати	Jászapáti/R
+Ясонаты	Jászapáti/R
+Ясонаши	Jászapáti/R
+Ясонот	Jászapáti/R
+Ясопапи	Jászapáti/R
+Ясопапт	Jászapáti/R
+Ясопат	Jászapáti/R
+Ясопата	Jászapáti/R
+Ясопатва	Jászapáti/R
+Ясопатий	Jászapáti/R
+Ясопатин	Jászapáti/R
+Ясопатый	Jászapáti/R
+Ясопатын	Jászapáti/R
+Ясопатье	Jászapáti/R
+Ясопеты	Jászapáti/R
+Ясопод	Jászapáti/R
+Ясопота	Jászapáti/R
+Ясопьты	Jászapáti/R
+Ясоросалош	Jászárokszállás/R
+Ясорох Салаш	Jászárokszállás/R
+Ясорусаволош	Jászárokszállás/R
+Ясорусалош	Jászárokszállás/R
+Ясошовсентгёрк	Jászalsószentgyörgy/R
+Ясперен	Jászberény/R
+Ясса-Пати	Jászapáti/R
+Ясураксараш	Jászárokszállás/R
+Ясфеньсорок	Jászfényszaru/R
+Ясякотаимо	Jászjákóhalma/R
+Ясяногомп	Jászjákóhalma/R
+Яцберин	Jászberény/R

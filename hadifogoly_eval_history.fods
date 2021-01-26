@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
+ <office:meta><meta:creation-date>2021-01-25T17:57:59.320816861</meta:creation-date><dc:date>2021-01-25T18:24:17.509472063</dc:date><meta:editing-duration>PT24M29S</meta:editing-duration><meta:editing-cycles>15</meta:editing-cycles><meta:generator>LibreOffice/6.0.7.3$Linux_X86_64 LibreOffice_project/00m0$Build-3</meta:generator><meta:document-statistic meta:table-count="1" meta:cell-count="69" meta:object-count="0"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="VisibleAreaTop" config:type="int">612</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">626</config:config-item>
+   <config:config-item config:name="VisibleAreaWidth" config:type="int">30344</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">6732</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
+     <config:config-item-map-named config:name="Tables">
+      <config:config-item-map-entry config:name="Munkalap1">
+       <config:config-item config:name="CursorPositionX" config:type="int">0</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">0</config:config-item>
+       <config:config-item config:name="HorizontalSplitMode" config:type="short">0</config:config-item>
+       <config:config-item config:name="VerticalSplitMode" config:type="short">0</config:config-item>
+       <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
+       <config:config-item config:name="VerticalSplitPosition" config:type="int">0</config:config-item>
+       <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">0</config:config-item>
+       <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+       <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
+       <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+       <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+       <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+      </config:config-item-map-entry>
+     </config:config-item-map-named>
+     <config:config-item config:name="ActiveTable" config:type="string">Munkalap1</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1239</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
+     <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+     <config:config-item config:name="ShowPageBreakPreview" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="GridColor" config:type="long">12632256</config:config-item>
+     <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="HasSheetTabs" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="IsValueHighlightingEnabled" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
+     <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
+     <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+     <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
+     <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="SyntaxStringRef" config:type="short">7</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">nwH+/0hQLURlc2tqZXQtNDYyMC1vdHRob25pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpIUC1EZXNramV0LTQ2MjAtb3R0aG9uaQAAAAAWAAMAvAAAAAAAAAAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SFAtRGVza2pldC00NjIwLW90dGhvbmkKb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5kYWp1c3RtZW50PTAsMCwwLDAKY29sb3JkZXB0aD0yNApwc2xldmVsPTAKcGRmZGV2aWNlPTEKY29sb3JkZXZpY2U9MApQUERDb250ZXhEYXRhClBhZ2VTaXplOkE0AAASAENPTVBBVF9EVVBMRVhfTU9ERRMARHVwbGV4TW9kZTo6VW5rbm93bg==</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string">HP-Deskjet-4620-otthoni</config:config-item>
+   <config:config-item config:name="AutoCalculate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">3</config:config-item>
+   <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="GridColor" config:type="long">12632256</config:config-item>
+   <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsDocumentShared" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="HasSheetTabs" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
+   <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
+   <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
+   <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+   <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="Courier" svg:font-family="Courier" style:font-family-generic="modern" style:font-pitch="fixed"/>
+  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="AR PL SungtiL GB" svg:font-family="&apos;AR PL SungtiL GB&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Lohit Devanagari" svg:font-family="&apos;Lohit Devanagari&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="table-cell">
+   <style:paragraph-properties style:tab-stop-distance="12.5mm"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:language="hu" fo:country="HU" style:font-name-asian="DejaVu Sans" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="DejaVu Sans" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <number:number-style style:name="N0">
+   <number:number number:min-integer-digits="1"/>
+  </number:number-style>
+  <number:percentage-style style:name="N107">
+   <number:number number:decimal-places="1" loext:min-decimal-places="1" number:min-integer-digits="1"/>
+   <number:text>%</number:text>
+  </number:percentage-style>
+  <style:style style:name="Default" style:family="table-cell">
+   <style:text-properties style:font-name-asian="AR PL SungtiL GB" style:font-family-asian="&apos;AR PL SungtiL GB&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-name-complex="Lohit Devanagari" style:font-family-complex="&apos;Lohit Devanagari&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable"/>
+  </style:style>
+  <style:style style:name="Heading_20__28_user_29_" style:display-name="Heading (user)" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#000000" fo:font-size="24pt" fo:font-style="normal" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="table-cell" style:parent-style-name="Heading_20__28_user_29_">
+   <style:text-properties fo:color="#000000" fo:font-size="18pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Heading_20_2" style:display-name="Heading 2" style:family="table-cell" style:parent-style-name="Heading_20__28_user_29_">
+   <style:text-properties fo:color="#000000" fo:font-size="12pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Text" style:family="table-cell" style:parent-style-name="Default"/>
+  <style:style style:name="Note" style:family="table-cell" style:parent-style-name="Text">
+   <style:table-cell-properties fo:background-color="#ffffcc" style:diagonal-bl-tr="none" style:diagonal-tl-br="none" fo:border="0.74pt solid #808080"/>
+   <style:text-properties fo:color="#333333" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Footnote" style:family="table-cell" style:parent-style-name="Text">
+   <style:text-properties fo:color="#808080" fo:font-size="10pt" fo:font-style="italic" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Hyperlink" style:family="table-cell" style:parent-style-name="Text">
+   <style:text-properties fo:color="#0000ee" fo:font-size="10pt" fo:font-style="normal" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="#0000ee" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Status" style:family="table-cell" style:parent-style-name="Default"/>
+  <style:style style:name="Good" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ccffcc"/>
+   <style:text-properties fo:color="#006600" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Neutral" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ffffcc"/>
+   <style:text-properties fo:color="#996600" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Bad" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ffcccc"/>
+   <style:text-properties fo:color="#cc0000" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Warning" style:family="table-cell" style:parent-style-name="Status">
+   <style:text-properties fo:color="#cc0000" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Error" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#cc0000"/>
+   <style:text-properties fo:color="#ffffff" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Accent" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#000000" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Accent_20_1" style:display-name="Accent 1" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#000000"/>
+   <style:text-properties fo:color="#ffffff" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Accent_20_2" style:display-name="Accent 2" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#808080"/>
+   <style:text-properties fo:color="#ffffff" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Accent_20_3" style:display-name="Accent 3" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#dddddd"/>
+  </style:style>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="co1" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="6.26mm"/>
+  </style:style>
+  <style:style style:name="co2" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="55.9mm"/>
+  </style:style>
+  <style:style style:name="co3" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="30.04mm"/>
+  </style:style>
+  <style:style style:name="co4" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="42.02mm"/>
+  </style:style>
+  <style:style style:name="co5" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="27.04mm"/>
+  </style:style>
+  <style:style style:name="co6" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="45.01mm"/>
+  </style:style>
+  <style:style style:name="co7" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="48.01mm"/>
+  </style:style>
+  <style:style style:name="co8" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="18.04mm"/>
+  </style:style>
+  <style:style style:name="co9" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="6.79mm"/>
+  </style:style>
+  <style:style style:name="co10" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="30.59mm"/>
+  </style:style>
+  <style:style style:name="co11" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="22.58mm"/>
+  </style:style>
+  <style:style style:name="ro1" style:family="table-row">
+   <style:table-row-properties style:row-height="6.12mm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ta1" style:family="table" style:master-page-name="Default">
+   <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="ce1" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="14pt" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="ce2" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Courier" fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce3" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="start" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce4" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="start" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Courier" fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce5" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="start" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce6" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Courier" fo:font-size="14pt" fo:font-weight="normal" style:font-size-asian="14pt" style:font-weight-asian="normal" style:font-size-complex="14pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="ce7" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Courier" fo:font-size="14pt" fo:font-weight="normal" style:font-size-asian="14pt" style:font-weight-asian="normal" style:font-size-complex="14pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="ce8" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="14pt" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="ce9" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Courier" fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce10" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:table-cell-properties style:text-align-source="value-type" style:repeat-content="false"/>
+   <style:paragraph-properties fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="14pt" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="ce11" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:text-properties fo:font-size="14pt" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="ce12" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="14pt" fo:font-weight="normal" style:font-size-asian="14pt" style:font-weight-asian="normal" style:font-size-complex="14pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="ce13" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:text-properties fo:font-size="14pt" fo:font-weight="normal" style:font-size-asian="14pt" style:font-weight-asian="normal" style:font-size-complex="14pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="ce14" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:font-size="14pt" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="ce15" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="start" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="14pt" fo:font-style="italic" style:font-size-asian="14pt" style:font-style-asian="italic" style:font-size-complex="14pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="ce16" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="start" fo:margin-left="0mm"/>
+   <style:text-properties style:font-name="Courier" fo:font-size="14pt" fo:font-style="italic" fo:font-weight="bold" style:font-size-asian="14pt" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-style-complex="italic" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties style:writing-mode="lr-tb"/>
+   <style:header-style>
+    <style:header-footer-properties fo:min-height="7.5mm" fo:margin-left="0mm" fo:margin-right="0mm" fo:margin-bottom="2.5mm"/>
+   </style:header-style>
+   <style:footer-style>
+    <style:header-footer-properties fo:min-height="7.5mm" fo:margin-left="0mm" fo:margin-right="0mm" fo:margin-top="2.5mm"/>
+   </style:footer-style>
+  </style:page-layout>
+  <style:page-layout style:name="pm2">
+   <style:page-layout-properties style:writing-mode="lr-tb"/>
+   <style:header-style>
+    <style:header-footer-properties fo:min-height="7.5mm" fo:margin-left="0mm" fo:margin-right="0mm" fo:margin-bottom="2.5mm" fo:border="2.49pt solid #000000" fo:padding="0.18mm" fo:background-color="#c0c0c0">
+     <style:background-image/>
+    </style:header-footer-properties>
+   </style:header-style>
+   <style:footer-style>
+    <style:header-footer-properties fo:min-height="7.5mm" fo:margin-left="0mm" fo:margin-right="0mm" fo:margin-top="2.5mm" fo:border="2.49pt solid #000000" fo:padding="0.18mm" fo:background-color="#c0c0c0">
+     <style:background-image/>
+    </style:header-footer-properties>
+   </style:footer-style>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Default" style:page-layout-name="pm1">
+   <style:header>
+    <text:p><text:sheet-name>???</text:sheet-name></text:p>
+   </style:header>
+   <style:header-left style:display="false"/>
+   <style:footer>
+    <text:p>Oldal <text:page-number>1</text:page-number></text:p>
+   </style:footer>
+   <style:footer-left style:display="false"/>
+  </style:master-page>
+  <style:master-page style:name="Report" style:page-layout-name="pm2">
+   <style:header>
+    <style:region-left>
+     <text:p><text:sheet-name>???</text:sheet-name><text:s/>(<text:title>???</text:title>)</text:p>
+    </style:region-left>
+    <style:region-right>
+     <text:p><text:date style:data-style-name="N2" text:date-value="2021-01-25">0000.00.00</text:date>, <text:time style:data-style-name="N2" text:time-value="18:23:59.288961838">00:00:00</text:time></text:p>
+    </style:region-right>
+   </style:header>
+   <style:header-left style:display="false"/>
+   <style:footer>
+    <text:p>Oldal <text:page-number>1</text:page-number><text:s/>/ <text:page-count>99</text:page-count></text:p>
+   </style:footer>
+   <style:footer-left style:display="false"/>
+  </style:master-page>
+ </office:master-styles>
+ <office:body>
+  <office:spreadsheet>
+   <table:calculation-settings table:automatic-find-labels="false" table:use-regular-expressions="false" table:use-wildcards="true"/>
+   <table:table table:name="Munkalap1" table:style-name="ta1">
+    <table:table-column table:style-name="co1" table:default-cell-style-name="ce1"/>
+    <table:table-column table:style-name="co2" table:default-cell-style-name="ce3"/>
+    <table:table-column table:style-name="co3" table:default-cell-style-name="ce6"/>
+    <table:table-column table:style-name="co4" table:default-cell-style-name="ce8"/>
+    <table:table-column table:style-name="co5" table:default-cell-style-name="ce8"/>
+    <table:table-column table:style-name="co6" table:default-cell-style-name="ce8"/>
+    <table:table-column table:style-name="co7" table:default-cell-style-name="ce12"/>
+    <table:table-column table:style-name="co8" table:default-cell-style-name="ce12"/>
+    <table:table-column table:style-name="co9" table:default-cell-style-name="ce14"/>
+    <table:table-column table:style-name="co10" table:default-cell-style-name="ce15"/>
+    <table:table-column table:style-name="co11" table:number-columns-repeated="2" table:default-cell-style-name="ce8"/>
+    <table:table-column table:style-name="co11" table:number-columns-repeated="1012" table:default-cell-style-name="ce1"/>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="1024"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:style-name="ce2"/>
+     <table:table-cell table:style-name="ce4"/>
+     <table:table-cell table:style-name="ce2"/>
+     <table:table-cell table:style-name="ce9" office:value-type="string" calcext:value-type="string">
+      <text:p>Kart_1000_Sor</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9" office:value-type="string" calcext:value-type="string">
+      <text:p>test_set</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9" office:value-type="string" calcext:value-type="string">
+      <text:p>pseudo_1000_42</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9" office:value-type="string" calcext:value-type="string">
+      <text:p>random_10000_42</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string">
+      <text:p>Kart</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce16"/>
+     <table:table-cell table:style-name="ce9" table:number-columns-repeated="2"/>
+     <table:table-cell table:style-name="ce2" table:number-columns-repeated="1012"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+      <text:p>1. szakasz vége</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+      <text:p>@5ee9d20</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce10" office:value-type="percentage" office:value="0.787" calcext:value-type="percentage">
+      <text:p>78,7%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce10" office:value-type="percentage" office:value="0.822" calcext:value-type="percentage">
+      <text:p>82,2%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.815" calcext:value-type="percentage">
+      <text:p>81,5%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.804" calcext:value-type="percentage">
+      <text:p>80,4%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.805" calcext:value-type="percentage">
+      <text:p>80,5%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1016"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+      <text:p>utca nélkül</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce7"/>
+     <table:table-cell office:value-type="percentage" office:value="0.792" calcext:value-type="percentage">
+      <text:p>79,2%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.834" calcext:value-type="percentage">
+      <text:p>83,4%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.821" calcext:value-type="percentage">
+      <text:p>82,1%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.808" calcext:value-type="percentage">
+      <text:p>80,8%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.809" calcext:value-type="percentage">
+      <text:p>80,9%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1016"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+      <text:p>algo nostrict, -szkij</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce7"/>
+     <table:table-cell office:value-type="percentage" office:value="0.793" calcext:value-type="percentage">
+      <text:p>79,3%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.834" calcext:value-type="percentage">
+      <text:p>83,4%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.82" calcext:value-type="percentage">
+      <text:p>82,0%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1018"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+      <text:p>országröv</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+      <text:p>@fac3b58</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.795" calcext:value-type="percentage">
+      <text:p>79,5%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.838" calcext:value-type="percentage">
+      <text:p>83,8%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.822" calcext:value-type="percentage">
+      <text:p>82,2%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.811" calcext:value-type="percentage">
+      <text:p>81,1%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>leadva #1</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1014"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+      <text:p>loc algo jav, loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+      <text:p>@877063e</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.814" calcext:value-type="percentage">
+      <text:p>81,4%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.857" calcext:value-type="percentage">
+      <text:p>85,7%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.842" calcext:value-type="percentage">
+      <text:p>84,2%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1018"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+      <text:p>loose enyém</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+      <text:p>@8e919d9</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.816" calcext:value-type="percentage">
+      <text:p>81,6%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.859" calcext:value-type="percentage">
+      <text:p>85,9%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.846" calcext:value-type="percentage">
+      <text:p>84,6%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.832" calcext:value-type="percentage">
+      <text:p>83,2%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>leadva #2</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1014"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>SAR, freq locs, intern</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>@69458bd</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.822" calcext:value-type="percentage">
+      <text:p>82,2%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.862" calcext:value-type="percentage">
+      <text:p>86,2%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.86" calcext:value-type="percentage">
+      <text:p>86,0%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.848" calcext:value-type="percentage">
+      <text:p>84,8%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>leadva #3</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1014"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>SAR#1, G-CS</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>@65ad81c</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.825" calcext:value-type="percentage">
+      <text:p>82,5%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.865" calcext:value-type="percentage">
+      <text:p>86,5%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.862" calcext:value-type="percentage">
+      <text:p>86,2%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2" office:value-type="percentage" office:value="0.852" calcext:value-type="percentage">
+      <text:p>85,2%</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>leadva #4/5</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1014"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>full country abbr list</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>@3085dd9</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.826" calcext:value-type="percentage">
+      <text:p>82,6%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.868" calcext:value-type="percentage">
+      <text:p>86,8%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.863" calcext:value-type="percentage">
+      <text:p>86,3%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce13" office:value-type="percentage" office:value="0.854" calcext:value-type="percentage">
+      <text:p>85,4%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1017"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>SAR#2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>working..</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.836" calcext:value-type="percentage">
+      <text:p>83,6%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.882" calcext:value-type="percentage">
+      <text:p>88,2%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.873" calcext:value-type="percentage">
+      <text:p>87,3%</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="percentage" office:value="0.865" calcext:value-type="percentage">
+      <text:p>86,5%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce13" office:value-type="percentage" office:value="0.866" calcext:value-type="percentage">
+      <text:p>86,6%</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="1016"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="3"/>
+     <table:table-cell table:style-name="ce11" table:number-columns-repeated="3"/>
+     <table:table-cell table:number-columns-repeated="1018"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="3"/>
+     <table:table-cell table:style-name="ce11" table:number-columns-repeated="2"/>
+     <table:table-cell table:number-columns-repeated="1019"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="3"/>
+     <table:table-cell table:style-name="ce11"/>
+     <table:table-cell table:number-columns-repeated="1020"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1" table:number-rows-repeated="1048560">
+     <table:table-cell table:number-columns-repeated="1024"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="1024"/>
+    </table:table-row>
+   </table:table>
+   <table:named-expressions/>
+  </office:spreadsheet>
+ </office:body>
+</office:document>

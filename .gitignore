@@ -10,6 +10,7 @@ out/old*
 out/new*
 out/*new*
 out/full*
+out/other
 
 *preprocessed*
 

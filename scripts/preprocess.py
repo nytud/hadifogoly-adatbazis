@@ -34,7 +34,7 @@ def read_sar_table(filename):
     sar = {}
     with open(filename) as csvfile:
         sar_reader = csv.reader(csvfile, delimiter='\t')
-        for cnt, orig, transcribed, *_ in sar_reader:
+        for orig, transcribed, *_ in sar_reader:
             sar[orig] = transcribed
     return sar
 
