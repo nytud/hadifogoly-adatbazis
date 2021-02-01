@@ -32,7 +32,8 @@ AS_LOOSE = '/L'           # 2. loose-ként megvan
 STRICT_FIRST_STEP = False
 # akarunk-e difflib guess-t
 IS_DIFFLIB = True         # False if '-n' 
-DIFFLIB_CUTOFF = 0.8      # set by '-f'
+DIFFLIB_CUTOFF = 0.7      # set by '-f'
+DIFFLIB_N = 5             # set by '-n'
 AS_DIFFLIB = '/D'         # 3. difflib-ként megvan
 FROM_STRICT = '>>'        # difflib esetén a strict alak jele
 
@@ -41,6 +42,71 @@ AS_FALLBACK = '=T'        # 4. ha nincs más, marad a strict
 SAR_MARK = '/R'           # search-and-replace mark, see: preprocess.py
 
 LOGBASE = 100             # base for log freq values
+
+# "extremal" character values from "General Pubctuation" unicode block for CHAR_EQUIVALENT_TABLE
+C = "‖‗†‡•‣․‥…‧L‰‱′″‴‵‶‷‸‹›※‼‽‾⁁⁂⁃⁄⁅⁆⁇⁈⁉⁊⁋⁌⁍⁎⁏⁐⁑⁒⁓⁔⁕⁖⁗⁘⁙⁚⁛⁜⁝⁞"
+# XXX talán lower() -rel kellene nyomatni? hogyan? XXX
+CHAR_EQUIVALENT_TABLE = {
+
+    'gyö': C[0],
+    'gye': C[0],
+    'Gyö': C[1],
+    'Gye': C[1],
+
+    'já': C[2],
+    'ja': C[2],
+    'Já': C[3],
+    'Ja': C[3],
+
+    'jó': C[4],
+    'ju': C[4],
+    'Jó': C[5],
+    'Ju': C[5],
+
+    'a': C[6],
+    'á': C[6],
+    'o': C[6],
+    'A': C[7],
+    'Á': C[7],
+    'O': C[7],
+
+    'gy': '<HIDE1>',
+    'g': C[8],
+    'h': C[8],
+    '<HIDE1>': 'gy',
+    'Gy': '<HIDE2>',
+    'G': C[9],
+    'H': C[9],
+    '<HIDE2>': 'Gy',
+
+    'j': C[10],
+    'ly': C[10],
+    'J': C[11],
+    'Ly': C[11],
+
+    'sz': '<HIDE3>',
+    'zs': C[12],
+    'z': C[12],
+    '<HIDE3>': 'sz',
+    'Sz': '<HIDE4>',
+    'Zs': C[13],
+    'Z': C[13],
+    '<HIDE4>': 'Sz',
+
+    'ny': C[14],
+    'n': C[14],
+    'Ny': C[15],
+    'N': C[15],
+}
+
+
+# XXX németre (egyéb nyelvekre) persze másképp kéne mint magyarra!
+def make_chars_equivalent(string):
+
+    for k, v in CHAR_EQUIVALENT_TABLE.items():
+        string = string.replace(k, v)
+
+    return string
 
 
 def build_one(data):
@@ -65,11 +131,19 @@ def build_one(data):
     # XXX legyen portable...
     termlist_filename = 'data/lists/' + data['termlist'] + '.csv'
     with open(termlist_filename) as termlist:
-        data['terms'] = [
+        terms = [
             item.replace(' ', '_')
             for item
             in termlist.read().splitlines()]
         # set()-tel lassabb volt, pedig "5. pont"! hm..
+        terms_equiv = [make_chars_equivalent(term) for term in terms]
+        terms_equiv2orig = defaultdict(list)
+        for term, term_equiv in zip(terms, terms_equiv):
+            terms_equiv2orig[term_equiv].append(term)    
+
+        data['terms'] = terms
+        data['terms_equiv'] = terms_equiv
+        data['terms_equiv2orig'] = terms_equiv2orig
 
     # XXX legyen portable...
     data['freqs'] = {} # ti. a 'freqs' opcionális!
@@ -118,6 +192,37 @@ def build_infrastructure(config):
     return infrastructure
 
 
+def add_score(matches, trans, freqs):
+    """
+    Returns matches ordered by a score based on:
+     * difflib ratio of match and trans
+     * frequency of match
+    """
+
+    if len(matches) == 1:
+        res = matches[0]
+
+    # megmérjük strict vs match távot,
+    # és hozzáírjuk a szavakhoz: Jóska[0.52],
+    # és sorbatesszük eszerint! :)
+
+    elif len(matches) > 1:
+
+        # lehet szebben? :)
+        res = ';'.join("{}[{:.2f}]".format(i[0], i[1])
+            for i
+            in sorted((
+                (match,
+                 # score = difflib_ratio + logfreq
+                 difflib.SequenceMatcher(None, trans, match).ratio() +
+                 (freqs[match] if match in freqs else 0))
+                for match
+                in matches),
+                key=lambda x: x[1],
+                reverse=True))
+    return res
+
+
 def process(infrastructure):
     """Do the thing."""
 
@@ -151,6 +256,8 @@ def process(infrastructure):
             loose_trans = actual_data['loose_trans']
             strict_trans = actual_data['strict_trans']
             terms = actual_data['terms']
+            terms_equiv = actual_data['terms_equiv']
+            terms_equiv2orig = actual_data['terms_equiv2orig']
             freqs = actual_data['freqs']
             cache = actual_data['cache']
 
@@ -207,25 +314,8 @@ def process(infrastructure):
 # 8. ha van találat: visszaadjuk az összes találatot + ratio()!
 
                 if matches:
-                    if len(matches) == 1:
-                        res = matches[0]
-                    elif len(matches) > 1:
-                        # megmérjük strict vs match távot,
-                        # és hozzáírjuk a szavakhoz: Jóska[0.52],
-                        # és sorbatesszük eszerint! :)
 
-                        # lehet szebben? :)
-                        res = ';'.join("{}[{:.2f}]".format(i[0], i[1])
-                            for i
-                            in sorted((
-                                (match,
-                                 # score = difflib_ratio + logfreq
-                                 difflib.SequenceMatcher(None, trans, match).ratio() +
-                                 (freqs[match] if match in freqs else 0))
-                                for match
-                                in matches),
-                                key=lambda x: x[1],
-                                reverse=True))
+                    res = add_score(matches, trans, freqs)
 
                     result = res + AS_LOOSE
                     transcribed = result
@@ -235,9 +325,22 @@ def process(infrastructure):
 # 9. még teszünk egy próbát a difflib-bel, ha engedélyezve van
 
                 if IS_DIFFLIB: # 
-                    close_matches = difflib.get_close_matches(trans, terms, n=1, cutoff=DIFFLIB_CUTOFF)
+                    close_matches = difflib.get_close_matches(
+                        make_chars_equivalent(trans),
+                        terms_equiv,
+                        n=DIFFLIB_N, cutoff=DIFFLIB_CUTOFF)
+
                     if close_matches:
-                        result = trans + FROM_STRICT + ';'.join(close_matches) + AS_DIFFLIB
+
+                        matches = [orig
+                                   for close_match in close_matches
+                                   for orig in terms_equiv2orig[close_match]]
+
+                        matches = list(set(matches))
+
+                        res = add_score(matches, trans, freqs)
+
+                        result = trans + FROM_STRICT + res + AS_DIFFLIB # Forenc>>Ferenc/D
                         transcribed = result
                         cache[word] = result
                         continue
@@ -267,7 +370,7 @@ def get_args():
         help="add a 'simple strict match' step at the beginning",
     )
     pars.add_argument(
-        '-n', '--no-difflib',
+        '-x', '--no-difflib',
         action='store_true',
         help="turn off difflib, no approx search, 7x faster",
     )
@@ -275,6 +378,11 @@ def get_args():
         '-f', '--difflib-cutoff',
         type=float,
         help="cutoff for difflib (default={})".format(DIFFLIB_CUTOFF),
+    )
+    pars.add_argument(
+        '-n', '--difflib-n',
+        type=float,
+        help="for difflib outputs N predictions (default={})".format(DIFFLIB_N),
     )
     pars.add_argument(
         '-p', '--plain',
@@ -299,8 +407,10 @@ def main():
     IS_DIFFLIB = not args.no_difflib
 
     global DIFFLIB_CUTOFF
-    DIFFLIB_CUTOFF = args.difflib_cutoff if args.difflib_cutoff else 0.8      # set by '-f'
-    # XXX hardcoded 0.8 ...
+    if args.difflib_cutoff: DIFFLIB_CUTOFF = args.difflib_cutoff # set by '-f'
+
+    global DIFFLIB_N
+    if args.difflib_n: DIFFLIB_N = args.difflib_n                # set by '-n'
 
     global IS_MARK
     IS_MARK = not args.plain

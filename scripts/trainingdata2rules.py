@@ -22,9 +22,9 @@ ONE_CHARS = {
 
 # XXX [aáo] --> 'A', azaz ezeket nem különítjük el, mert nehéz!
 MERGESIMPLIFY = {
-    'a': 'A',
-    'á': 'A',
-    'o': 'A',
+#    'a': 'A',
+#    'á': 'A',
+#    'o': 'A',
 #    'g': 'H',
 #    'h': 'H'
 }

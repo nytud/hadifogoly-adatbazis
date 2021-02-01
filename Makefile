@@ -41,16 +41,15 @@ preprocess:
 preparation: process_countries convert_rules convert_metarules complete_sar_tables
 	@echo "--- $@" 1>&2
 
-SPLITDIR=splits
-SPLIT_FROM=0
-SPLIT_TO=2399
+SPLIT_FILE=$(FILE)
+SPLIT_CHUNKS=2400
 SPLIT_OUT=o
 SPLIT_ERR=e
 # egy csomó minden a scriptben van beállítva...
 # prereq: make preparation
 split_and_parallel:
 	@echo "--- $@" 1>&2
-	rm -rf $(SPLITDIR) ; date ; time $S/split_and_parallel.sh $(SPLIT_FROM) $(SPLIT_TO) > $(SPLIT_OUT) 2> $(SPLIT_ERR) ; date
+	date ; time $S/split_and_parallel.sh $(SPLIT_FILE) $(SPLIT_CHUNKS) > $(SPLIT_OUT) 2> $(SPLIT_ERR) ; date
 
 
 # ===== EVAL

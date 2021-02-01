@@ -1,24 +1,38 @@
 #!/bin/bash
 
-INPUT=data/Kart.csv
+DEFAULT_DATAFILE=Kart
 
-OUTDIR=splits
-mkdir -p $OUTDIR
-
-CHUNKS=2400 # can be divided by 2, 3, 4, 6, 24...
+DEFAULT_CHUNKS=2400 # can be divided by 2, 3, 4, 6, 24...
 
 if [ $# -eq 0 ]
 then
+  DATAFILE=$DEFAULT_DATAFILE
+  CHUNKS=$DEFAULT_CHUNKS
   FROM=0
   TO=$((CHUNKS - 1))
 elif [ $# -eq 2 ]
 then
-  FROM=$1
-  TO=$2
+  DATAFILE=$1
+  CHUNKS=$2
+  FROM=0
+  TO=$((CHUNKS - 1))
+elif [ $# -eq 4 ]
+then
+  DATAFILE=$1
+  CHUNKS=$2
+  FROM=$3
+  TO=$4
 else
-  echo "zero or 2 (FROM and TO) parameter needed"
+  echo "zero or 2 (DATAFILE and CHUNKS) or 4 (+ FROM and TO) parameter needed"
   exit 1
 fi
+
+INPUT=data/$DATAFILE.csv
+
+OUTDIR=$DATAFILE.splits
+rm -rf $OUTDIR
+mkdir -p $OUTDIR
+
 
 # !!! number of cores !!!
 # https://stackoverflow.com/questions/6481005
@@ -26,7 +40,7 @@ CORES=$(grep -c ^processor /proc/cpuinfo)
 echo "# of cores = $CORES"
 
 SUFFIX_LENGTH=4
-PREFIX=$OUTDIR/c
+PREFIX=$OUTDIR/$DATAFILE.c
 ADD_SUFFIX=.csv
 CHUNKS_FILES_PATTERN="$PREFIX????$ADD_SUFFIX" # according to $PREFIX and $SUFFIX_LENGTH
 echo $CHUNKS_FILES_PATTERN
