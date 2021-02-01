@@ -147,23 +147,11 @@ complete_sar_tables:
 
 # ===== UTILS
 
-DEPLOY_DIR=deploy_dir
-DEPLOY_NAME=habt
 DEPLOY_TARGET=corpus.nytud.hu:/var/www/habt
-deploy: deploy_random README.pdf
+deploy:
 	@echo "--- $@" 1>&2
-	@$S/deploy.sh $(DEPLOY_DIR)
-	@ln -s $(DEPLOY_DIR) $(DEPLOY_NAME)
-	@zip -r $(DEPLOY_NAME) $(DEPLOY_NAME)
-	@scp -p $(DEPLOY_NAME).zip $(DEPLOY_TARGET)
-	@rm -rf $(DEPLOY_DIR) $(DEPLOY_NAME) $(DEPLOY_NAME).zip
-	@echo "--- $@" 1>&2
-
-deploy_random:
-	@echo "--- $@" 1>&2
-	@echo "!!! header+dátum+ponthelyettalahuzas legyen a random_10000_42.transcribed.csv -ben !!!"
-	#@scp -p data/random_10000_42.csv $(DEPLOY_TARGET)
-	@scp -p out/random_10000_42.transcribed.csv $(DEPLOY_TARGET)
+	@scp -p data/random_10000_42.csv out/random_10000_42.transcribed.csv $(DEPLOY_TARGET)
+	@scp -p data/Kart.csv out/Kart.transcribed.csv $(DEPLOY_TARGET)
 
 README_IN=README.md
 README_INTERM=README_for_pandoc_pdf.md
