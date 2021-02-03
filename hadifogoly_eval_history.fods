@@ -1739,7 +1739,7 @@
       <text:p>SAR#3</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>working</text:p>
+      <text:p>@c40db03</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="ce11" office:value-type="percentage" office:value="0.943" calcext:value-type="percentage">
       <text:p>94,3%</text:p>
