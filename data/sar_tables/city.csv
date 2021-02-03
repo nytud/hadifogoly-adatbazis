@@ -83,6 +83,8 @@
 Бекеш-Габо	Békéscsaba/R
 Бекеш гобо	Békéscsaba/R
 Бекешгово	Békéscsaba/R
+Бекешдюла	Békésgyula/R
+Бекешдюло	Békésgyula/R
 Бекеш-Меде	Békés/R
 Бекешсабо	Békéscsaba/R
 Бекеш Чаба	Békéscsaba/R
@@ -106,6 +108,7 @@
 Берег-Дороуц	Beregdaróc/R
 Берег Дороц	Beregdaróc/R
 Берег-Дороц	Beregdaróc/R
+Берегово	Beregszász/R
 Берег ракуш	Beregrákos/R
 Береграном	Beregrákos/R
 Берег-Саз	Beregszász/R
@@ -171,6 +174,8 @@
 Бротиславль	Pozsony/R
 Брошоу	Brassó/R
 Брошув	Brassó/R
+Брук	Bruck/R
+Брун	Brünn;Brno/R
 Брюн	Brünn;Brno/R
 Брюнь	Brünn;Brno/R
 Брюп	Brünn;Brno/R
@@ -353,6 +358,7 @@
 Девованс	Dévaványa/R
 Девованю	Dévaványa/R
 Деичланцберг	Deutschlandsberg/R
+Деиш	Dés/R
 Дейвованё	Dévaványa/R
 Дейвовани	Dévaványa/R
 Дейвованс	Dévaványa/R
@@ -565,6 +571,7 @@
 Инойшак	Ipolyság/R
 Инойшач	Ipolyság/R
 Инольшак	Ipolyság/R
+Инс	Enns/R
 Интернирован	internált/R
 интернирован	kitelepített/R
 интернирована	internálták;internált/R
@@ -1006,6 +1013,7 @@
 Нечкемет	Kecskemét/R
 Нивнице	Nivnice/R
 Николаевка	Nikolaevka;Nikolayevka;Mykolaivka;Mikolaivka/R
+Николаевск	Nikolaevka/R
 Нирбато	Nyírbátor/R
 Нирбашор	Nyírbátor/R
 Ниредьказо	Nyíregyháza/R
@@ -1053,6 +1061,7 @@
 Нью-Иорк	New York/R
 Нью-Йорк	New York/R
 Нэредьхазо	Nyíregyháza/R
+Нюлаш	Nyulas/R
 Нюль	Nyúl/R
 Оберблан	Oberplan;Horní Plana/R
 Оберплан	Oberplan;Horní Plana/R
@@ -1120,6 +1129,7 @@
 Прегартен	Pregarten/R
 Пресбург	Pozsony/R
 Прешов	Eperjes/R
+Припять	Pripjaty/R
 Пустошоморье	Pusztasomorja/R
 Рабоковач	Rábakovácsi/R
 Рабочече	Rábacsécsény/R
@@ -1148,16 +1158,20 @@
 р-не Воронежа	Voronyezs/R
 р-не Вош	Vas/R
 р-не Гевеш	Heves/R
+р-не Грац	Graz/R
 р-не Дебрецен	Debrecen/R
 р-не Делатин	Deljatin;Deliatyn;Delatyn/R
 р-не Дер	Győr;Győri járás/R
 р-не Дёр	Győr;Győri járás/R
+р-не Днестра	Dnyeszter/R
+р-не Дона	Don/R
 р-не Дубно	Dubno/R
 р-не Дунофельдвар	Dunaföldvár;Dunaföldvári járás/R
 р-не Дюр	Győr;Győri járás/R
 р-не Зала	Zala/R
 р-не Зола	Zala/R
 р-не Золо	Zala/R
+р-не Касторная	Kasztornaja;Kasztornoje/R
 р-не Касторное	Kastornoye;Kasztornoje/R
 р-не Касторной	Kastornoye;Kasztornoje/R
 р-не Кечкемет	Kecskemét;Kecskeméti járás/R
@@ -1190,6 +1204,7 @@
 р-не Пешт	Pest/R
 р-не Пешта	Pest/R
 р-не Прешов	Eperjes;Eperjesi járás/R
+р-не Припять	Pripjaty/R
 р-не Ровно	Rovno;Rivne/R
 р-не Сегед	Szeged;Szegedi járás/R
 р-не Сойва	Szolyva,Szolyvai járás/R
@@ -1234,6 +1249,7 @@
 Санпультен	Sankt Pölten/R
 Санпюльтен	Sankt Pölten/R
 Сантнельтен	Sankt Pölten/R
+Сантниколай	Sankt_Nikolai/R
 Сант-Палтен	Sankt Pölten/R
 Сантпелтен	Sankt Pölten/R
 Сантпельтен	Sankt Pölten/R
@@ -1253,6 +1269,7 @@
 Сату-Маре	Szatmárnémeti;Szatmár/R
 Сваляво	Szolyva/R
 Сволява	Szolyva/R
+Святой Николай	Sankt_Nikolai/R
 с дома	otthonról/R
 с дому	otthonából/R
 Севастополь	Szevasztopol/R
@@ -1276,6 +1293,9 @@
 Сент Иштван	Szentistván/R
 Сент-Иштван	Szentistván/R
 Сент-Ласло	Szentlászló/R
+Сентниколай	Sankt_Nikolai/R
+Сент Николай	Sankt_Nikolai/R
+Сент-Николай	Sankt_Nikolai/R
 Сентпелтен	Sankt Pölten/R
 Сентпельтен	Sankt Pölten/R
 Сент-Пельтен	Sankt Pölten/R
@@ -1349,6 +1369,7 @@
 Требань	Třeboň/R
 Треболь	Třeboň/R
 Требонь	Třeboň/R
+Турецкий Св. Мартын	Túrócszentmárton/R
 Туркевс	Túrkeve/R
 Турулунг	Túrterebes/R
 Тыргумуреш	Marosvásárhely/R
@@ -1505,11 +1526,13 @@
 Шоушкут	Sóskút/R
 Шофон	Sopron/R
 Шпофок	Siófok/R
+Штир	Steyr/R
 Штокерау	Stockerau/R
 Эгерсолу	Egerszalók/R
 Эгор	Eger/R
 Эденбург	Sopron/R
 Энсбах	Ensbach/R
+Энц	Enns/R
 Эпинг	Enying/R
 Эрдлигет	Érdliget/R
 Эреглок	Öreglak/R

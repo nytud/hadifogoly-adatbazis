@@ -9,7 +9,7 @@ import sys
 
 # search-and-replace table
 SAR_TABLE_DIR = 'data/sar_tables'
-SAR_TABLE_COLUMNS = ['lastname', 'firstname', 'county', 'city']
+SAR_TABLE_COLUMNS = ['lastname', 'firstname', 'county', 'district', 'city']
 #SAR_MARK = '/R' # search-and-replace mark -- see in file
 
 PREPOSITIONS = [
@@ -92,6 +92,11 @@ def process():
             if col in {6, 13}:
                 if val in sar['county']:
                     val = sar['county'][val]
+
+            # search-and-replace for districts
+            if col in {7, 14}:
+                if val in sar['district']:
+                    val = sar['district'][val]
 
             # search-and-replace for cities
             if col in {8, 15}:

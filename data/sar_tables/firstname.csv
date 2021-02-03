@@ -389,6 +389,7 @@
 Верунка	Veronka;Veronika/R
 Виламуш	Vilmos/R
 Вилгем	Wilhelm;Vilmos/R
+Вилли	Willi;Vilmos/R
 Виллюш	Vilmos/R
 Вилма	Vilma/R
 Вилман	Vilma;Vilmos/R
@@ -511,6 +512,7 @@
 Гейзи	Géza/R
 Гейзор	Géza/R
 Гейнрик	Henrik;Heinrich/R
+Гейнрих	Henrik/R
 Гельзо	Géza/R
 Геннрих	Henrik;Heinrich/R
 Генрих	Henri/R
@@ -657,6 +659,7 @@
 Дениел	Dániel/R
 Деола	Gyula/R
 Деорг	György/R
+Деорд	György/R
 Деордж	György/R
 Деорди	Györgyi/R
 Деордий	György/R
@@ -694,6 +697,7 @@
 Дерч	György/R
 Дёрч	György/R
 Дерь	György/R
+Дете	Dezső/R
 Деуже	Dezső/R
 Деуло	Gyula/R
 Дешете	Demeter/R
@@ -798,12 +802,14 @@
 Дьердне	Györgyné/R
 Дьерт	György/R
 Дьирд	György/R
+Дьирдь	György/R
 Дьоердь	György/R
 Дьоло	Gyula/R
 Дьорди	Györgyi/R
 Дьорт	György/R
 Дьорч	György/R
 Дьосрдь	György/R
+Дьырдь	György/R
 Дьюрт	György/R
 Дьярдь	György/R
 Дэжев	Dezső/R
@@ -859,8 +865,10 @@
 Еанош	János/R
 Евгений	Jevgenyij;Jenő/R
 Евгень	Jevgenyij;Jenő/R
+Евжев	József/R
 Евжеф	József/R
 Егоп	Egon/R
+Еден	Ödön/R
 Еежеф	József/R
 Еезеф	József/R
 Еижеф	József/R
@@ -884,7 +892,12 @@
 Емре	Imre/R
 Емрих	Imre/R
 Енö	Ernő/R
+Еней	Jenő/R
 Енне	Anna/R
+Енов	Jenő/R
+Еной	Jenő/R
+Енуй	Jenő/R
+Енуш	János/R
 Еожев	József/R
 Еожеф	József/R
 Еожиф	József/R
@@ -920,6 +933,7 @@
 Ёузев	József/R
 Еузеф	József/R
 Еусеф	József/R
+Еушев	József/R
 Еушеф	József/R
 Ештван	István/R
 Еюжеф	József/R
@@ -1009,6 +1023,7 @@
 Зула	Gyula/R
 Иажеф	József/R
 Иазеф	József/R
+Иал	Pál/R
 Ианошне	Jánosné/R
 Иасиф	József/R
 Иаузеф	József/R
@@ -1038,6 +1053,7 @@
 Игтван	István/R
 Игшван	István/R
 Ида	Ida/R
+Иден	Ödön/R
 Идо	Ida/R
 Иёжев	József/R
 Иежеф	József/R
@@ -1117,6 +1133,7 @@
 Иоанаш	Jónás;János/R
 Иоанош	János/R
 Иоануш	Jónás;János/R
+Иовж	József/R
 Иовжель	József/R
 Иовжер	József/R
 Иовожеф	József/R
@@ -1129,10 +1146,12 @@
 Иогеф	József/R
 Иогнат	Ignác/R
 Иогнац	Ignác/R
+Иож	József/R
 Иоже	József/R
 Иожед	József/R
 Иожек	József/R
 Иожер	József/R
+Иожес	József/R
 Иожеф	József/R
 Иожефе	József/R
 Иожефне	Józsefné/R
@@ -1620,6 +1639,7 @@
 Лаюшне	Lajosné/R
 Лаяс	Lajos/R
 Лаяуш	Lajos/R
+Лаяш	Lajos/R
 Лаяшв	Lajos/R
 Лаяшь	Lajos/R
 Лаяюш	Lajos/R
@@ -1719,6 +1739,7 @@
 Лонуш	Lajos/R
 Лооюш	Lajos/R
 Лопош	Lajos/R
+Лопуш	Lajos/R
 Лоран	Lóránt;Loránd/R
 Лоренец	Lőrinc/R
 Лоренц	Lorenz/R
@@ -1975,6 +1996,7 @@
 Мигальне	Mihályné/R
 Мигат	Mihály/R
 Мигаю	Mihály/R
+Мигей	Mihály/R
 Мигель	Migel;Miguel;Mihály/R
 Мигяль	Mihály/R
 Мизай	Mihály/R
@@ -2461,6 +2483,7 @@
 Тюля	Gyula/R
 Тюула	Gyula/R
 Уанош	János/R
+Ульяна	Uljana/R
 Умре	Imre/R
 Уожеф	József/R
 Уозеф	József/R
@@ -2541,8 +2564,10 @@
 Францис	Ferenc/R
 Франциск	Franzisk;Franciska/R
 Франциска	Franciska/R
+Франциско	Franzisk;Franz;Ferenc/R
 Францишка	Franciska/R
 Францишко	Franciska/R
+Франческ	Franzisk;Franz;Ferenc/R
 Франчиск	Franzisk;Francesco/R
 Френс	Ferenc/R
 Фрида	Frida/R
@@ -2808,6 +2833,8 @@
 Эвжибед	Erzsébet/R
 Эгржебед	Erzsébet/R
 Эгри	Egri/R
+Эден	Ödön/R
+Эдер	Ödön/R
 Эдыт	Edit/R
 Эдьед Янош	Egyed János/R
 Эжеберт	Erzsébet/R
@@ -3120,6 +3147,7 @@
 Южов	József/R
 Южоф	József/R
 Южыф	József/R
+Юз	József/R
 Юзевф	József/R
 Юзер	József/R
 Юзеф	József/R
@@ -3153,6 +3181,7 @@
 Юизеф	József/R
 Юисеф	József/R
 Юйжеф	József/R
+Юл	Gyula/R
 Юлана	Julianna/R
 Юлео	Júlia/R
 Юлжев	József/R
@@ -3189,11 +3218,13 @@
 Юлиянна	Julianna/R
 Юлиянно	Julianna/R
 Юлйана	Julianna/R
+Юлла	Gyula/R
 Юлля	Júlia/R
 Юлнана	Julianna/R
 Юлояна	Julianna/R
 Юлсеф	József/R
 Юлыана	Julianna/R
+Юль	Gyula/R
 Юльоно	Julianna/R
 Юльчи	Júlcsi;Júlia/R
 Юлья	Júlia/R
@@ -3218,7 +3249,10 @@
 Юосиф	József/R
 Юоуля	Júlia/R
 Юошеф	József/R
+Юрай	Juraj;György/R
 Юрий	Jurij;György/R
+Юрко	Jurkó;Juraj;György/R
+Юрь	Juraj;György/R
 Юсев	József/R
 Юстеф	József/R
 Ютеф	József/R

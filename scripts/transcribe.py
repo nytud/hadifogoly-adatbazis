@@ -45,6 +45,8 @@ LOGBASE = 100             # base for log freq values
 
 # "extremal" character values from "General Pubctuation" unicode block for CHAR_EQUIVALENT_TABLE
 C = "‖‗†‡•‣․‥…‧L‰‱′″‴‵‶‷‸‹›※‼‽‾⁁⁂⁃⁄⁅⁆⁇⁈⁉⁊⁋⁌⁍⁎⁏⁐⁑⁒⁓⁔⁕⁖⁗⁘⁙⁚⁛⁜⁝⁞"
+# XXX a többkarakteres izék talán nem kellenek, csak egyenként a karakterek...
+# XXX esetleg még lehetne: aáoó; eéöő; j|ly|l; sz|s; uú; c|cz
 # XXX talán lower() -rel kellene nyomatni? hogyan? XXX
 CHAR_EQUIVALENT_TABLE = {
 
@@ -218,8 +220,9 @@ def add_score(matches, trans, freqs):
                  (freqs[match] if match in freqs else 0))
                 for match
                 in matches),
-                key=lambda x: x[1],
-                reverse=True))
+                key=lambda x: (-x[1], x[0]) # fixed order
+            )
+        )
     return res
 
 

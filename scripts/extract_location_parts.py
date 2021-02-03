@@ -149,7 +149,7 @@ ABBRS_RUS_DICT = {
     'комитат': 'county',
     'к-т': 'county',
     'р-н': 'county',  # megye, ha van obl, akkor ált. város/község
-    'p-нe': 'county',  # ua., mint egyel feljebb
+    'р-не': 'county',  # ua., mint egyel feljebb
     'р-он': 'county',
     'р-на': 'county',
     'у.': 'county',  # megye

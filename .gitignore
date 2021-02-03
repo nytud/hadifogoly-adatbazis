@@ -12,6 +12,8 @@ out/*new*
 out/full*
 out/other
 
+rules/*INPROGRESS*
+
 *preprocessed*
 
 out/transcribe.sample.*
