@@ -253,6 +253,21 @@ create_prec_eval_start:
 	@for i in $(PE_OUTDIR)/prec_eval* ; do j=`echo $$i | sed "s/prec_eval/prec_eval.MANUAL/"` ; cp -p $$i $$j ; done
 	@rm -f re.data re.out
 
+# improved version of `make create_prec_eval`
+# this creates a csv table with suitable empty columns for eval
+PET_RANDOM_SIZE=500
+PET_RANDOM_SEED=43
+# 51 is for an empty column for eval created by sed
+PET_RANDOM_PATTERN=1,2,21,51,3,22,51,4,23,51,6,25,51,26,51,27,51,28,51,7,32,51,33,51,34,51,35,51
+PET_RANDOM_FILE=random_$(PET_RANDOM_SIZE)_$(PET_RANDOM_SEED).csv
+PET_OUTDIR=prec_eval
+create_prec_eval_table:
+	@echo "--- $@" 1>&2
+	@make create_random DATAFILE=data/Kart.csv RANDOM_SIZE=$(PET_RANDOM_SIZE) RANDOM_SEED=$(PET_RANDOM_SEED) RANDOM_PATH=aa
+	@make create_random DATAFILE=out/Kart.transcribed.csv RANDOM_SIZE=$(PET_RANDOM_SIZE) RANDOM_SEED=$(PET_RANDOM_SEED) RANDOM_PATH=bb
+	@paste aa bb | sed "s/^M$$//;s/$$/	./" | python3 scripts/cuto.py -c $(PET_RANDOM_PATTERN) > $(PET_OUTDIR)/prec_eval_table.$(PET_RANDOM_FILE)
+	@rm -f aa bb
+
 # create one crafted data record for testing
 # in $(DATADIR)/$(CR_FILE).csv
 # for setting CR_FLAGS see $S/create_crafted_data.py -h
