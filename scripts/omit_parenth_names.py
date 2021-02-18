@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This module simply omits parenthesized versions of names if any.
+Omit the original name if there is a parenthesized version instead.
 """
 
 import csv
@@ -8,7 +8,7 @@ import re
 import sys
 
 def process():
-    """Do the thing"""
+    """Do the thing."""
 
     reader = csv.reader(sys.stdin, delimiter='\t')
     writer = csv.writer(sys.stdout, delimiter='\t')
@@ -17,9 +17,10 @@ def process():
         to_print = []
         for col, val in enumerate(row):
             if col in {1, 2, 3}: # 0-tól számozva!
-                to_print.append(re.sub(' \(.*\)', '', val))
-            else:
-                to_print.append(val)
+                #val = re.sub(' \(.*\)', '', val)
+                val = re.sub(r'^.+ \((.+)\)$', r'\1', val)
+                val = re.sub('см. ', '', val)
+            to_print.append(val)
         print('\t'.join(to_print))
 
 def main():

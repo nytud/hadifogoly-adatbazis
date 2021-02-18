@@ -33,6 +33,7 @@
 Андоут	Mosontarcsa/R
 Андрашидо	Andráshida/R
 Андраш-Хидо	Andráshida/R
+арестован	letartóztatott/R
 арестован на родине	otthon letartóztatták/R
 Арноут	Arnót/R
 Ароктуй	Ároktő/R
@@ -753,6 +754,7 @@
 Краснобельты	Krasznabéltek/R
 Краснобельтык	Krasznabéltek/R
 Краснобельтых	Krasznabéltek/R
+Красногорск	Krasznogorszk/R
 Красношандор	Krasznasándorfalu/R
 Красношандофоль	Krasznasándorfalu/R
 Красный Теребет	Krasznaterebes/R
@@ -1109,41 +1111,271 @@
 Песшент Эржибет	Pestszenterzsébet/R
 Песшент-Эржибет	Pestszenterzsébet/R
 Петервашар	Pétervására/R
+Пеш-Меде	Pest/R
+Пешнекладань	Püspökladány/R
+Пешнехоза	Petneháza/R
+Пешт Вар Меде	Pest/R
 Пештгидекут	Pesthidegkút/R
+Пештидегкут	Pesthidegkút/R
+Пешт-Идегкут	Pesthidegkút/R
 Пештидекут	Pesthidegkút/R
 Пешт Меде	Pest/R
 Пешт-Меде	Pest/R
+Пешт Медя	Pest/R
+Пешт-Санлоренц	Pestszentlőrinc/R
+Пешт-Сент Эржибет	Pestszenterzsébet/R
+Пештугай	Pestújhely/R
+Пешт Уйгей	Pestújhely/R
+Пешт-Уйгей	Pestújhely/R
+Пештуйчейль	Pestújhely/R
+Пештунгей	Pestújhely/R
+Пештунгель	Pestújhely/R
+Пештухвей	Pestújhely/R
+Пештучей	Pestújhely/R
+Пештхидек Кут	Pesthidegkút/R
 Пештхидекут	Pesthidegkút/R
+Пешт-Хидекут	Pesthidegkút/R
+Пешт Яра	Pest/R
 Пизен	Pilsen;Plzeň/R
 Пийч	Pécs/R
+Пилашморот	Pilismarót/R
 Пилешверешвар	Pilisvörösvár/R
+Пилисчого	Piliscsaba/R
+Пилич Эрешвоер	Pilisvörösvár/R
+Пилишверетвар	Pilisvörösvár/R
+Пилиш Санто	Piliszántó/R
+Пилиш-Сантор	Piliszántó/R
+Пилши-Вере-Швар	Pilisvörösvár/R
+Пимицсанто	Piliszántó/R
+Пимишверишвар	Pilisvörösvár/R
+Пинцегет	Pincehely/R
+Пиральгельшец	Nyírgelse/R
+Пирлугош	Nyírlugos/R
+Пирпилиш	Nyírpilis/R
+Писанана	Tiszanána/R
+Писафюред	Tiszafüred/R
+Писке Эстергум	Piszke, Esztergomi járás/R
+Писовид	Tiszavid/R
+Писоорш	Tiszaőrs/R
+Писофюред	Tiszafüred/R
+Питервашергей	Pétervására/R
+Питсбург	Pittsburgh/R
+Пишнекладан	Püspökladány/R
+Пишнеклем	Püspöklele;Maroslele/R
 Пишнеклодань	Püspökladány/R
+Пишпек-Ладань	Püspökladány/R
+Пишпек-Ладонь	Püspökladány/R
+Пишпеклелле	Püspöklele;Maroslele/R
+Пишпеклем	Püspöklele;Maroslele/R
+Пишпеклене	Püspöklele;Maroslele/R
+Пишпек Лодань	Püspökladány/R
+Пишпек-Лодань	Püspökladány/R
+Пишпеклодат	Püspökladány/R
+Пишпекнадаш	Püspöknádasd;Mecseknádasd/R
+Пишпенсилад	Püspökszilágy/R
+Пишпикнада	Püspöknádasd;Mecseknádasd/R
+Пишпикнадош	Püspöknádasd;Mecseknádasd/R
+Пишрекготван	Püspökhatvan/R
+Пишрекнадош	Püspöknádasd;Mecseknádasd/R
+Пишсекнадош	Püspöknádasd;Mecseknádasd/R
+Пиштокнадо	Püspöknádasd;Mecseknádasd/R
+п. Обуда	Óbuda/R
+Подковачи	Nagykovácsi/R
+Подькало	Nagykálló/R
+Подьконижо	Nagykanizsa/R
+Подьморош	Nagymaros/R
+Подьсекерен	Nagyszekeres/R
+Подьсипаш	Nagyszilas/R
+Пожаньпишпек	Pozsonypüspöki/R
+Пожань пишпеки	Pozsonypüspöki/R
+Пожёньпишнеки	Pozsonypüspöki/R
+Пожон	Pozsony/R
+Пожонь	Pozsony/R
+Пожоньнишнеки	Pozsonypüspöki/R
+Пожоньнюшпоки	Pozsonypüspöki/R
+Пожонэжреш	Pozsonyeperjes/R
+Пожочагань	Pozsonycsákány/R
 Пойрад	Poprád/R
+Покш толноулош	Paks, Tolna megye/R
+Полгарт	Polgár;Polgárdi/R
 Полотопожек	Palotabozsok/R
+Полотопужок	Palotabozsok/R
+Полутопужу	Palotabozsok/R
+Польманоштор	Pálmonostora/R
+польской границе	lengyel határ/R
 Польша	Lengyelország/R
 по местожительству	lakóhelyén/R
 по месту жит.	lakóhelyén/R
 по месту жительства	lakóhelyén/R
 по месту жительству	lakóhelyén/R
 Понрад	Poprád/R
+Понтомаш	Paptamási/R
+Понтомаши	Paptamási/R
+Попряд	Poprád/R
+Порно-Аноди	Pornóapáti/R
+Потудан	Potudany/R
+Потудань	Potudany/R
+Поугпетри	Pócspetri/R
+Поучпетре	Pócspetri/R
+Поуч-Петри	Pócspetri/R
+Почпетре	Pócspetri/R
+Прашов	Eperjes/R
 Прегартен	Pregarten/R
+предместье Сент-Ендре	Szentendre külterülete/R
+Презбург	Pozsony/R
 Пресбург	Pozsony/R
 Прешов	Eperjes/R
+приг. Будапешта	Budapest/R
 Припять	Pripjaty/R
+Пуда Пешт	Budapest/R
+Пуста-Шомориан	Pusztasomorja/R
+Пустовамо	Pusztavám/R
+Пустоенге	Pusztahencse/R
+Пусто-Замор	Pusztazámor/R
+Пусто-Керестор	Pusztakeresztúr/R
+Пусто-Ковач	Pusztakovácsi/R
+Пустоковачь	Pusztakovácsi/R
+Пустоковаш	Pusztakovácsi/R
+Пустомодеруш	Pusztamagyaród/R
+Пустомодьяр	Pusztamagyaród/R
+Пусто-Модьярод	Pusztamagyaród/R
+Пустопюмория	Pusztasomorja/R
+Пустосантлато	Pusztaszentlászló/R
+Пустосенласло	Pusztaszentlászló/R
+Пустосенласлу	Pusztaszentlászló/R
+Пусто сент Ласло	Pusztaszentlászló/R
+Пусто-Собольг	Pusztaszabolcs/R
+Пустособочь	Pusztaszabolcs/R
+Пустосштласлу	Pusztaszentlászló/R
+Пустофельдвари	Pusztaföldvár/R
+Пустофеньвар	Pusztaföldvár/R
+Пустошоморно	Pusztasomorja/R
 Пустошоморье	Pusztasomorja/R
+Пусто Эдерич	Pusztaederics/R
+Путапешт	Budapest/R
+Пюшнекладайн	Püspökladány/R
+Пюшнекладан	Püspökladány/R
+Пюшнекладань	Püspökladány/R
+Пюшнеклеле	Püspöklele;Maroslele/R
+Пюшпеклем	Püspöklele;Maroslele/R
+Пюшпекнадож	Püspöknádasd;Mecseknádasd/R
+Пюшпекнадош	Püspöknádasd;Mecseknádasd/R
+Пюшпюк Лодань	Püspökladány/R
+Рабоботоно	Rábapatona/R
+Рабодёрма	Rábagyarmat/R
+Рабодерме	Rábagyarmat/R
+Рабодермо	Rábagyarmat/R
+Рабодерно	Rábagyarmat/R
+Рабоидвег	Rábahídvég/R
+Рабокецен	Rábakecöl/R
 Рабоковач	Rábakovácsi/R
+Рабонордань	Rábapordány/R
+Рабонотоно	Rábapatona/R
+Рабопотоло	Rábapatona/R
+Рабопотон	Rábapatona/R
+Работоутфалу	Rábatótfalu/R
 Рабочече	Rábacsécsény/R
+Рабочечи	Rábacsécsény/R
+Рабочичий	Rábacsécsény/R
+Рабочолок	Rábacsanak/R
 Ракомаш	Rakamaz/R
+Раконополота	Rákospalota/R
+Ракос-Чаба	Rákoscsaba/R
+Ракоцифоль	Rákóczifalva/R
+Ракоци-Фольво	Rákóczifalva/R
+Ракошино	Beregrákos/R
+Ракошкерескут	Rákoskeresztúr/R
+Ракошкерестут	Rákoskeresztúr/R
+Ракошкеритур	Rákoskeresztúr/R
+Ракошколота	Rákospalota/R
+Ракошколото	Rákospalota/R
+Ракошкоресту	Rákoskeresztúr/R
+Ракош-Лигет	Rákosliget/R
+Ракошналоба	Rákospalota/R
+Ракош-Палата	Rákospalota/R
+Ракошпалать	Rákospalota/R
+Ракошпалкто	Rákospalota/R
+Ракош Палуто	Rákospalota/R
+Ракош-Полата	Rákospalota/R
 Ракош-Полота	Rákospalota/R
+Ракошполоти	Rákospalota/R
+Ракошполоты	Rákospalota/R
+Ракошполоша	Rákospalota/R
+Ракошпольта	Rákospalota/R
+Ракош-Сент-Михай	Rákosszentmihály/R
+Ракоштемигай	Rákosszentmihály/R
+Ракошфорту	Fertőrákos/R
+Ракош-Чобо	Rákoscsaba/R
+Ракошь Палата	Rákospalota/R
+Ракуцефалва	Rákosfalva/R
+Ракуцефальва	Rákosfalva/R
+Ракушкерест	Rákoskeresztúr/R
+Ракушкерестуй	Rákoskeresztúr/R
+Ракуш Керестур	Rákoskeresztúr/R
+Ракуш Керестург	Rákoskeresztúr/R
+Ракушкеритур	Rákoskeresztúr/R
+Ракуш Палята	Rákospalota/R
+Ракушполо	Rákospalota/R
+Ракуш Полота	Rákospalota/R
+Ракуш полото	Rákospalota/R
+Ракуш-Полуто	Rákospalota/R
+Раношпалоба	Rákospalota/R
+Рапушполото	Rákospalota/R
 Ратибор	Ratiboř/R
+Раукевер	Ráckeve/R
+Рацеве	Ráckeve/R
+Рацкево	Ráckeve/R
+Рацкересту	Ráckeresztúr/R
+Рац-Керестул	Ráckeresztúr/R
+Рац-Олмаш	Rácalmás/R
+Рацомаш	Rácalmás/R
+Ребцевиш	Répcevis/R
+Ревланвар	Révleányvár/R
+Регенсбург	Regensburg/R
+Реицевиш	Répcevis/R
+Рейв-Леаль-Вар	Révleányvár/R
+Рейв-Фюлен	Révfülöp/R
+Рёкешмезе	Rákosmező/R
+Рексард	Szekszárd/R
+Ренцелок	Répcelak/R
+Репуевиш	Répcevis/R
+Репцевиз	Répcevis/R
 Репьевка	Repjevka;Rep'yevka/R
+Ресеч	Reszege/R
+Ресфиньсару	Jászfényszaru/R
+Ретцевиш	Répcevis/R
+Реукемезей	Rákosmező/R
+Рефлеанвар	Révleányvár/R
+Рибцевиш	Répcevis/R
+Римассубота	Rimaszombat/R
+Римог	Rimóc/R
+Римосомбой	Rimaszombat/R
+Римосумборт	Rimaszombat/R
+Римосумбут	Rimaszombat/R
+Римоувц	Rimóc/R
+Римууц	Rimóc/R
+Ринцелок	Répcelak/R
+Ришкозбаранч	Rétközberencs/R
+р-не Балатон	Balaton/R
 р-не Барановичи	Baranovicsi/R
+р-не Бац	Váci járás/R
 р-не Бекеш	Békés/R
+р-не Бекешгобо	Békéscsabai járás/R
+р-не Бекешчабо	Békéscsabai járás/R
+р-не Бекешчобо	Békéscsabai járás/R
+р-не Бекешьчаба	Békéscsabai járás/R
+р-не Беленеш	Belényesi járás/R
 р-не Берегово	Beregszász;Beregszászi járás/R
+р-не Берексас	Beregszászi járás/R
 р-не Берлина	Berlin/R
+р-не Борш	Borsi járás/R
+р-не Боя	Bajai járás/R
+р-не Братислав	Pozsonyi járás/R
 р-не Братислава	Pozsony;Pozsonyi járás/R
+р-не Братислова	Pozsonyi járás/R
 р-не Брест Литовск	Breszt-Litovszk;Breszt/R
 р-не Брно	Brünn;Brno/R
+р-не Брошов	Brassói járás/R
 р-не Буда	Buda/R
 р-не Будапешт	Budapest/R
 р-не Будапешта	Budapest/R
@@ -1154,9 +1386,14 @@
 р-не Варшава	Varsó/R
 р-не Варшавы	Varsó/R
 р-не Ваш	Vas/R
+р-не Веленце	Velencei járás/R
+р-не Веленци	Velencei járás/R
+р-не Веспреим	Veszprémi járás/R
+р-не Веспрейм	Veszprémi járás/R
 р-не Весприм	Veszprém;Veszprémi járás/R
 р-не Воронежа	Voronyezs/R
 р-не Вош	Vas/R
+р-не Вудапешт	Budapest/R
 р-не Гевеш	Heves/R
 р-не Грац	Graz/R
 р-не Дебрецен	Debrecen/R
@@ -1165,15 +1402,32 @@
 р-не Дёр	Győr;Győri járás/R
 р-не Днестра	Dnyeszter/R
 р-не Дона	Don/R
+р-не Дорог	Dorogi járás/R
 р-не Дубно	Dubno/R
+р-не Дуна-Килита	Dunakiliti járás/R
 р-не Дунофельдвар	Dunaföldvár;Dunaföldvári járás/R
+р-не Дунофельдвор	Dunaföldvári járás/R
+р-не Дьер	Győri járás/R
+р-не Дюер	Győri járás/R
+р-не Дюла	Gyulai járás/R
 р-не Дюр	Győr;Győri járás/R
+р-не Егерь	Egri járás/R
+р-не Жилина	Zsolnai járás/R
 р-не Зала	Zala/R
+р-не Земплен	Zemplén/R
 р-не Зола	Zala/R
+р-не Золаэгерсег	Zalaegerszegi járás/R
+р-не Золе	Zala/R
 р-не Золо	Zala/R
+р-не Зологерсек	Zalaegerszegi járás/R
+р-не Игло	Iglói járás/R
+р-не Капошвар	Kaposvári járás/R
 р-не Касторная	Kasztornaja;Kasztornoje/R
 р-не Касторное	Kastornoye;Kasztornoje/R
 р-не Касторной	Kastornoye;Kasztornoje/R
+р-не Кашица	Kassai járás/R
+р-не Кермент	Körmendi járás/R
+р-не Кёссек	Kőszegi járás/R
 р-не Кечкемет	Kecskemét;Kecskeméti járás/R
 р-не Кечкемит	Kecskemét;Kecskeméti járás/R
 р-не Ковель	Kovel/R
@@ -1185,72 +1439,260 @@
 р-не Коломыи	Kolomija;Kolomjia/R
 р-не Коломыя	Kolomija;Kolomjia/R
 р-не Колошвар	Kolozsvár;Kolozsvári járás/R
+р-не Комарварош	Komárvárosi járás/R
+р-не Комарно	Komáromi járás/R
 р-не Комаром	Komárom;Komáromi járás/R
+р-не Комароме	Komáromi járás/R
 р-не Комароми	Komárom;Komáromi járás/R
+р-не Конувар	Kapuvári járás/R
 р-не Кошице	Kassa;Kassai járás/R
+р-не Курменд	Körmendi járás/R
 р-не Курск	Kurszk/R
 р-не Курска	Kurszk/R
+р-не Кушкомарум	Kiskomáromi járás/R
+р-не Кюрмент	Körmendi járás/R
+р-не Кюсек	Kőszegi járás/R
+р-не Кюссек	Kőszegi járás/R
+р-не Лендва	Lendvai járás/R
+р-не Ленты	Lenti járás/R
+р-не Мадяровар	Magyaróvári járás/R
+р-не Мако	Makói járás/R
+р-не Мезекевиш	Mezőkövesdi járás/R
 р-не Мишкольц	Miskolc;Miskolci járás/R
 р-не Мошон	Moson;Mosoni járás/R
+р-не Мошонмадьярувар	Mosonmagyaróvári járás/R
+р-не Мошонмодяровар	Mosonmagyaróvári járás/R
 р-не Мошонь	Moson;Mosoni járás/R
 р-не Мукачево	Munkács;Munkácsi járás/R
+р-не Мункач	Munkácsi járás/R
 р-не Надворна	Nadvorna;Nadvirna/R
+р-не Надьконижа	Nagykanizsai járás/R
+р-не Надькониже	Nagykanizsai járás/R
+р-не Ниредьгазо	Nyíregyházi járás/R
+р-не Нитра	Nyitra/R
+р-не Ноград	Nógrád/R
+р-не Нодьварод	Nagyváradi járás/R
+р-не Нодьканижа	Nagykanizsai járás/R
+р-не Нодькереш	Nagykőrösi járás/R
 р-не Нодьконижо	Nagykanizsa;Nagykanizsai járás/R
 р-не Нодь-Конижо	Nagykanizsa;Nagykanizsai járás/R
+р-не Нодьсалонта	Nagyszalontai járás/R
+р-не Нодьсокачи	járás/R
+р-не Нотьконижо	Nagykanizsai járás/R
 р-не Острогожск	Osztrogozsszk;Ostrogozhsk/R
 р-не Острогожска	Osztrogozsszk;Ostrogozhsk/R
+р-не Пажонь	Pozsonyi járás/R
+р-не Папа	Pápai járás/R
 р-не Перекопа	Perekop/R
 р-не Перлеберг	Perleberg/R
 р-не Пешт	Pest/R
 р-не Пешта	Pest/R
+р-не Пеште	Pest/R
+р-не Пожон	Pozsonyi járás/R
+р-не Поросло	Poroszlói járás/R
 р-не Прешов	Eperjes;Eperjesi járás/R
+р-не Прешова	Eperjesi járás/R
 р-не Припять	Pripjaty/R
 р-не Ровно	Rovno;Rivne/R
 р-не Сегед	Szeged;Szegedi járás/R
+р-не Сентготгард	Szentgotthárdi járás/R
+р-не Сентготхард	Szentgotthárdi járás/R
+р-не Сентеш	Szentesi járás/R
+р-не Серенч	Szerencsi járás/R
+р-не Силадь	Szilágy/R
 р-не Сойва	Szolyva,Szolyvai járás/R
 р-не Солнок	Szolnok;Szolnoki járás/R
+р-не Соло	Zala/R
+р-не Сомбатей	Szombathelyi járás/R
+р-не Сомботель	Szombathelyi járás/R
+р-не Сомботий	Szombathelyi járás/R
+р-не Сосреген	Szászrégeni járás/R
 р-не Старый Оскол	Sztarij Oszkol/R
+р-не Сумбатхей	Szombathelyi járás/R
 р-не Торда	Torda;Tordai járás/R
 р-не Тордо	Torda;Tordai járás/R
+р-не Туроц-Сент-Мартон	Turócszentmártoni járás/R
 р-не Ужгород	Ungvár;Ungvári járás/R
 р-не Ужгорода	Ungvár;Ungvári járás/R
+р-не Унгбар	Ungvári járás/R
 р-не Унгвар	Ungvár;Ungvári járás/R
 р-не Унгвара	Ungvár;Ungvári járás/R
+р-не Ушгорода	Ungvári járás/R
+р-не Физеш Абонь	Füzesabonyi járás/R
+р-не Хевиз	Hévízi járás/R
+р-не Хотвон	Hatvani járás/R
+р-не Цеглед	Ceglédi járás/R
 р-не Чоп	Csap;Csapi járás/R
+р-не Чорна	Csornai járás/R
+р-не Шапран	Soproni járás/R
 р-не Шомодь	Somogy/R
 р-не Шопрон	Sopron;Soproni járás/R
+р-не Шопрона	Soproni járás/R
 р-не Шопронь	Sopron;Soproni járás/R
 р-не Эгер	Eger;Egri járás/R
+р-не Энинг	Enyingi járás/R
+р-не Эперйеш	Eperjesi járás/R
 р-не Эстергом	Esztergom;Esztergomi járás/R
+р-не Эстергоф	Esztergomi járás/R
+р-не Эстергума	Esztergomi járás/R
+р-н. Капошвар	Kaposvári járás/R
+Рободермант	Rábagyarmat/R
+Рободьёриот	Rábagyarmat/R
+Робоковач	Rábakovácsi/R
+Робоковоч	Rábakovácsi/R
+Родошто	Rodostó/R
+Роземберг	Rózsahegy/R
 Розенау	Rosenau/R
 Розенбург	Rosenburg/R
+Рознява	Rozsnyó/R
+Рокалоз	Rakamaz/R
+Рокомаш	Rakamaz/R
+Рокоца-Сент	Rakacaszend/R
+Рокоша	Rakaca/R
+Рокошполе	Rákospalota/R
+Рокошполоти	Rákospalota/R
+Рокош-Полото	Rákospalota/R
+Рокошпопото	Rákospalota/R
 Роуносек	Rónaszék/R
+Рудобония	Rudabánya/R
+Рузенберг	Rózsahegy/R
+Руминия	Románia/R
 Румыния	Románia/R
+Румыно-Венгерской границе	román-magyar határ/R
 Рунгури	Rungury;Runhury/R
+Русские Комаровцы	Oroszkomoróc/R
+Рыбцевиш	Répcevis/R
+Рюзерродваль	Füzérradvány/R
+Сабад-Салаш	Szabadszállás/R
+Сабат-Ботья	Szabadbattyán/R
+Сабатвян	Szabadbattyán/R
+Сабат-Салаш	Szabadszállás/R
+Сабодалош	Szabadszállás/R
+Сабодеалаш	Szabadszállás/R
+Сабодсагаш	Szabadszállás/R
+Сабод-Салаш	Szabadszállás/R
+Сабольч-Бако	Szabolcsbáka/R
+Саборсалош	Szabadszállás/R
+Сабосалош	Szabadszállás/R
+Саботвалош	Szabadszállás/R
+Сабот-Салаш	Szabadszállás/R
+Саботсало	Szabadszállás/R
+Сабот Салош	Szabadszállás/R
+Саботсано	Szabadszállás/R
+Саботшалош	Szabadszállás/R
 Сабоцалаш	Szabadszállás/R
+Сабочбако	Szabolcsbáka/R
+Сабочь-Меди	Szabolcs/R
+Садалалмаш	Szádalmás/R
+Садамаш	Szádalmás/R
+Сажу-Море	Szatmárnémeti/R
+Саиктпельтен	Sankt Pölten/R
+Сакпельтен	Sankt Pölten/R
+Саксерд	Szekszárd/R
+Саксет Мартон	Szalkszentmárton/R
+Саласентласло	Zalaszentlászló/R
+Салпелтен	Sankt Pölten/R
+Салькелтен	Sankt Pölten/R
+Сальпелтен	Sankt Pölten/R
+Сальпельтен	Sankt Pölten/R
 Самбатай	Szombathely/R
+Самбатхой	Szombathely/R
 Самботель	Szombathely/R
+Самботиль	Szombathely/R
 Самботкей	Szombathely/R
+Самботкель	Szombathely/R
+Самботней	Szombathely/R
 Самботой	Szombathely/R
+Самботхэй	Szombathely/R
+Самботчейк	Szombathely/R
+Самиельтен	Sankt Pölten/R
+Самошуйлон	Szamosújlak/R
+Сампелтен	Sankt Pölten/R
+Сампельт	Sankt Pölten/R
 Сампельтен	Sankt Pölten/R
+Сампельтон	Sankt Pölten/R
+Сампольт	Sankt Pölten/R
+Сампольтен	Sankt Pölten/R
+Сампюльтен	Sankt Pölten/R
+Самушнер	Szamoskér/R
+Самфлория	Sankt Florian/R
+Сан-Бётен	Sankt Pölten/R
+Санготарт	Szentgotthárd/R
+Санготару	Szentgotthárd/R
+Санготхар	Szentgotthárd/R
+Санготхарт	Szentgotthárd/R
+Сандерт	Szentgyörgy/R
+Сандерть	Szentgyörgy/R
+Санкнельтен	Sankt Pölten/R
+Санкотолин	Szentkatalin/R
+Санк-Пелтен	Sankt Pölten/R
 Санкпельтен	Sankt Pölten/R
+Санкпольтен	Sankt Pölten/R
+Санкт Андре	Szentandrás;Sankt Andrä/R
+Санкт-Андре	Szentandrás;Sankt Andrä/R
+Санкт-Андрей	Szentandrás;Sankt Andrä/R
+Санктольтен	Sankt Pölten/R
+Санкт-Пелтен	Sankt Pölten/R
+Санктпельбен	Sankt Pölten/R
+Санктпельта	Sankt Pölten/R
+Санктпельте	Sankt Pölten/R
+Санктпельтек	Sankt Pölten/R
 Санктпельтен	Sankt Pölten/R
 Санкт Пельтен	Sankt Pölten/R
 Санкт-Пельтен	Sankt Pölten/R
 Санкт-Пёльтен	Sankt Pölten/R
+Санктпельшен	Sankt Pölten/R
+Санкт-Пильтен	Sankt Pölten/R
+Санктполтен	Sankt Pölten/R
+Санкт Полтен	Sankt Pölten/R
+Санкт-Полтен	Sankt Pölten/R
 Санктпольтен	Sankt Pölten/R
+Санктпультен	Sankt Pölten/R
 Санктфлория	Sankt Florian/R
+Санкт-Флориян	Sankt Florian/R
+Санкт-флорьян	Sankt Florian/R
+Сан-Пелотен	Sankt Pölten/R
 Санпелтен	Sankt Pölten/R
+Сан-Пелтен	Sankt Pölten/R
+Санпёлтен	Sankt Pölten/R
+Санпельден	Sankt Pölten/R
+Санпельжен	Sankt Pölten/R
+Санпельте	Sankt Pölten/R
+Санпельтек	Sankt Pölten/R
+Санпельтел	Sankt Pölten/R
 Санпельтен	Sankt Pölten/R
 Сан Пельтен	Sankt Pölten/R
 Сан-Пельтен	Sankt Pölten/R
+Сан-Пёльтен	Sankt Pölten/R
+Санпельтон	Sankt Pölten/R
+Сан-Пельтон	Sankt Pölten/R
+Санпельшен	Sankt Pölten/R
+Санпентел	Sankt Pölten/R
+Санпентель	Sankt Pölten/R
 Санпертен	Sankt Pölten/R
+Санполта	Sankt Pölten/R
+Санполтен	Sankt Pölten/R
 Санпольтен	Sankt Pölten/R
 Санпультен	Sankt Pölten/R
+Санпуртен	Sankt Pölten/R
 Санпюльтен	Sankt Pölten/R
+Сан-Пюльтен	Sankt Pölten/R
+Сант-Андре	Szentandrás;Sankt Andrä/R
+Сантбольтен	Sankt Pölten/R
+Сант-Иван-Лаворт Фолво	Szentivánlaborfalva/R
+Сантиельтен	Sankt Pölten/R
+Сант-Иштван	Szentistván/R
+Санткольтен	Sankt Pölten/R
+Сант Ласло	Szentlászló/R
+Сант-Ласло	Szentlászló/R
+Сантлирец	Szentlőrinc/R
+Сантлоренц	Szentlőrinc/R
+Сант Мартукати	Szentmártonkáta/R
 Сантнельтен	Sankt Pölten/R
 Сантниколай	Sankt_Nikolai/R
+Сант Николай	Sankt Nikola;Szentmiklós/R
 Сант-Палтен	Sankt Pölten/R
+Сант Палтон	Sankt Pölten/R
 Сантпелтен	Sankt Pölten/R
 Сантпельтен	Sankt Pölten/R
 Сант Пельтен	Sankt Pölten/R

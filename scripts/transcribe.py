@@ -41,7 +41,7 @@ AS_FALLBACK = '=T'        # 4. ha nincs más, marad a strict
 
 SAR_MARK = '/R'           # search-and-replace mark, see: preprocess.py
 
-LOGBASE = 100             # base for log freq values
+LOGBASE = 500             # base for log freq values
 
 # "extremal" character values from "General Pubctuation" unicode block for CHAR_EQUIVALENT_TABLE
 C = "‖‗†‡•‣․‥…‧L‰‱′″‴‵‶‷‸‹›※‼‽‾⁁⁂⁃⁄⁅⁆⁇⁈⁉⁊⁋⁌⁍⁎⁏⁐⁑⁒⁓⁔⁕⁖⁗⁘⁙⁚⁛⁜⁝⁞"
@@ -207,13 +207,12 @@ def add_score(matches, trans, freqs):
     # megmérjük strict vs match távot,
     # és hozzáírjuk a szavakhoz: Jóska[0.52],
     # és sorbatesszük eszerint! :)
+    # + még normalizáljuk is max 1-re vmiért...
 
     elif len(matches) > 1:
 
         # lehet szebben? :)
-        res = ';'.join("{}[{:.2f}]".format(i[0], i[1])
-            for i
-            in sorted((
+        sorted_matches = sorted((
                 (match,
                  # score = difflib_ratio + logfreq
                  difflib.SequenceMatcher(None, trans, match).ratio() +
@@ -222,7 +221,13 @@ def add_score(matches, trans, freqs):
                 in matches),
                 key=lambda x: (-x[1], x[0]) # fixed order
             )
-        )
+
+        # normalize to max 1 (i.e. normalize by max norm)
+        maximum = max(max(x[1] for x in sorted_matches), 1) # should be at least 1
+        normalized = [(x[0], x[1]/maximum) for x in sorted_matches]
+
+        res = ';'.join("{}[{:.2f}]".format(i[0], i[1]) for i in normalized)
+
     return res
 
 
