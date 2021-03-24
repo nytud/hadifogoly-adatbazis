@@ -51,6 +51,12 @@ split_and_parallel:
 	@echo "--- $@" 1>&2
 	date ; time $S/split_and_parallel.sh $(SPLIT_FILE) $(SPLIT_CHUNKS) > $(SPLIT_OUT) 2> $(SPLIT_ERR) ; date
 
+# XXX generates front.mp4 <- should be a parameter
+# prereq: make transcribe
+coords:
+	@echo "--- $@" 1>&2
+	time cat $(OUTDIR)/$(FILE).transcribed.csv | python3 scripts/coords.py > $(OUTDIR)/$(FILE).transcribed_coords.csv 2> $(FILE).coords.err
+
 
 # ===== EVAL
 
