@@ -77,11 +77,11 @@ def front_plot(front_db):
         ordered_days = sorted(front_db.items())
     
         for day, one_day_data in ordered_days:
-            print(day, one_day_data)
+            #print(day, one_day_data)
             x, y, s = [], [], []
     
             for (lati, lngi), val in one_day_data.items():
-                print(lati, lngi, val)
+                #print(lati, lngi, val)
                 if val >= MIN_CAPTURED:
                     x.append(float(lngi))
                     y.append(float(lati))
@@ -114,7 +114,7 @@ def front_plot(front_db):
     #     now it is too large -> causes StopIteration in update()
     ani = animation.FuncAnimation(fig, update,
         frames=2000, interval=200)
-    ani.save('front.mp4')
+    ani.save('out/front.mp4') # XXX 'out' must not be hardcoded
 
 
 def splitandwhich(string, sep, n):
@@ -138,6 +138,9 @@ def main():
     for line in sys.stdin:
         orig_line = line.strip()
         fields = orig_line.split('\t')
+
+        capture_lati, capture_lngi = '', ''
+
         for field_id in [BIRTH_CITY, CAPTURE_CITY]:
             field = fields[field_id]
 
@@ -148,20 +151,24 @@ def main():
             items = [splitandwhich(item, '[', 0)
                      for item in field.split(';')]
             city = items[0] # always take the 1st one
-            lati, lngi = coord_dict[city]
+
+            lati, lngi = coord_dict[city] # ('', '') if not present
             fields.extend([lati, lngi])
+
+            if field_id == CAPTURE_CITY:
+                capture_lati, capture_lngi = lati, lngi
 
         # print the whole database coords added
         print('\t'.join(fields))
 
         # collect data for war front line:
         # capture date + coord of city of capture
-        if len(lati) > 0 and len(lngi) > 0:
+        if len(capture_lati) > 0 and len(capture_lngi) > 0:
             try:
                 # check date input format: dd.mm.yyyy
                 date_obj = datetime.datetime.strptime(
                     fields[CAPTURE_DATE], '%d.%m.%Y')
-                front_db[date_obj.date()][(lati, lngi)] += 1
+                front_db[date_obj.date()][(capture_lati, capture_lngi)] += 1
             except ValueError:
                 pass
 

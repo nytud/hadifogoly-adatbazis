@@ -159,6 +159,7 @@ deploy:
 	@echo "--- $@" 1>&2
 	@scp -p data/random_10000_42.csv out/random_10000_42.transcribed.csv $(DEPLOY_TARGET)
 	@scp -p data/Kart.csv out/Kart.transcribed.csv $(DEPLOY_TARGET)
+	@scp -p out/Kart.transcribed_coords.csv out/front.mp4 $(DEPLOY_TARGET)
 
 README_IN=README.md
 README_INTERM=README_for_pandoc_pdf.md
