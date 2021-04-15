@@ -50,5 +50,7 @@
 31	50	DBNumber
 32	51	Mesto_r/city/latitude
 33	52	Mesto_r/city/longitude
-34	53	Mesto_pl/city/latitude
-35	54	Mesto_pl/city/longitude
+34	53	Mesto_r/city/id
+35	54	Mesto_pl/city/latitude
+36	55	Mesto_pl/city/longitude
+37	56	Mesto_pl/city/id

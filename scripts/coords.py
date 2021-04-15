@@ -31,20 +31,20 @@ GEONAMES_DATA_DIR = 'data/geonames'
 def load_geonames_data():
     """
     Load geonames data.
-    Returns a dict {city: (latitude, longitude)}.
+    Returns a dict {city: (latitude, longitude, id)}.
     """
     filepath = f'{GEONAMES_DATA_DIR}/??.txt'
     filenames = glob.glob(filepath)
 
-    geonames = defaultdict(lambda: ('', ''))
+    geonames = defaultdict(lambda: ('', '', ''))
 
     for filename in filenames:
         f = open(filename, 'r')
 
         for line in f:
             fields = line.split('\t')
-            mainname, altnames, lati, lngi, feature, popul = \
-                [fields[i] for i in [1, 3, 4, 5, 6, 14]]
+            id_, mainname, altnames, lati, lngi, feature, popul = \
+                [fields[i] for i in [0, 1, 3, 4, 5, 6, 14]]
 
             # only inhabited ('P') with population > 0
             if not(feature == 'P' and int(popul) >= 1):
@@ -56,9 +56,9 @@ def load_geonames_data():
                 # XXX no check whether
                 #     there are several cities with the same name
                 if len(name) > 0:
-                    geonames[name] = (lati, lngi)
+                    geonames[name] = (lati, lngi, id_)
 
-                #print('\t'.join([name, lati, lngi]))
+                #print('\t'.join([name, lati, lngi, id_]))
  
     return geonames
 
@@ -152,8 +152,8 @@ def main():
                      for item in field.split(';')]
             city = items[0] # always take the 1st one
 
-            lati, lngi = coord_dict[city] # ('', '') if not present
-            fields.extend([lati, lngi])
+            lati, lngi, id_ = coord_dict[city] # ('', '', '') if not present
+            fields.extend([lati, lngi, id_])
 
             if field_id == CAPTURE_CITY:
                 capture_lati, capture_lngi = lati, lngi

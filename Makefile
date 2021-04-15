@@ -10,6 +10,9 @@ S=scripts
 # ===== MAIN STUFF 
 
 # >>> mindent egybe <<
+# transcribe + coords + eval részletes kiértékeléssel
+transcribe_and_coords_and_eval_by_col: transcribe coords eval_by_col
+
 # transcribe + eval részletes kiértékeléssel
 transcribe_and_eval_by_col: transcribe eval_by_col
 
@@ -55,7 +58,7 @@ split_and_parallel:
 # prereq: make transcribe
 coords:
 	@echo "--- $@" 1>&2
-	time cat $(OUTDIR)/$(FILE).transcribed.csv | python3 scripts/coords.py > $(OUTDIR)/$(FILE).transcribed_coords.csv 2> $(FILE).coords.err
+	time cat $(OUTDIR)/$(FILE).transcribed.new.csv | python3 scripts/coords.py > $(OUTDIR)/$(FILE).transcribed_coords.new.csv 2> $(OUTDIR)/$(FILE).coords.new.err
 
 
 # ===== EVAL
@@ -160,6 +163,7 @@ deploy:
 	@scp -p data/random_10000_42.csv out/random_10000_42.transcribed.csv $(DEPLOY_TARGET)
 	@scp -p data/Kart.csv out/Kart.transcribed.csv $(DEPLOY_TARGET)
 	@scp -p out/Kart.transcribed_coords.csv out/front.mp4 $(DEPLOY_TARGET)
+	@scp -p data/data.header.new.csv data/data.header.new_coords.csv $(DEPLOY_TARGET)
 
 README_IN=README.md
 README_INTERM=README_for_pandoc_pdf.md

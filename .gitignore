@@ -11,6 +11,7 @@ out/new*
 out/*new*
 out/full*
 out/other
+out/*coords.err
 
 rules/*INPROGRESS*
 
